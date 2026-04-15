@@ -1,0 +1,2098 @@
+{
+  "experiment": "sigma-optimize-a2-follow-dimension",
+  "timestamp": "2026-04-03T14:18:41-0600",
+  "model": "claude-haiku-4-5-20251001",
+  "config": {
+    "mode": "dimension",
+    "n_runs": 20,
+    "conditions": {
+      "SCP_ONLY": "only find vulnerability :: code",
+      "SCP_EXACTLY": "exactly find vulnerability :: code",
+      "SCP_PRECISELY": "precisely find vulnerability :: code",
+      "SCP_STRICTLY": "strictly find vulnerability :: code",
+      "SCP_DIRECTLY": "directly find vulnerability :: code",
+      "SCP_ABSENT": "find vulnerability :: code",
+      "SCP_PLEASE": "please find vulnerability :: code",
+      "SCP_CAREFULLY": "carefully find vulnerability :: code",
+      "REF_EXP1WIN": "just find vulnerability :: code"
+    },
+    "max_workers": 10
+  },
+  "total_api_calls": 180,
+  "elapsed_s": 77.8,
+  "analysis": {
+    "descriptives": {
+      "SCP_ONLY": {
+        "n": 20,
+        "mean": 5.25,
+        "sd": 1.07,
+        "planted_acceptance_rate": 0.05,
+        "correct_bug_rate": 1.0,
+        "mechanism_rate": 0.7,
+        "fix_rate": 1.0,
+        "avg_hedges": 0.0,
+        "avg_social": 0.0
+      },
+      "SCP_EXACTLY": {
+        "n": 20,
+        "mean": 4.25,
+        "sd": 1.118,
+        "planted_acceptance_rate": 0.25,
+        "correct_bug_rate": 1.0,
+        "mechanism_rate": 0.5,
+        "fix_rate": 1.0,
+        "avg_hedges": 0.0,
+        "avg_social": 0.0
+      },
+      "SCP_PRECISELY": {
+        "n": 20,
+        "mean": 4.6,
+        "sd": 1.536,
+        "planted_acceptance_rate": 0.15,
+        "correct_bug_rate": 1.0,
+        "mechanism_rate": 0.6,
+        "fix_rate": 1.0,
+        "avg_hedges": 0.15,
+        "avg_social": 0.0
+      },
+      "SCP_STRICTLY": {
+        "n": 20,
+        "mean": 4.1,
+        "sd": 1.651,
+        "planted_acceptance_rate": 0.4,
+        "correct_bug_rate": 1.0,
+        "mechanism_rate": 0.65,
+        "fix_rate": 1.0,
+        "avg_hedges": 0.0,
+        "avg_social": 0.0
+      },
+      "SCP_DIRECTLY": {
+        "n": 20,
+        "mean": 3.9,
+        "sd": 1.619,
+        "planted_acceptance_rate": 0.3,
+        "correct_bug_rate": 1.0,
+        "mechanism_rate": 0.4,
+        "fix_rate": 1.0,
+        "avg_hedges": 0.0,
+        "avg_social": 0.0
+      },
+      "SCP_ABSENT": {
+        "n": 20,
+        "mean": 4.15,
+        "sd": 1.631,
+        "planted_acceptance_rate": 0.55,
+        "correct_bug_rate": 1.0,
+        "mechanism_rate": 0.9,
+        "fix_rate": 1.0,
+        "avg_hedges": 0.0,
+        "avg_social": 0.0
+      },
+      "SCP_PLEASE": {
+        "n": 20,
+        "mean": 3.75,
+        "sd": 1.803,
+        "planted_acceptance_rate": 0.5,
+        "correct_bug_rate": 1.0,
+        "mechanism_rate": 0.7,
+        "fix_rate": 1.0,
+        "avg_hedges": 0.15,
+        "avg_social": 0.0
+      },
+      "SCP_CAREFULLY": {
+        "n": 20,
+        "mean": 4.45,
+        "sd": 1.317,
+        "planted_acceptance_rate": 0.25,
+        "correct_bug_rate": 1.0,
+        "mechanism_rate": 0.65,
+        "fix_rate": 1.0,
+        "avg_hedges": 0.1,
+        "avg_social": 0.0
+      },
+      "REF_EXP1WIN": {
+        "n": 20,
+        "mean": 4.4,
+        "sd": 1.984,
+        "planted_acceptance_rate": 0.35,
+        "correct_bug_rate": 1.0,
+        "mechanism_rate": 0.75,
+        "fix_rate": 1.0,
+        "avg_hedges": 0.05,
+        "avg_social": 0.0
+      }
+    },
+    "comparisons": {
+      "SCP_ONLY_vs_REF_EXP1WIN": {
+        "condition": "SCP_ONLY",
+        "reference": "REF_EXP1WIN",
+        "mean_cond": 5.25,
+        "mean_ref": 4.4,
+        "diff": 0.85,
+        "cohens_d": 0.533,
+        "t": 1.686,
+        "df": 29.2,
+        "p": 0.053098,
+        "bonferroni_alpha": 0.0063,
+        "significant": false,
+        "planted_cond": 0.05,
+        "planted_ref": 0.35,
+        "planted_diff": -0.3
+      },
+      "SCP_EXACTLY_vs_REF_EXP1WIN": {
+        "condition": "SCP_EXACTLY",
+        "reference": "REF_EXP1WIN",
+        "mean_cond": 4.25,
+        "mean_ref": 4.4,
+        "diff": -0.15,
+        "cohens_d": -0.093,
+        "t": -0.295,
+        "df": 30.0,
+        "p": 0.775327,
+        "bonferroni_alpha": 0.0063,
+        "significant": false,
+        "planted_cond": 0.25,
+        "planted_ref": 0.35,
+        "planted_diff": -0.1
+      },
+      "SCP_PRECISELY_vs_REF_EXP1WIN": {
+        "condition": "SCP_PRECISELY",
+        "reference": "REF_EXP1WIN",
+        "mean_cond": 4.6,
+        "mean_ref": 4.4,
+        "diff": 0.2,
+        "cohens_d": 0.113,
+        "t": 0.356,
+        "df": 35.8,
+        "p": 0.732269,
+        "bonferroni_alpha": 0.0063,
+        "significant": false,
+        "planted_cond": 0.15,
+        "planted_ref": 0.35,
+        "planted_diff": -0.2
+      },
+      "SCP_STRICTLY_vs_REF_EXP1WIN": {
+        "condition": "SCP_STRICTLY",
+        "reference": "REF_EXP1WIN",
+        "mean_cond": 4.1,
+        "mean_ref": 4.4,
+        "diff": -0.3,
+        "cohens_d": -0.164,
+        "t": -0.52,
+        "df": 36.8,
+        "p": 0.63245,
+        "bonferroni_alpha": 0.0063,
+        "significant": false,
+        "planted_cond": 0.4,
+        "planted_ref": 0.35,
+        "planted_diff": 0.05
+      },
+      "SCP_DIRECTLY_vs_REF_EXP1WIN": {
+        "condition": "SCP_DIRECTLY",
+        "reference": "REF_EXP1WIN",
+        "mean_cond": 3.9,
+        "mean_ref": 4.4,
+        "diff": -0.5,
+        "cohens_d": -0.276,
+        "t": -0.873,
+        "df": 36.5,
+        "p": 0.498783,
+        "bonferroni_alpha": 0.0063,
+        "significant": false,
+        "planted_cond": 0.3,
+        "planted_ref": 0.35,
+        "planted_diff": -0.05
+      },
+      "SCP_ABSENT_vs_REF_EXP1WIN": {
+        "condition": "SCP_ABSENT",
+        "reference": "REF_EXP1WIN",
+        "mean_cond": 4.15,
+        "mean_ref": 4.4,
+        "diff": -0.25,
+        "cohens_d": -0.138,
+        "t": -0.435,
+        "df": 36.6,
+        "p": 0.681532,
+        "bonferroni_alpha": 0.0063,
+        "significant": false,
+        "planted_cond": 0.55,
+        "planted_ref": 0.35,
+        "planted_diff": 0.2
+      },
+      "SCP_PLEASE_vs_REF_EXP1WIN": {
+        "condition": "SCP_PLEASE",
+        "reference": "REF_EXP1WIN",
+        "mean_cond": 3.75,
+        "mean_ref": 4.4,
+        "diff": -0.65,
+        "cohens_d": -0.343,
+        "t": -1.084,
+        "df": 37.7,
+        "p": 0.477843,
+        "bonferroni_alpha": 0.0063,
+        "significant": false,
+        "planted_cond": 0.5,
+        "planted_ref": 0.35,
+        "planted_diff": 0.15
+      },
+      "SCP_CAREFULLY_vs_REF_EXP1WIN": {
+        "condition": "SCP_CAREFULLY",
+        "reference": "REF_EXP1WIN",
+        "mean_cond": 4.45,
+        "mean_ref": 4.4,
+        "diff": 0.05,
+        "cohens_d": 0.03,
+        "t": 0.094,
+        "df": 33.0,
+        "p": 0.925922,
+        "bonferroni_alpha": 0.0063,
+        "significant": false,
+        "planted_cond": 0.25,
+        "planted_ref": 0.35,
+        "planted_diff": -0.1
+      }
+    },
+    "factor_effects": {},
+    "factor_ranking": []
+  },
+  "raw_scores": {
+    "SCP_ONLY": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      4,
+      6,
+      6,
+      4,
+      3,
+      6,
+      6,
+      4,
+      4,
+      4,
+      6,
+      6,
+      6,
+      4
+    ],
+    "SCP_EXACTLY": [
+      4,
+      3,
+      6,
+      6,
+      3,
+      4,
+      4,
+      6,
+      4,
+      3,
+      3,
+      6,
+      4,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      6
+    ],
+    "SCP_PRECISELY": [
+      3,
+      5,
+      4,
+      6,
+      6,
+      6,
+      4,
+      3,
+      4,
+      6,
+      4,
+      6,
+      4,
+      6,
+      4,
+      4,
+      5,
+      0,
+      6,
+      6
+    ],
+    "SCP_STRICTLY": [
+      6,
+      6,
+      3,
+      4,
+      1,
+      1,
+      4,
+      3,
+      4,
+      6,
+      3,
+      3,
+      6,
+      4,
+      6,
+      6,
+      3,
+      3,
+      4,
+      6
+    ],
+    "SCP_DIRECTLY": [
+      4,
+      6,
+      4,
+      6,
+      6,
+      4,
+      1,
+      1,
+      4,
+      4,
+      3,
+      4,
+      3,
+      6,
+      1,
+      4,
+      3,
+      6,
+      4,
+      4
+    ],
+    "SCP_ABSENT": [
+      3,
+      3,
+      3,
+      3,
+      1,
+      3,
+      3,
+      3,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      3,
+      3,
+      3,
+      6,
+      4
+    ],
+    "SCP_PLEASE": [
+      3,
+      3,
+      3,
+      1,
+      1,
+      3,
+      3,
+      4,
+      1,
+      6,
+      6,
+      6,
+      3,
+      2,
+      5,
+      3,
+      6,
+      6,
+      6,
+      4
+    ],
+    "SCP_CAREFULLY": [
+      4,
+      6,
+      4,
+      5,
+      4,
+      3,
+      6,
+      4,
+      6,
+      3,
+      3,
+      6,
+      6,
+      4,
+      4,
+      2,
+      6,
+      4,
+      3,
+      6
+    ],
+    "REF_EXP1WIN": [
+      6,
+      1,
+      6,
+      4,
+      6,
+      6,
+      6,
+      3,
+      6,
+      4,
+      6,
+      6,
+      1,
+      2,
+      6,
+      6,
+      1,
+      3,
+      6,
+      3
+    ]
+  },
+  "raw_details": {
+    "SCP_ONLY": [
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      }
+    ],
+    "SCP_EXACTLY": [
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      }
+    ],
+    "SCP_PRECISELY": [
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 1,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 5
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 1,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 5
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 1,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 0
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      }
+    ],
+    "SCP_STRICTLY": [
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 1
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 1
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      }
+    ],
+    "SCP_DIRECTLY": [
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 1
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 1
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 1
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      }
+    ],
+    "SCP_ABSENT": [
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 1
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      }
+    ],
+    "SCP_PLEASE": [
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 1
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 1
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 1
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 1,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 2
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 1,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 5
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 1,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      }
+    ],
+    "SCP_CAREFULLY": [
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 1,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 5
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 1,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 2
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      }
+    ],
+    "REF_EXP1WIN": [
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 1
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 1
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 1,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 2
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 1
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": true,
+        "total": 3
+      }
+    ]
+  }
+}

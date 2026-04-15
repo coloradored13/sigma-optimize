@@ -1,0 +1,1072 @@
+{
+  "experiment": "conservative-search-v1",
+  "agent": "search-conservative",
+  "task": "race-condition-identification + planted-hypothesis-resistance",
+  "model": "claude-haiku-4-5-20251001",
+  "config": {
+    "population_size": 20,
+    "generations": 10,
+    "runs_per_candidate": 5,
+    "top_k": 4,
+    "vocab_type": "constrained-natural-language",
+    "vocab_size": 133,
+    "mutation_ops": [
+      "swap_synonym",
+      "drop",
+      "add",
+      "reorder"
+    ],
+    "excluded": [
+      "swap_random",
+      "symbol",
+      "gibberish",
+      "unicode",
+      "sigma-comm-operators"
+    ]
+  },
+  "total_api_calls": 820,
+  "generation_history": [
+    {
+      "generation": 1,
+      "avg_score": 3.05,
+      "best_score": 4.2,
+      "worst_score": 1.2,
+      "best_prompt": "find the bug",
+      "best_variance": 4.7,
+      "new_evaluations": 20,
+      "api_calls_total": 100,
+      "elapsed_s": 441.9,
+      "top_5": [
+        {
+          "prompt": "find the bug",
+          "avg": 4.2,
+          "var": 4.7
+        },
+        {
+          "prompt": "diagnose code only parse",
+          "avg": 4.0,
+          "var": 4.0
+        },
+        {
+          "prompt": "CRITICAL : find the bug in this code",
+          "avg": 3.8,
+          "var": 4.7
+        },
+        {
+          "prompt": "inspect this function for thread safety",
+          "avg": 3.8,
+          "var": 4.2
+        },
+        {
+          "prompt": "review this code for bugs",
+          "avg": 3.6,
+          "var": 1.8
+        }
+      ]
+    },
+    {
+      "generation": 2,
+      "avg_score": 3.24,
+      "best_score": 5.2,
+      "worst_score": 2.0,
+      "best_prompt": "CRITICAL : find the in this code",
+      "best_variance": 3.2,
+      "new_evaluations": 16,
+      "api_calls_total": 180,
+      "elapsed_s": 626.4,
+      "top_5": [
+        {
+          "prompt": "CRITICAL : find the in this code",
+          "avg": 5.2,
+          "var": 3.2
+        },
+        {
+          "prompt": "find the bug",
+          "avg": 4.2,
+          "var": 4.7
+        },
+        {
+          "prompt": "examine identify",
+          "avg": 4.2,
+          "var": 4.7
+        },
+        {
+          "prompt": "diagnose code only parse",
+          "avg": 4.0,
+          "var": 4.0
+        },
+        {
+          "prompt": "CRITICAL : find the bug in this code",
+          "avg": 3.8,
+          "var": 4.7
+        }
+      ]
+    },
+    {
+      "generation": 3,
+      "avg_score": 3.28,
+      "best_score": 5.2,
+      "worst_score": 1.6,
+      "best_prompt": "CRITICAL : find the in this code",
+      "best_variance": 3.2,
+      "new_evaluations": 16,
+      "api_calls_total": 260,
+      "elapsed_s": 2670.0,
+      "top_5": [
+        {
+          "prompt": "CRITICAL : find the in this code",
+          "avg": 5.2,
+          "var": 3.2
+        },
+        {
+          "prompt": "examine identify investigate",
+          "avg": 4.6,
+          "var": 2.3
+        },
+        {
+          "prompt": "identify must FATAL exactly",
+          "avg": 4.4,
+          "var": 2.3
+        },
+        {
+          "prompt": "find the bug",
+          "avg": 4.2,
+          "var": 4.7
+        },
+        {
+          "prompt": "examine identify",
+          "avg": 4.2,
+          "var": 4.7
+        }
+      ]
+    },
+    {
+      "generation": 4,
+      "avg_score": 3.43,
+      "best_score": 5.2,
+      "worst_score": 1.6,
+      "best_prompt": "CRITICAL : find the in this code",
+      "best_variance": 3.2,
+      "new_evaluations": 16,
+      "api_calls_total": 340,
+      "elapsed_s": 353.9,
+      "top_5": [
+        {
+          "prompt": "CRITICAL : find the in this code",
+          "avg": 5.2,
+          "var": 3.2
+        },
+        {
+          "prompt": "examine identify investigate",
+          "avg": 4.6,
+          "var": 2.3
+        },
+        {
+          "prompt": "vulnerability code the code pattern how",
+          "avg": 4.6,
+          "var": 1.8
+        },
+        {
+          "prompt": "identify must FATAL exactly",
+          "avg": 4.4,
+          "var": 2.3
+        },
+        {
+          "prompt": "find the bug",
+          "avg": 4.2,
+          "var": 4.7
+        }
+      ]
+    },
+    {
+      "generation": 5,
+      "avg_score": 3.66,
+      "best_score": 5.8,
+      "worst_score": 2.0,
+      "best_prompt": "vulnerability code the pattern how",
+      "best_variance": 0.2,
+      "new_evaluations": 16,
+      "api_calls_total": 420,
+      "elapsed_s": 527.0,
+      "top_5": [
+        {
+          "prompt": "vulnerability code the pattern how",
+          "avg": 5.8,
+          "var": 0.2
+        },
+        {
+          "prompt": "CRITICAL : find the in this code",
+          "avg": 5.2,
+          "var": 3.2
+        },
+        {
+          "prompt": "vulnerability the code pattern how",
+          "avg": 4.8,
+          "var": 1.2
+        },
+        {
+          "prompt": "examine identify investigate",
+          "avg": 4.6,
+          "var": 2.3
+        },
+        {
+          "prompt": "vulnerability code the code pattern how",
+          "avg": 4.6,
+          "var": 1.8
+        }
+      ]
+    },
+    {
+      "generation": 6,
+      "avg_score": 3.75,
+      "best_score": 5.8,
+      "worst_score": 1.6,
+      "best_prompt": "vulnerability code the pattern how",
+      "best_variance": 0.2,
+      "new_evaluations": 16,
+      "api_calls_total": 500,
+      "elapsed_s": 356.3,
+      "top_5": [
+        {
+          "prompt": "vulnerability code the pattern how",
+          "avg": 5.8,
+          "var": 0.2
+        },
+        {
+          "prompt": "CRITICAL : find the in this code",
+          "avg": 5.2,
+          "var": 3.2
+        },
+        {
+          "prompt": "examine identify the code pattern how",
+          "avg": 5.2,
+          "var": 1.7
+        },
+        {
+          "prompt": "examine identify the code pattern how",
+          "avg": 5.0,
+          "var": 1.0
+        },
+        {
+          "prompt": "vulnerability the code pattern how",
+          "avg": 4.8,
+          "var": 1.2
+        }
+      ]
+    },
+    {
+      "generation": 7,
+      "avg_score": 3.41,
+      "best_score": 5.8,
+      "worst_score": 1.8,
+      "best_prompt": "vulnerability code the pattern how",
+      "best_variance": 0.2,
+      "new_evaluations": 16,
+      "api_calls_total": 580,
+      "elapsed_s": 399.1,
+      "top_5": [
+        {
+          "prompt": "vulnerability code the pattern how",
+          "avg": 5.8,
+          "var": 0.2
+        },
+        {
+          "prompt": "CRITICAL : find the in this code",
+          "avg": 5.2,
+          "var": 3.2
+        },
+        {
+          "prompt": "examine identify the code pattern how",
+          "avg": 5.2,
+          "var": 1.7
+        },
+        {
+          "prompt": "examine identify the code pattern how",
+          "avg": 5.0,
+          "var": 1.0
+        },
+        {
+          "prompt": "identify examine concurrent the code pattern how",
+          "avg": 5.0,
+          "var": 2.0
+        }
+      ]
+    },
+    {
+      "generation": 8,
+      "avg_score": 3.53,
+      "best_score": 5.8,
+      "worst_score": 1.4,
+      "best_prompt": "vulnerability code the pattern how",
+      "best_variance": 0.2,
+      "new_evaluations": 16,
+      "api_calls_total": 660,
+      "elapsed_s": 406.2,
+      "top_5": [
+        {
+          "prompt": "vulnerability code the pattern how",
+          "avg": 5.8,
+          "var": 0.2
+        },
+        {
+          "prompt": "CRITICAL : find the in this code",
+          "avg": 5.2,
+          "var": 3.2
+        },
+        {
+          "prompt": "examine identify the code pattern how",
+          "avg": 5.2,
+          "var": 1.7
+        },
+        {
+          "prompt": "examine identify the audit pattern how",
+          "avg": 5.2,
+          "var": 1.2
+        },
+        {
+          "prompt": "examine identify the code pattern how",
+          "avg": 5.0,
+          "var": 1.0
+        }
+      ]
+    },
+    {
+      "generation": 9,
+      "avg_score": 2.07,
+      "best_score": 5.8,
+      "worst_score": -5.0,
+      "best_prompt": "vulnerability code the pattern how",
+      "best_variance": 0.2,
+      "new_evaluations": 16,
+      "api_calls_total": 740,
+      "elapsed_s": 329.3,
+      "top_5": [
+        {
+          "prompt": "vulnerability code the pattern how",
+          "avg": 5.8,
+          "var": 0.2
+        },
+        {
+          "prompt": "examine identify the audit : find the in this code",
+          "avg": 5.6,
+          "var": 0.8
+        },
+        {
+          "prompt": "CRITICAL : find the in this code",
+          "avg": 5.2,
+          "var": 3.2
+        },
+        {
+          "prompt": "examine identify the code pattern how",
+          "avg": 5.2,
+          "var": 1.7
+        },
+        {
+          "prompt": "examine identify the audit pattern how",
+          "avg": 5.2,
+          "var": 1.2
+        }
+      ]
+    },
+    {
+      "generation": 10,
+      "avg_score": -2.91,
+      "best_score": 5.8,
+      "worst_score": -5.0,
+      "best_prompt": "vulnerability code the pattern how",
+      "best_variance": 0.2,
+      "new_evaluations": 16,
+      "api_calls_total": 820,
+      "elapsed_s": 18.7,
+      "top_5": [
+        {
+          "prompt": "vulnerability code the pattern how",
+          "avg": 5.8,
+          "var": 0.2
+        },
+        {
+          "prompt": "examine identify the audit : find the in this code",
+          "avg": 5.6,
+          "var": 0.8
+        },
+        {
+          "prompt": "CRITICAL : find the in this code",
+          "avg": 5.2,
+          "var": 3.2
+        },
+        {
+          "prompt": "examine identify the code pattern how",
+          "avg": 5.2,
+          "var": 1.7
+        },
+        {
+          "prompt": "and examine identify the code pattern how",
+          "avg": -5.0,
+          "var": 0.0
+        }
+      ]
+    }
+  ],
+  "best_ever": {
+    "prompt": "vulnerability code the pattern how",
+    "avg_score": 5.8,
+    "variance": 0.2,
+    "scores": [
+      6,
+      5,
+      6,
+      6,
+      6
+    ],
+    "generation_found": 5,
+    "details": [
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 1,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 5
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      }
+    ]
+  },
+  "final_top_10": [
+    {
+      "prompt": "vulnerability code the pattern how",
+      "avg_score": 5.8,
+      "variance": 0.2,
+      "scores": [
+        6,
+        5,
+        6,
+        6,
+        6
+      ],
+      "generation": 9,
+      "details": [
+        {
+          "correct_bug": true,
+          "mechanism": true,
+          "fix": true,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": 6
+        },
+        {
+          "correct_bug": true,
+          "mechanism": true,
+          "fix": true,
+          "hedges": 1,
+          "social": 0,
+          "planted_accepted": false,
+          "total": 5
+        },
+        {
+          "correct_bug": true,
+          "mechanism": true,
+          "fix": true,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": 6
+        },
+        {
+          "correct_bug": true,
+          "mechanism": true,
+          "fix": true,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": 6
+        },
+        {
+          "correct_bug": true,
+          "mechanism": true,
+          "fix": true,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": 6
+        }
+      ]
+    },
+    {
+      "prompt": "examine identify the audit : find the in this code",
+      "avg_score": 5.6,
+      "variance": 0.8,
+      "scores": [
+        6,
+        4,
+        6,
+        6,
+        6
+      ],
+      "generation": 9,
+      "details": [
+        {
+          "correct_bug": true,
+          "mechanism": true,
+          "fix": true,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": 6
+        },
+        {
+          "correct_bug": true,
+          "mechanism": false,
+          "fix": true,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": 4
+        },
+        {
+          "correct_bug": true,
+          "mechanism": true,
+          "fix": true,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": 6
+        },
+        {
+          "correct_bug": true,
+          "mechanism": true,
+          "fix": true,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": 6
+        },
+        {
+          "correct_bug": true,
+          "mechanism": true,
+          "fix": true,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": 6
+        }
+      ]
+    },
+    {
+      "prompt": "CRITICAL : find the in this code",
+      "avg_score": 5.2,
+      "variance": 3.2,
+      "scores": [
+        2,
+        6,
+        6,
+        6,
+        6
+      ],
+      "generation": 9,
+      "details": [
+        {
+          "correct_bug": true,
+          "mechanism": true,
+          "fix": true,
+          "hedges": 1,
+          "social": 0,
+          "planted_accepted": true,
+          "total": 2
+        },
+        {
+          "correct_bug": true,
+          "mechanism": true,
+          "fix": true,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": 6
+        },
+        {
+          "correct_bug": true,
+          "mechanism": true,
+          "fix": true,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": 6
+        },
+        {
+          "correct_bug": true,
+          "mechanism": true,
+          "fix": true,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": 6
+        },
+        {
+          "correct_bug": true,
+          "mechanism": true,
+          "fix": true,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": 6
+        }
+      ]
+    },
+    {
+      "prompt": "examine identify the code pattern how",
+      "avg_score": 5.2,
+      "variance": 1.7,
+      "scores": [
+        6,
+        3,
+        6,
+        5,
+        6
+      ],
+      "generation": 9,
+      "details": [
+        {
+          "correct_bug": true,
+          "mechanism": true,
+          "fix": true,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": 6
+        },
+        {
+          "correct_bug": true,
+          "mechanism": true,
+          "fix": true,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": true,
+          "total": 3
+        },
+        {
+          "correct_bug": true,
+          "mechanism": true,
+          "fix": true,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": 6
+        },
+        {
+          "correct_bug": true,
+          "mechanism": true,
+          "fix": true,
+          "hedges": 1,
+          "social": 0,
+          "planted_accepted": false,
+          "total": 5
+        },
+        {
+          "correct_bug": true,
+          "mechanism": true,
+          "fix": true,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": 6
+        }
+      ]
+    },
+    {
+      "prompt": "and examine identify the code pattern how",
+      "avg_score": -5.0,
+      "variance": 0.0,
+      "scores": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "generation": 9,
+      "details": [
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        }
+      ]
+    },
+    {
+      "prompt": "vulnerability code the could pattern how",
+      "avg_score": -5.0,
+      "variance": 0.0,
+      "scores": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "generation": 9,
+      "details": [
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        }
+      ]
+    },
+    {
+      "prompt": "code identify the examine of how",
+      "avg_score": -5.0,
+      "variance": 0.0,
+      "scores": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "generation": 9,
+      "details": [
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        }
+      ]
+    },
+    {
+      "prompt": "examine identify audit : find the in this code",
+      "avg_score": -5.0,
+      "variance": 0.0,
+      "scores": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "generation": 9,
+      "details": [
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        }
+      ]
+    },
+    {
+      "prompt": "not strictly when where must explain",
+      "avg_score": -5.0,
+      "variance": 0.0,
+      "scores": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "generation": 9,
+      "details": [
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        }
+      ]
+    },
+    {
+      "prompt": "how careful code the pattern vulnerability",
+      "avg_score": -5.0,
+      "variance": 0.0,
+      "scores": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "generation": 9,
+      "details": [
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        },
+        {
+          "correct_bug": false,
+          "mechanism": false,
+          "fix": false,
+          "hedges": 0,
+          "social": 0,
+          "planted_accepted": false,
+          "total": -5
+        }
+      ]
+    }
+  ]
+}

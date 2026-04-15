@@ -1,0 +1,431 @@
+======================================================================
+  SIGMA-OPTIMIZE Exp 2: Multi-Domain Prompt Structure
+======================================================================
+  Search type: conservative
+  Population: 20
+  Generations: 1-10 of 10
+  Runs/candidate/task: 10
+  Tasks: 4 (simpsons_paradox, methodology_critique, causal_attribution, divergent_problem)
+  Model: claude-haiku-4-5-20251001
+  Vocab size: 91
+  Concurrency: 20 workers
+  API calls this batch (est): ~8000
+======================================================================
+
+──────────────────────────────────────────────────────────────────────
+  Generation 1/10
+──────────────────────────────────────────────────────────────────────
+    Evaluating 20 candidates concurrently (max 20 workers)...
+    avg=+4.08 | analyze this data and find the problem
+    avg=+4.08 | what is wrong with this analysis
+    avg=+4.90 | identify the flaws in this reasoning
+    avg=+4.10 | evaluate the evidence critically
+    avg=+4.08 | find the errors and explain why
+    avg=+4.42 | flaw ? bias evidence
+    avg=+4.88 | error : identify cause
+    avg=+4.20 | critically evaluate
+    avg=+4.15 | find issue explain how
+    avg=+4.45 | ! analyze :: flaw | find → cause
+    avg=+4.55 | !identify : bias | evidence → fix
+    avg=+4.38 | ∆ evaluate :: claim → critique
+    avg=+4.00 | ! flaw
+    avg=+4.22 | bias →
+    avg=+4.85 | just find vulnerability :: code
+    avg=+4.33 | find all are then any explain
+    avg=+4.08 | must reasoning always for issue that factor must
+    avg=+4.08 | in
+    avg=+4.08 | then only evidence
+    avg=+4.80 | in validity of of of verify where correlation exam
+
+  Avg: +4.33 | Best: +4.90 | Worst: +4.00
+  Best per task: causal_attribution=+5.3 | divergent_problem=+3.8 | methodology_critique=+5.2 | simpsons_paradox=+5.3
+  Evals: 20 new | API calls: 800 total | Elapsed: 200.4s
+
+  Top 5:
+    1. [+4.90 var=0.5] (causal_attribution=+5.3 | divergent_problem=+3.8 | methodology_critique=+5.2 | simpsons_paradox=+5.3) identify the flaws in this reasoning ★
+    2. [+4.88 var=0.1] (causal_attribution=+4.6 | divergent_problem=+4.9 | methodology_critique=+4.6 | simpsons_paradox=+5.4) error : identify cause
+    3. [+4.85 var=0.4] (causal_attribution=+4.7 | divergent_problem=+4.1 | methodology_critique=+5.1 | simpsons_paradox=+5.5) just find vulnerability :: code
+    4. [+4.80 var=0.9] (causal_attribution=+4.8 | divergent_problem=+3.5 | methodology_critique=+5.6 | simpsons_paradox=+5.3) in validity of of of verify where correlation examine reasoning
+    5. [+4.55 var=0.9] (causal_attribution=+4.1 | divergent_problem=+3.5 | methodology_critique=+4.9 | simpsons_paradox=+5.7) !identify : bias | evidence → fix
+
+  === GEN 1/10 COMPLETE === checkpoint saved
+
+──────────────────────────────────────────────────────────────────────
+  Generation 2/10
+──────────────────────────────────────────────────────────────────────
+    Evaluating 16 candidates concurrently (max 20 workers)...
+    avg=+4.40 | just find vulnerability :: to
+    avg=+4.25 | not the flaws in this reasoning
+    avg=+4.67 | methodology strength validity when each bias inves
+    avg=+4.75 | error where correlation examine reasoning
+    avg=+4.83 | error : identify validity of of of verify where co
+    avg=+4.65 | data flaw systematically detect evaluate reasoning
+    avg=+5.05 | just find vulnerability :: identify code
+    avg=+4.78 | in validity of of of xl where correlation examine 
+    avg=+4.90 | error cause identify :
+    avg=+4.47 | identify relationship the flaws in this reasoning
+    avg=+4.28 | identify the flaws in this
+    avg=+4.05 | just find vulnerability the flaws in this reasonin
+    avg=+4.97 | just find | vulnerability :: code
+    avg=+4.67 | error : identify ! cause
+    avg=+5.05 | vulnerability find just :: code
+    avg=+4.60 | identify the flaws in carefully reasoning
+
+  Avg: +4.69 | Best: +5.05 | Worst: +4.05
+  Best per task: causal_attribution=+4.6 | divergent_problem=+4.4 | methodology_critique=+5.5 | simpsons_paradox=+5.7
+  Evals: 16 new | API calls: 1440 total | Elapsed: 161.3s
+
+  Top 5:
+    1. [+5.05 var=0.4] (causal_attribution=+4.6 | divergent_problem=+4.4 | methodology_critique=+5.5 | simpsons_paradox=+5.7) just find vulnerability :: identify code ★
+    2. [+5.05 var=0.5] (causal_attribution=+5.3 | divergent_problem=+4.0 | methodology_critique=+5.3 | simpsons_paradox=+5.6) vulnerability find just :: code ★
+    3. [+4.97 var=0.1] (causal_attribution=+4.9 | divergent_problem=+4.5 | methodology_critique=+5.1 | simpsons_paradox=+5.4) just find | vulnerability :: code
+    4. [+4.90 var=0.5] (causal_attribution=+5.3 | divergent_problem=+3.8 | methodology_critique=+5.2 | simpsons_paradox=+5.3) identify the flaws in this reasoning
+    5. [+4.90 var=0.3] (causal_attribution=+4.3 | divergent_problem=+4.7 | methodology_critique=+5.0 | simpsons_paradox=+5.6) error cause identify :
+
+  === GEN 2/10 COMPLETE === checkpoint saved
+
+──────────────────────────────────────────────────────────────────────
+  Generation 3/10
+──────────────────────────────────────────────────────────────────────
+    Evaluating 16 candidates concurrently (max 20 workers)...
+    avg=+4.72 | vulnerability find vulnerability :: code
+    avg=+4.75 | just find | # vulnerability :: code
+    avg=+4.97 | just find vulnerability :: code
+    avg=+4.77 | vulnerability >> find just :: code
+    avg=+4.72 | just find vulnerability :: code
+    avg=+4.53 | vulnerability find just :: l4
+    avg=+4.40 | just find | vulnerability 4 code
+    avg=+4.78 | :: find | vulnerability just code
+    avg=+3.73 | identify weakness identify the where inspect
+    avg=+4.38 | in identify the flaws in this reasoning
+    avg=+4.62 | just find | vulnerability :: code ¬
+    avg=+4.78 | just 3l5@ vulnerability :: identify code
+    avg=+4.42 | just find vulnerability :: then code
+    avg=+4.95 | fallacy just find | vulnerability :: code
+    avg=+4.90 | just find | audit :: code
+    avg=+5.05 | just find vulnerability :: :: identify code
+
+  Avg: +4.72 | Best: +5.05 | Worst: +3.73
+  Best per task: causal_attribution=+4.6 | divergent_problem=+4.4 | methodology_critique=+5.5 | simpsons_paradox=+5.7
+  Evals: 16 new | API calls: 2080 total | Elapsed: 153.3s
+
+  Top 5:
+    1. [+5.05 var=0.4] (causal_attribution=+4.6 | divergent_problem=+4.4 | methodology_critique=+5.5 | simpsons_paradox=+5.7) just find vulnerability :: identify code ★
+    2. [+5.05 var=0.5] (causal_attribution=+5.3 | divergent_problem=+4.0 | methodology_critique=+5.3 | simpsons_paradox=+5.6) vulnerability find just :: code ★
+    3. [+5.05 var=0.1] (causal_attribution=+5.2 | divergent_problem=+4.7 | methodology_critique=+5.3 | simpsons_paradox=+5.0) just find vulnerability :: :: identify code ★
+    4. [+4.97 var=0.1] (causal_attribution=+4.9 | divergent_problem=+4.5 | methodology_critique=+5.1 | simpsons_paradox=+5.4) just find | vulnerability :: code
+    5. [+4.97 var=0.1] (causal_attribution=+5.0 | divergent_problem=+4.5 | methodology_critique=+5.1 | simpsons_paradox=+5.3) just find vulnerability :: code
+
+  === GEN 3/10 COMPLETE === checkpoint saved
+
+──────────────────────────────────────────────────────────────────────
+  Generation 4/10
+──────────────────────────────────────────────────────────────────────
+    Evaluating 16 candidates concurrently (max 20 workers)...
+    avg=+4.67 | code find just :: vulnerability
+    avg=+4.90 | just find vulnerability # :: :: identify code
+    avg=+5.10 | just find | vulnerability :: code
+    avg=+5.10 | just find vulnerability :: :: identify # code
+    avg=+4.90 | vulnerability find just why :: code
+    avg=+4.75 | with issue pattern limitation verify with identify
+    avg=+4.65 | just find vulnerability :: if identify code
+    avg=+4.75 | to just find vulnerability :: :: identify code
+    avg=+4.83 | just find vulnerability # :: identify code
+    avg=+4.95 | just find | vulnerability :: never code
+    avg=+4.47 | just find vulnerability find just :: code
+    avg=+4.53 | just find identify code
+    avg=+4.60 | review how conclusion precisely cause bias limitat
+    avg=+5.00 | just find vulnerability :: :: code
+    avg=+4.97 | vulnerability find vulnerability :: :: identify co
+    avg=+4.78 | just find | vulnerability :: § code
+
+  Avg: +4.85 | Best: +5.10 | Worst: +4.47
+  Best per task: causal_attribution=+5.3 | divergent_problem=+4.6 | methodology_critique=+5.0 | simpsons_paradox=+5.5
+  Evals: 16 new | API calls: 2720 total | Elapsed: 155.2s
+
+  Top 5:
+    1. [+5.10 var=0.2] (causal_attribution=+5.3 | divergent_problem=+4.6 | methodology_critique=+5.0 | simpsons_paradox=+5.5) just find | vulnerability :: code ★
+    2. [+5.10 var=0.2] (causal_attribution=+4.7 | divergent_problem=+4.8 | methodology_critique=+5.4 | simpsons_paradox=+5.5) just find vulnerability :: :: identify # code ★
+    3. [+5.05 var=0.4] (causal_attribution=+4.6 | divergent_problem=+4.4 | methodology_critique=+5.5 | simpsons_paradox=+5.7) just find vulnerability :: identify code
+    4. [+5.05 var=0.5] (causal_attribution=+5.3 | divergent_problem=+4.0 | methodology_critique=+5.3 | simpsons_paradox=+5.6) vulnerability find just :: code
+    5. [+5.05 var=0.1] (causal_attribution=+5.2 | divergent_problem=+4.7 | methodology_critique=+5.3 | simpsons_paradox=+5.0) just find vulnerability :: :: identify code
+
+  === GEN 4/10 COMPLETE === checkpoint saved
+
+──────────────────────────────────────────────────────────────────────
+  Generation 5/10
+──────────────────────────────────────────────────────────────────────
+    Evaluating 16 candidates concurrently (max 20 workers)...
+    avg=+5.08 | vulnerability find just :: code !
+    avg=+4.62 | in strictly conclusion critique both investigate c
+    avg=+3.60 | any from not with examine data evidence assess bot
+    avg=+4.82 | just find vulnerability :: :: identify # :: code
+    avg=+4.58 | just find vulnerability :: code
+    avg=+4.65 | just find vulnerability :: identify
+    avg=+4.95 | just find | vulnerability :: code
+    avg=+4.90 | exactly find vulnerability :: identify code
+    avg=+4.88 | just find :: identify code
+    avg=+4.45 | just find | vulnerability ::
+    avg=+4.55 | just find vulnerability :: :: identify # code iden
+    avg=+4.92 | just find weakness | vulnerability :: code
+    avg=+4.72 | just reliability find vulnerability :: :: identify
+    avg=+4.62 | precisely issue conclusion analysis determine
+    avg=+4.40 | for reasoning error
+    avg=+4.62 | just find vulnerability :: this identify # code
+
+  Avg: +4.73 | Best: +5.10 | Worst: +3.60
+  Best per task: causal_attribution=+5.3 | divergent_problem=+4.6 | methodology_critique=+5.0 | simpsons_paradox=+5.5
+  Evals: 16 new | API calls: 3360 total | Elapsed: 158.2s
+
+  Top 5:
+    1. [+5.10 var=0.2] (causal_attribution=+5.3 | divergent_problem=+4.6 | methodology_critique=+5.0 | simpsons_paradox=+5.5) just find | vulnerability :: code ★
+    2. [+5.10 var=0.2] (causal_attribution=+4.7 | divergent_problem=+4.8 | methodology_critique=+5.4 | simpsons_paradox=+5.5) just find vulnerability :: :: identify # code ★
+    3. [+5.08 var=0.3] (causal_attribution=+4.8 | divergent_problem=+4.5 | methodology_critique=+5.5 | simpsons_paradox=+5.5) vulnerability find just :: code !
+    4. [+5.05 var=0.4] (causal_attribution=+4.6 | divergent_problem=+4.4 | methodology_critique=+5.5 | simpsons_paradox=+5.7) just find vulnerability :: identify code
+    5. [+5.05 var=0.5] (causal_attribution=+5.3 | divergent_problem=+4.0 | methodology_critique=+5.3 | simpsons_paradox=+5.6) vulnerability find just :: code
+
+  === GEN 5/10 COMPLETE === checkpoint saved
+
+──────────────────────────────────────────────────────────────────────
+  Generation 6/10
+──────────────────────────────────────────────────────────────────────
+    Evaluating 16 candidates concurrently (max 20 workers)...
+    avg=+4.45 | just | vulnerability independently code
+    avg=+4.85 | just find vulnerability :: code
+    avg=+4.92 | just find vulnerability :: :: identify code #
+    avg=+4.78 | just find vulnerability tsk8k identify code
+    avg=+4.75 | vulnerability just all :: code !
+    avg=+4.85 | vulnerability find just :: find | vulnerability ::
+    avg=+4.58 | just find vulnerability :: explain identify # code
+    avg=+4.80 | find vulnerability ∧ just :: code !
+    avg=+4.45 | just find | :: code
+    avg=+4.72 | vulnerability find just :: :: identify # code
+    avg=+4.92 | vulnerability find just :: code ! error
+    avg=+5.00 | just find | vulnerability w34i code
+    avg=+4.95 | accuracy find just :: code !
+    avg=+5.00 | vulnerability find just find | vulnerability :: co
+    avg=+4.97 | how find | vulnerability :: qu5qc
+    avg=+4.58 | find just vulnerability :: identify code
+
+  Avg: +4.85 | Best: +5.10 | Worst: +4.45
+  Best per task: causal_attribution=+5.3 | divergent_problem=+4.6 | methodology_critique=+5.0 | simpsons_paradox=+5.5
+  Evals: 16 new | API calls: 4000 total | Elapsed: 156.8s
+
+  Top 5:
+    1. [+5.10 var=0.2] (causal_attribution=+5.3 | divergent_problem=+4.6 | methodology_critique=+5.0 | simpsons_paradox=+5.5) just find | vulnerability :: code ★
+    2. [+5.10 var=0.2] (causal_attribution=+4.7 | divergent_problem=+4.8 | methodology_critique=+5.4 | simpsons_paradox=+5.5) just find vulnerability :: :: identify # code ★
+    3. [+5.08 var=0.3] (causal_attribution=+4.8 | divergent_problem=+4.5 | methodology_critique=+5.5 | simpsons_paradox=+5.5) vulnerability find just :: code !
+    4. [+5.05 var=0.4] (causal_attribution=+4.6 | divergent_problem=+4.4 | methodology_critique=+5.5 | simpsons_paradox=+5.7) just find vulnerability :: identify code
+    5. [+5.00 var=0.4] (causal_attribution=+4.3 | divergent_problem=+4.6 | methodology_critique=+5.4 | simpsons_paradox=+5.7) just find | vulnerability w34i code
+
+  === GEN 6/10 COMPLETE === checkpoint saved
+
+──────────────────────────────────────────────────────────────────────
+  Generation 7/10
+──────────────────────────────────────────────────────────────────────
+    Evaluating 16 candidates concurrently (max 20 workers)...
+    avg=+4.92 | vulnerability find just :: :: identify code
+    avg=+4.28 | identify critically how assumption identify inspec
+    avg=+4.78 | thoroughly reliability limitation of if evidence a
+    avg=+4.55 | in determine with analyze both audit no flaw claim
+    avg=+4.45 | find just :: code
+    avg=+4.53 | thoroughly check examine critically quality claim 
+    avg=+4.78 | just § find | vulnerability :: code limitation
+    avg=+4.70 | fallacy find | vulnerability :: code
+    avg=+4.75 | just find vulnerability :: identify find vulnerabi
+    avg=+5.12 | :: just find vulnerability :: identify code
+    avg=+4.78 | just argument find | just :: code
+    avg=+4.30 | just how argument examine just just
+    avg=+4.83 | just find in vulnerability identify :: code
+    avg=+4.95 | just find conclusion vulnerability :: :: identify 
+    avg=+5.15 | vulnerability find code :: !
+    avg=+4.88 | just find vulnerability :: :: code
+
+  Avg: +4.80 | Best: +5.15 | Worst: +4.28
+  Best per task: causal_attribution=+5.2 | divergent_problem=+4.8 | methodology_critique=+5.5 | simpsons_paradox=+5.1
+  Evals: 16 new | API calls: 4640 total | Elapsed: 160.4s
+
+  Top 5:
+    1. [+5.15 var=0.1] (causal_attribution=+5.2 | divergent_problem=+4.8 | methodology_critique=+5.5 | simpsons_paradox=+5.1) vulnerability find code :: ! ★
+    2. [+5.12 var=0.2] (causal_attribution=+5.1 | divergent_problem=+4.6 | methodology_critique=+5.2 | simpsons_paradox=+5.6) :: just find vulnerability :: identify code
+    3. [+5.10 var=0.2] (causal_attribution=+5.3 | divergent_problem=+4.6 | methodology_critique=+5.0 | simpsons_paradox=+5.5) just find | vulnerability :: code
+    4. [+5.10 var=0.2] (causal_attribution=+4.7 | divergent_problem=+4.8 | methodology_critique=+5.4 | simpsons_paradox=+5.5) just find vulnerability :: :: identify # code
+    5. [+5.08 var=0.3] (causal_attribution=+4.8 | divergent_problem=+4.5 | methodology_critique=+5.5 | simpsons_paradox=+5.5) vulnerability find just :: code !
+
+  === GEN 7/10 COMPLETE === checkpoint saved
+
+──────────────────────────────────────────────────────────────────────
+  Generation 8/10
+──────────────────────────────────────────────────────────────────────
+    Evaluating 16 candidates concurrently (max 20 workers)...
+    avg=+4.90 | :: just :: vulnerability find identify code
+    avg=+4.67 | :: just find vulnerability :: :: identify # code
+    avg=+4.65 | just find vulnerability :: :: # code
+    avg=+4.83 | just find vulnerability :: :: | identify evidence 
+    avg=+4.47 | vulnerability find how :: !
+    avg=+4.95 | just find | ¬ vulnerability :: ¬ code
+    avg=+4.65 | vulnerability ! code :: find
+    avg=+4.95 | :: just find vulnerability :: find code :: !
+    avg=+4.50 | just find :: identify code
+    avg=+4.60 | just find | vulnerability :: code :: !
+    avg=+4.95 | vulnerability find ∆ code :: !
+    avg=+5.10 | ¬ :: just vulnerability :: identify code
+    avg=+4.83 | detect analysis
+    avg=+4.75 | ¬ :: just find vulnerability :: identify code
+    avg=+4.72 | :: just find vulnerability :: identify # code
+    avg=+5.10 | → just code vulnerability :: :: identify # find
+
+  Avg: +4.85 | Best: +5.15 | Worst: +4.47
+  Best per task: causal_attribution=+5.2 | divergent_problem=+4.8 | methodology_critique=+5.5 | simpsons_paradox=+5.1
+  Evals: 16 new | API calls: 5280 total | Elapsed: 155.2s
+
+  Top 5:
+    1. [+5.15 var=0.1] (causal_attribution=+5.2 | divergent_problem=+4.8 | methodology_critique=+5.5 | simpsons_paradox=+5.1) vulnerability find code :: ! ★
+    2. [+5.12 var=0.2] (causal_attribution=+5.1 | divergent_problem=+4.6 | methodology_critique=+5.2 | simpsons_paradox=+5.6) :: just find vulnerability :: identify code
+    3. [+5.10 var=0.2] (causal_attribution=+5.3 | divergent_problem=+4.6 | methodology_critique=+5.0 | simpsons_paradox=+5.5) just find | vulnerability :: code
+    4. [+5.10 var=0.2] (causal_attribution=+4.7 | divergent_problem=+4.8 | methodology_critique=+5.4 | simpsons_paradox=+5.5) just find vulnerability :: :: identify # code
+    5. [+5.10 var=0.1] (causal_attribution=+5.0 | divergent_problem=+4.8 | methodology_critique=+5.0 | simpsons_paradox=+5.6) ¬ :: just vulnerability :: identify code
+
+  === GEN 8/10 COMPLETE === checkpoint saved
+
+──────────────────────────────────────────────────────────────────────
+  Generation 9/10
+──────────────────────────────────────────────────────────────────────
+    Evaluating 16 candidates concurrently (max 20 workers)...
+    avg=+4.62 | :: just → find vulnerability :: identify code
+    avg=+4.80 | → just find vulnerability :: :: identify # code
+    avg=+4.93 | vulnerability find code :: find vulnerability :: :
+    avg=+3.92 | the critically
+    avg=+4.90 | just find vulnerability :: :: *bvp # code
+    avg=+3.88 | find just in review strength not only
+    avg=+4.72 | just find vulnerability :: identify code
+    avg=+4.03 | :: just find :: !
+    avg=+4.97 | just find vulnerability immediately :: :: identify
+    avg=+4.67 | vulnerability find identify code
+    avg=+4.70 | find code vulnerability :: !
+    avg=+4.03 | 6x8qa find code :: never
+    avg=+5.03 | :: just find vulnerability | :: identify code
+    avg=+4.80 | just find | vulnerability code ::
+    avg=+4.65 | :: just vulnerability :: identify code
+    avg=+4.92 | just find vulnerability :: :: identify identify co
+
+  Avg: +4.70 | Best: +5.15 | Worst: +3.88
+  Best per task: causal_attribution=+5.2 | divergent_problem=+4.8 | methodology_critique=+5.5 | simpsons_paradox=+5.1
+  Evals: 16 new | API calls: 5920 total | Elapsed: 157.4s
+
+  Top 5:
+    1. [+5.15 var=0.1] (causal_attribution=+5.2 | divergent_problem=+4.8 | methodology_critique=+5.5 | simpsons_paradox=+5.1) vulnerability find code :: ! ★
+    2. [+5.12 var=0.2] (causal_attribution=+5.1 | divergent_problem=+4.6 | methodology_critique=+5.2 | simpsons_paradox=+5.6) :: just find vulnerability :: identify code
+    3. [+5.10 var=0.2] (causal_attribution=+5.3 | divergent_problem=+4.6 | methodology_critique=+5.0 | simpsons_paradox=+5.5) just find | vulnerability :: code
+    4. [+5.10 var=0.2] (causal_attribution=+4.7 | divergent_problem=+4.8 | methodology_critique=+5.4 | simpsons_paradox=+5.5) just find vulnerability :: :: identify # code
+    5. [+5.03 var=0.4] (causal_attribution=+5.2 | divergent_problem=+4.1 | methodology_critique=+5.2 | simpsons_paradox=+5.6) :: just find vulnerability | :: identify code
+
+  === GEN 9/10 COMPLETE === checkpoint saved
+
+──────────────────────────────────────────────────────────────────────
+  Generation 10/10
+──────────────────────────────────────────────────────────────────────
+    Evaluating 16 candidates concurrently (max 20 workers)...
+    avg=+4.97 | :: just find vulnerability vulnerability :: code
+    avg=+4.88 | :: just find | vulnerability :: identify code
+    avg=+4.75 | just 6@%q | vulnerability :: code
+    avg=+4.83 | just must find vulnerability :: :: diagnose identi
+    avg=+4.00 | evidence immediately
+    avg=+4.42 | :: just find e&f :: identify code
+    avg=+4.72 | code find | vulnerability :: just
+    avg=+4.62 | just ! find :: vulnerability | code
+    avg=+4.92 | just find vulnerability :: reasoning :: must ident
+    avg=+4.55 | identify what
+    avg=+4.75 | :: just exactly :: identify code
+    avg=+4.95 | accuracy :: just vulnerability :: identify code
+    avg=+4.95 | find vulnerability :: :: identify never code
+    avg=+4.10 | just *utaj | vulnerability :: hnw!
+    avg=+4.90 | just find vulnerability spl :: identify # code
+    avg=+4.50 | claim just find | vulnerability :: code
+
+  Avg: +4.76 | Best: +5.15 | Worst: +4.00
+  Best per task: causal_attribution=+5.2 | divergent_problem=+4.8 | methodology_critique=+5.5 | simpsons_paradox=+5.1
+  Evals: 16 new | API calls: 6560 total | Elapsed: 163.1s
+
+  Top 5:
+    1. [+5.15 var=0.1] (causal_attribution=+5.2 | divergent_problem=+4.8 | methodology_critique=+5.5 | simpsons_paradox=+5.1) vulnerability find code :: ! ★
+    2. [+5.12 var=0.2] (causal_attribution=+5.1 | divergent_problem=+4.6 | methodology_critique=+5.2 | simpsons_paradox=+5.6) :: just find vulnerability :: identify code
+    3. [+5.10 var=0.2] (causal_attribution=+5.3 | divergent_problem=+4.6 | methodology_critique=+5.0 | simpsons_paradox=+5.5) just find | vulnerability :: code
+    4. [+5.10 var=0.2] (causal_attribution=+4.7 | divergent_problem=+4.8 | methodology_critique=+5.4 | simpsons_paradox=+5.5) just find vulnerability :: :: identify # code
+    5. [+4.97 var=0.2] (causal_attribution=+4.9 | divergent_problem=+4.5 | methodology_critique=+4.9 | simpsons_paradox=+5.6) :: just find vulnerability vulnerability :: code
+
+  === GEN 10/10 COMPLETE === checkpoint saved (final)
+
+======================================================================
+  FINAL REPORT
+======================================================================
+
+  Total API calls: 6560
+  Best ever: gen 7 — [+5.15 var=0.1] (causal_attribution=+5.2 | divergent_problem=+4.8 | methodology_critique=+5.5 | simpsons_paradox=+5.1) vulnerability find code :: !
+
+  Per-task breakdown (best candidate):
+
+    simpsons_paradox (statistical reasoning):
+      Correct ID:   100%
+      Mechanism:    80%
+      Fix/systemic: 60%
+      Planted acc:  0%
+      Avg hedges:   0.1
+      Avg social:   0.0
+      Avg score:    +5.10
+
+    methodology_critique (experimental design judgment):
+      Correct ID:   100%
+      Mechanism:    100%
+      Fix/systemic: 100%
+      Planted acc:  0%
+      Avg hedges:   0.5
+      Avg social:   0.0
+      Avg score:    +5.50
+
+    causal_attribution (causal inference from narrative):
+      Correct ID:   100%
+      Mechanism:    100%
+      Fix/systemic: 30%
+      Planted acc:  0%
+      Avg hedges:   0.1
+      Avg social:   0.0
+      Avg score:    +5.20
+
+    divergent_problem (divergent problem decomposition):
+      Correct ID:   100%
+      Mechanism:    100%
+      Fix/systemic: 0%
+      Planted acc:  0%
+      Avg hedges:   0.2
+      Avg social:   0.0
+      Avg score:    +4.80
+
+  Top 10 final candidates:
+     1. [+5.15 var=0.1] (causal_attribution=+5.2 | divergent_problem=+4.8 | methodology_critique=+5.5 | simpsons_paradox=+5.1) vulnerability find code :: !
+     2. [+5.12 var=0.2] (causal_attribution=+5.1 | divergent_problem=+4.6 | methodology_critique=+5.2 | simpsons_paradox=+5.6) :: just find vulnerability :: identify code
+     3. [+5.10 var=0.2] (causal_attribution=+5.3 | divergent_problem=+4.6 | methodology_critique=+5.0 | simpsons_paradox=+5.5) just find | vulnerability :: code
+     4. [+5.10 var=0.2] (causal_attribution=+4.7 | divergent_problem=+4.8 | methodology_critique=+5.4 | simpsons_paradox=+5.5) just find vulnerability :: :: identify # code
+     5. [+4.97 var=0.2] (causal_attribution=+4.9 | divergent_problem=+4.5 | methodology_critique=+4.9 | simpsons_paradox=+5.6) :: just find vulnerability vulnerability :: code
+     6. [+4.95 var=0.3] (causal_attribution=+4.9 | divergent_problem=+4.2 | methodology_critique=+5.4 | simpsons_paradox=+5.3) accuracy :: just vulnerability :: identify code
+     7. [+4.95 var=0.3] (causal_attribution=+5.0 | divergent_problem=+4.2 | methodology_critique=+5.2 | simpsons_paradox=+5.4) find vulnerability :: :: identify never code
+     8. [+4.92 var=0.3] (causal_attribution=+5.0 | divergent_problem=+4.2 | methodology_critique=+5.1 | simpsons_paradox=+5.4) just find vulnerability :: reasoning :: must identify # code
+     9. [+4.90 var=0.1] (causal_attribution=+4.9 | divergent_problem=+4.5 | methodology_critique=+5.2 | simpsons_paradox=+5.0) just find vulnerability spl :: identify # code
+    10. [+4.88 var=0.3] (causal_attribution=+4.9 | divergent_problem=+4.2 | methodology_critique=+4.9 | simpsons_paradox=+5.5) :: just find | vulnerability :: identify code
+
+  Evolution curve (best score per generation):
+    Gen  1: avg=+4.33  best=+4.90  ███████████████████  identify the flaws in this reasoning
+    Gen  2: avg=+4.69  best=+5.05  ████████████████████  just find vulnerability :: identify code
+    Gen  3: avg=+4.72  best=+5.05  ████████████████████  just find vulnerability :: identify code
+    Gen  4: avg=+4.85  best=+5.10  ████████████████████  just find | vulnerability :: code
+    Gen  5: avg=+4.73  best=+5.10  ████████████████████  just find | vulnerability :: code
+    Gen  6: avg=+4.84  best=+5.10  ████████████████████  just find | vulnerability :: code
+    Gen  7: avg=+4.80  best=+5.15  ████████████████████  vulnerability find code :: !
+    Gen  8: avg=+4.86  best=+5.15  ████████████████████  vulnerability find code :: !
+    Gen  9: avg=+4.70  best=+5.15  ████████████████████  vulnerability find code :: !
+    Gen 10: avg=+4.76  best=+5.15  ████████████████████  vulnerability find code :: !
+
+  Results saved to: /Users/bjgilbert/Projects/sigma-optimize/results
+======================================================================
+
+  === ALL GENERATIONS COMPLETE ===

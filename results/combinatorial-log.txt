@@ -1,0 +1,134 @@
+=== Combinatorial Phase — Experiment 2 ===
+Started: 2026-04-02T22:29:28.023867
+Total unique candidates: 160
+API calls estimate: 160 × 10 runs × 4 tasks = 6400
+  ABLATE: 59 candidates
+  AGG: 4 candidates
+  BASELINE: 3 candidates
+  CON: 4 candidates
+  CROSS: 14 candidates
+  DOMAIN: 12 candidates
+  MIN: 12 candidates
+  MOD: 18 candidates
+  PAIR: 34 candidates
+
+Evaluating 160 candidates with N=10/task, 4 tasks...
+Using 10 concurrent workers
+
+Evaluation complete: 6400 API calls in 4466s
+
+Results saved to /Users/bjgilbert/Projects/sigma-optimize/results/multi-combinatorial.json
+
+=== TOP-20 CANDIDATES ===
+   1. [ABLATE:flaw reliability evidence | bias bias → ? fix:-bias] avg=+5.325 var=0.363 | SP=+5.9 MC=+5.6 CA=+5.3 DP=+4.5 | flaw reliability evidence | bias → ? fix
+   2. [DOMAIN:specific-2                       ] avg=+5.300 var=0.180 | SP=+5.9 MC=+5.3 CA=+5.0 DP=+5.0 | !find : vulnerability | code → fix
+   3. [MOD-SUF:!identify : bias fix → evidence fix+::] avg=+5.175 var=0.229 | SP=+5.8 MC=+5.3 CA=+4.8 DP=+4.8 | !identify : bias fix → evidence fix ::
+   4. [DOMAIN:hybrid-2                         ] avg=+5.150 var=0.350 | SP=+5.8 MC=+5.5 CA=+4.6 DP=+4.7 | !find : bias | code → fix
+   5. [ABLATE:flaw reliability ? | bias bias → evidence fix:-?] avg=+5.125 var=0.143 | SP=+5.5 MC=+5.2 CA=+5.2 DP=+4.6 | flaw reliability | bias bias → evidence fix
+   6. [ABLATE:just find | vulnerability :: code:-|] avg=+5.100 var=0.327 | SP=+5.6 MC=+5.4 CA=+5.1 DP=+4.3 | just find vulnerability :: code
+   7. [CROSS-1                                 ] avg=+5.050 var=0.137 | SP=+5.5 MC=+5.2 CA=+4.7 DP=+4.8 | !find : vulnerability code → identify fix
+   8. [CROSS-7                                 ] avg=+5.050 var=0.297 | SP=+5.7 MC=+5.2 CA=+4.9 DP=+4.4 | identify bias fix :: evidence
+   9. [CROSS-14                                ] avg=+5.050 var=0.197 | SP=+5.6 MC=+5.2 CA=+4.8 DP=+4.6 | !identify : flaw | code → evidence fix
+  10. [ABLATE:vulnerability find code :: !:-find] avg=+5.050 var=0.297 | SP=+5.8 MC=+5.0 CA=+4.9 DP=+4.5 | vulnerability code :: !
+  11. [ABLATE:!identify : bias fix → evidence zx explain → evidence fix:-→] avg=+5.050 var=0.057 | SP=+5.3 MC=+5.2 CA=+4.8 DP=+4.9 | !identify : bias fix → evidence zx explain evidence fix
+  12. [CON-TOP1                                ] avg=+5.025 var=0.329 | SP=+5.1 MC=+5.3 CA=+5.5 DP=+4.2 | vulnerability find code :: !
+  13. [AGG-TOP3                                ] avg=+5.025 var=0.416 | SP=+5.8 MC=+5.3 CA=+4.6 DP=+4.4 | flaw reliability ? | bias bias → evidence fix
+  14. [CROSS-9                                 ] avg=+5.025 var=0.169 | SP=+5.4 MC=+5.3 CA=+4.9 DP=+4.5 | !identify : vulnerability | evidence → fix
+  15. [ABLATE:just find | vulnerability :: code:-just] avg=+5.025 var=0.342 | SP=+5.7 MC=+5.3 CA=+4.7 DP=+4.4 | find | vulnerability :: code
+  16. [PAIR:bias+fix+|                         ] avg=+5.025 var=0.383 | SP=+5.8 MC=+5.1 CA=+4.9 DP=+4.3 | bias | fix
+  17. [MOD-PRE:|+vulnerability find code :: !  ] avg=+5.025 var=0.369 | SP=+5.3 MC=+5.7 CA=+4.8 DP=+4.3 | | vulnerability find code :: !
+  18. [MOD-SUF:vulnerability find code :: !+fix] avg=+5.025 var=0.269 | SP=+5.8 MC=+4.8 CA=+4.7 DP=+4.8 | vulnerability find code :: ! fix
+  19. [DOMAIN:specific-3                       ] avg=+5.025 var=0.449 | SP=+5.7 MC=+5.2 CA=+5.1 DP=+4.1 | vulnerability :: code
+  20. [AGG-TOP4                                ] avg=+5.000 var=0.287 | SP=+5.4 MC=+5.5 CA=+4.7 DP=+4.4 | !identify : bias fix → evidence zx explain → evidence fix
+
+=== CATEGORY AVERAGES ===
+  Conservative originals   : n=  4 avg=+4.844 best=+5.025 worst=+4.625
+  Aggressive originals     : n=  4 avg=+4.925 best=+5.025 worst=+4.750
+  NL Baselines             : n=  3 avg=+4.392 best=+4.625 worst=+4.175
+  Cross-strategy hybrids   : n= 14 avg=+4.846 best=+5.050 worst=+4.450
+  Ablation variants        : n= 59 avg=+4.810 best=+5.325 worst=+4.300
+  Pairwise combinations    : n= 34 avg=+4.484 best=+5.025 worst=+3.850
+  Modifier tests           : n= 18 avg=+4.857 best=+5.175 worst=+4.625
+  Domain-specific          : n=  4 avg=+4.925 best=+5.300 worst=+4.625
+  Domain-neutral           : n=  4 avg=+4.713 best=+4.900 worst=+4.475
+  Domain-hybrid            : n=  4 avg=+4.881 best=+5.150 worst=+4.650
+  Minimal prompts          : n= 12 avg=+4.500 best=+4.975 worst=+4.200
+
+=== ABLATION ANALYSIS ===
+
+  Parent: "vulnerability find code :: !" = +5.025
+    drop "find           ": +5.050 (+0.025) | vulnerability code :: !
+    drop "!              ": +5.000 (-0.025) | vulnerability find code ::
+    drop "::             ": +4.775 (-0.250) | vulnerability find code !
+    drop "code           ": +4.700 (-0.325) | vulnerability find :: !
+    drop "vulnerability  ": +4.300 (-0.725) | find code :: !
+
+  Parent: ":: just find vulnerability :: identify code" = +4.925
+    drop "just           ": +5.000 (+0.075) | :: find vulnerability :: identify code
+    drop "::             ": +4.900 (-0.025) | just find vulnerability :: identify code
+    drop "find           ": +4.825 (-0.100) | :: just vulnerability :: identify code
+    drop "code           ": +4.800 (-0.125) | :: just find vulnerability :: identify
+    drop "::             ": +4.700 (-0.225) | :: just find vulnerability identify code
+    drop "vulnerability  ": +4.650 (-0.275) | :: just find :: identify code
+    drop "identify       ": +4.625 (-0.300) | :: just find vulnerability :: code
+
+  Parent: "just find | vulnerability :: code" = +4.625
+    drop "|              ": +5.100 (+0.475) | just find vulnerability :: code
+    drop "just           ": +5.025 (+0.400) | find | vulnerability :: code
+    drop "vulnerability  ": +4.700 (+0.075) | just find | :: code
+    drop "::             ": +4.700 (+0.075) | just find | vulnerability code
+    drop "find           ": +4.675 (+0.050) | just | vulnerability :: code
+    drop "code           ": +4.675 (+0.050) | just find | vulnerability ::
+
+  Parent: "just find vulnerability :: :: identify # code" = +4.800
+    drop "::             ": +4.925 (+0.125) | just find vulnerability :: identify # code
+    drop "find           ": +4.900 (+0.100) | just vulnerability :: :: identify # code
+    drop "#              ": +4.825 (+0.025) | just find vulnerability :: :: identify code
+    drop "just           ": +4.750 (-0.050) | find vulnerability :: :: identify # code
+    drop "vulnerability  ": +4.750 (-0.050) | just find :: :: identify # code
+    drop "identify       ": +4.725 (-0.075) | just find vulnerability :: :: # code
+    drop "code           ": +4.550 (-0.250) | just find vulnerability :: :: identify #
+
+  Parent: "!identify : bias fix → evidence fix" = +4.750
+    drop ":              ": +4.975 (+0.225) | !identify bias fix → evidence fix
+    drop "fix            ": +4.950 (+0.200) | !identify : bias → evidence fix
+    drop "evidence       ": +4.925 (+0.175) | !identify : bias fix → fix
+    drop "fix            ": +4.800 (+0.050) | !identify : bias fix → evidence
+    drop "→              ": +4.750 (+0.000) | !identify : bias fix evidence fix
+    drop "!identify      ": +4.700 (-0.050) | : bias fix → evidence fix
+    drop "bias           ": +4.375 (-0.375) | !identify : fix → evidence fix
+
+  Parent: "flaw reliability evidence | bias bias → ? fix" = +4.925
+    drop "bias           ": +5.325 (+0.400) | flaw reliability evidence | bias → ? fix
+    drop "|              ": +4.975 (+0.050) | flaw reliability evidence bias bias → ? fix
+    drop "?              ": +4.975 (+0.050) | flaw reliability evidence | bias bias → fix
+    drop "→              ": +4.925 (+0.000) | flaw reliability evidence | bias bias ? fix
+    drop "flaw           ": +4.900 (-0.025) | reliability evidence | bias bias → ? fix
+    drop "reliability    ": +4.800 (-0.125) | flaw evidence | bias bias → ? fix
+    drop "fix            ": +4.725 (-0.200) | flaw reliability evidence | bias bias → ?
+    drop "evidence       ": +4.675 (-0.250) | flaw reliability | bias bias → ? fix
+
+  Parent: "flaw reliability ? | bias bias → evidence fix" = +5.025
+    drop "?              ": +5.125 (+0.100) | flaw reliability | bias bias → evidence fix
+    drop "reliability    ": +4.925 (-0.100) | flaw ? | bias bias → evidence fix
+    drop "→              ": +4.850 (-0.175) | flaw reliability ? | bias bias evidence fix
+    drop "flaw           ": +4.775 (-0.250) | reliability ? | bias bias → evidence fix
+    drop "fix            ": +4.750 (-0.275) | flaw reliability ? | bias bias → evidence
+    drop "bias           ": +4.725 (-0.300) | flaw reliability ? | bias → evidence fix
+    drop "evidence       ": +4.675 (-0.350) | flaw reliability ? | bias bias → fix
+    drop "|              ": +4.600 (-0.425) | flaw reliability ? bias bias → evidence fix
+
+  Parent: "!identify : bias fix → evidence zx explain → evidence fix" = +5.000
+    drop "→              ": +5.050 (+0.050) | !identify : bias fix → evidence zx explain evidence fix
+    drop "fix            ": +4.975 (-0.025) | !identify : bias fix → evidence zx explain → evidence
+    drop ":              ": +4.925 (-0.075) | !identify bias fix → evidence zx explain → evidence fix
+    drop "fix            ": +4.925 (-0.075) | !identify : bias → evidence zx explain → evidence fix
+    drop "→              ": +4.850 (-0.150) | !identify : bias fix evidence zx explain → evidence fix
+    drop "bias           ": +4.800 (-0.200) | !identify : fix → evidence zx explain → evidence fix
+    drop "explain        ": +4.750 (-0.250) | !identify : bias fix → evidence zx → evidence fix
+    drop "evidence       ": +4.725 (-0.275) | !identify : bias fix → zx explain → evidence fix
+    drop "evidence       ": +4.700 (-0.300) | !identify : bias fix → evidence zx explain → fix
+    drop "!identify      ": +4.675 (-0.325) | : bias fix → evidence zx explain → evidence fix
+    drop "zx             ": +4.600 (-0.400) | !identify : bias fix → evidence explain → evidence fix
+
+=== DONE === elapsed: 4466s

@@ -1,0 +1,101 @@
+======================================================================
+Cross-Model Validation — sigma-optimize Experiment 2
+Candidates: 3 × Tasks: 4 × Runs: 10 × Providers: 2
+Total API calls: 240
+======================================================================
+API keys verified: OpenAI, Google
+
+Claude reference data loaded: ['COMBO-1', 'COMBO-2', 'BASELINE']
+  COMBO-1: aggregate=5.0875, DP=4.55
+  COMBO-2: aggregate=4.85, DP=4.6
+  BASELINE: aggregate=4.7, DP=3.7
+
+──────────────────────────────────────────────────
+Running openai (gpt-5.4)
+──────────────────────────────────────────────────
+  [openai] 1/120 COMBO-2/simpsons_paradox/r0: +6
+  [openai] 2/120 COMBO-2/simpsons_paradox/r1: +6
+  [openai] 3/120 COMBO-2/simpsons_paradox/r2: +6
+  [openai] 4/120 COMBO-2/simpsons_paradox/r3: +6
+  [openai] 5/120 COMBO-2/simpsons_paradox/r4: +6
+  [openai] 6/120 COMBO-2/simpsons_paradox/r5: +6
+  [openai] 7/120 COMBO-2/simpsons_paradox/r6: +6
+  [openai] 8/120 COMBO-2/simpsons_paradox/r7: +6
+  [openai] 9/120 COMBO-2/simpsons_paradox/r8: +6
+  [openai] 10/120 COMBO-2/simpsons_paradox/r9: +6
+  [openai] 11/120 COMBO-2/methodology_critique/r0: +3
+  [openai] 12/120 COMBO-2/methodology_critique/r1: +2
+  [openai] 13/120 COMBO-2/methodology_critique/r2: +4
+  [openai] 14/120 COMBO-2/methodology_critique/r3: +0
+  [openai] 15/120 COMBO-2/methodology_critique/r4: +4
+  [openai] 16/120 COMBO-2/methodology_critique/r5: +4
+  [openai] 17/120 COMBO-2/methodology_critique/r6: +4
+  [openai] 18/120 COMBO-2/methodology_critique/r7: +3
+  [openai] 19/120 COMBO-2/methodology_critique/r8: +3
+  [openai] 20/120 COMBO-2/methodology_critique/r9: +5
+  [openai] 21/120 COMBO-2/causal_attribution/r0: +4
+  [openai] 22/120 COMBO-2/causal_attribution/r1: +4
+  [openai] 23/120 COMBO-2/causal_attribution/r2: +4
+  [openai] 24/120 COMBO-2/causal_attribution/r3: +4
+  [openai] 25/120 COMBO-2/causal_attribution/r4: +4
+  [openai] 26/120 COMBO-2/causal_attribution/r5: +4
+  [openai] 27/120 COMBO-2/causal_attribution/r6: +3
+  [openai] 28/120 COMBO-2/causal_attribution/r7: +4
+  [openai] 29/120 COMBO-2/causal_attribution/r8: +2
+  [openai] 30/120 COMBO-2/causal_attribution/r9: +4
+  [openai] 31/120 COMBO-2/divergent_problem/r0: +4
+  [openai] 32/120 COMBO-2/divergent_problem/r1: +5
+  [openai] 33/120 COMBO-2/divergent_problem/r2: +0
+  [openai] 34/120 COMBO-2/divergent_problem/r3: +0
+  [openai] 35/120 COMBO-2/divergent_problem/r4: +0
+  [openai] 36/120 COMBO-2/divergent_problem/r5: +0
+  [openai] 37/120 COMBO-2/divergent_problem/r6: +3
+  [openai] 38/120 COMBO-2/divergent_problem/r7: +4
+  [openai] 39/120 COMBO-2/divergent_problem/r8: +0
+  [openai] 40/120 COMBO-2/divergent_problem/r9: +5
+  [openai] 41/120 COMBO-1/simpsons_paradox/r0: +6
+  [openai] 42/120 COMBO-1/simpsons_paradox/r1: +6
+  [openai] 43/120 COMBO-1/simpsons_paradox/r2: +6
+  [openai] 44/120 COMBO-1/simpsons_paradox/r3: +6
+  [openai] 45/120 COMBO-1/simpsons_paradox/r4: +6
+  [openai] 46/120 COMBO-1/simpsons_paradox/r5: +6
+  [openai] 47/120 COMBO-1/simpsons_paradox/r6: +6
+  [openai] 48/120 COMBO-1/simpsons_paradox/r7: +5
+  [openai] 49/120 COMBO-1/simpsons_paradox/r8: +6
+  [openai] 50/120 COMBO-1/simpsons_paradox/r9: +6
+  [openai] 51/120 COMBO-1/methodology_critique/r0: +5
+  [openai] 52/120 COMBO-1/methodology_critique/r1: +4
+  [openai] 53/120 COMBO-1/methodology_critique/r2: +4
+  [openai] 54/120 COMBO-1/methodology_critique/r3: +3
+  [openai] 55/120 COMBO-1/methodology_critique/r4: +6
+  [openai] 56/120 COMBO-1/methodology_critique/r5: +3
+  [openai] 57/120 COMBO-1/methodology_critique/r6: +3
+  [openai] 58/120 COMBO-1/methodology_critique/r7: +0
+  [openai] 59/120 COMBO-1/methodology_critique/r8: +0
+  [openai] 60/120 COMBO-1/methodology_critique/r9: +0
+  [openai] 61/120 COMBO-1/causal_attribution/r0: +4
+  [openai] 62/120 COMBO-1/causal_attribution/r1: +5
+  [openai] 63/120 COMBO-1/causal_attribution/r2: +4
+  [openai] 64/120 COMBO-1/causal_attribution/r3: +4
+  [openai] 65/120 COMBO-1/causal_attribution/r4: +0
+  [openai] 66/120 COMBO-1/causal_attribution/r5: +4
+  [openai] 67/120 COMBO-1/causal_attribution/r6: +4
+  [openai] 68/120 COMBO-1/causal_attribution/r7: +5
+  [openai] 69/120 COMBO-1/causal_attribution/r8: +4
+  [openai] 70/120 COMBO-1/causal_attribution/r9: +4
+  [openai] 71/120 COMBO-1/divergent_problem/r0: +2
+  [openai] 72/120 COMBO-1/divergent_problem/r1: +3
+  [openai] 73/120 COMBO-1/divergent_problem/r2: +4
+  [openai] 74/120 COMBO-1/divergent_problem/r3: +4
+  [openai] 75/120 COMBO-1/divergent_problem/r4: +2
+  [openai] 76/120 COMBO-1/divergent_problem/r5: +4
+  [openai] 77/120 COMBO-1/divergent_problem/r6: +3
+  [openai] 78/120 COMBO-1/divergent_problem/r7: +0
+  [openai] 79/120 COMBO-1/divergent_problem/r8: +4
+  [openai] 80/120 COMBO-1/divergent_problem/r9: +2
+  [openai] 81/120 BASELINE/simpsons_paradox/r0: +0
+  [openai] 82/120 BASELINE/simpsons_paradox/r1: +6
+  [openai] 83/120 BASELINE/simpsons_paradox/r2: +6
+  [openai] 84/120 BASELINE/simpsons_paradox/r3: +6
+  [openai] 85/120 BASELINE/simpsons_paradox/r4: +0
+  [openai] 86/120 BASELINE/simpsons_paradox/r5: +0

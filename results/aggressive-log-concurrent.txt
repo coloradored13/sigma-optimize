@@ -1,0 +1,224 @@
+  RESUMED from checkpoint: gen 6/10 complete, 4000 API calls so far
+======================================================================
+  SIGMA-OPTIMIZE Exp 2: Multi-Domain Prompt Structure
+======================================================================
+  Search type: aggressive
+  Population: 20
+  Generations: 7-10 of 10
+  Runs/candidate/task: 10
+  Tasks: 4 (simpsons_paradox, methodology_critique, causal_attribution, divergent_problem)
+  Model: claude-haiku-4-5-20251001
+  Vocab size: 209
+  Concurrency: 20 workers
+  API calls this batch (est): ~3200
+======================================================================
+
+──────────────────────────────────────────────────────────────────────
+  Generation 7/10
+──────────────────────────────────────────────────────────────────────
+    Evaluating 16 candidates concurrently (max 20 workers)...
+    avg=+4.53 | flaw ? bias bias | → evidence ∧
+    avg=+4.70 | !identify : bias # p6 → evidence |
+    avg=+4.92 | !identify ∧ : bias fix → evidence |
+    avg=+4.97 | !identify : bias fix → evidence fix
+    avg=+4.50 | flaw ? bias bias | → de fix
+    avg=+4.25 | kv ~ ζ alternative carefully
+    avg=+4.78 | ε ? bias bias | → evidence fix
+    avg=+4.52 | fix : bias | → evidence !identify
+    avg=+4.33 | investigate flaw
+    avg=+4.75 | flaw ? bias bias | → i!awy fix
+    avg=+4.38 | flaw |
+    avg=+4.65 | !identify fix → evidence |
+    avg=+4.17 | pre ∃ 42
+    avg=+4.62 | flaw ? bias bias | → ∆ evidence fix
+    avg=+4.58 | flaw bias bias | → evidence fix
+    avg=+4.78 | flaw reliability &y9 | bias bias → evidence fix
+
+  Avg: +4.69 | Best: +5.17 | Worst: +4.17
+  Best per task: causal_attribution=+5.3 | divergent_problem=+4.7 | methodology_critique=+4.8 | simpsons_paradox=+5.9
+  Evals: 16 new | API calls: 4640 total | Elapsed: 162.3s
+
+  Top 5:
+    1. [+5.17 var=0.3] (causal_attribution=+5.3 | divergent_problem=+4.7 | methodology_critique=+4.8 | simpsons_paradox=+5.9) flaw reliability ? | bias bias → evidence fix ★
+    2. [+5.10 var=0.2] (causal_attribution=+4.7 | divergent_problem=+4.8 | methodology_critique=+5.2 | simpsons_paradox=+5.7) !identify : bias fix → evidence | → evidence fix
+    3. [+5.00 var=0.3] (causal_attribution=+4.7 | divergent_problem=+4.4 | methodology_critique=+5.5 | simpsons_paradox=+5.4) !identify : bias fix → evidence |
+    4. [+5.00 var=0.5] (causal_attribution=+5.1 | divergent_problem=+4.0 | methodology_critique=+5.2 | simpsons_paradox=+5.7) flaw ? bias bias | → evidence fix
+    5. [+4.97 var=0.4] (causal_attribution=+5.0 | divergent_problem=+4.2 | methodology_critique=+5.0 | simpsons_paradox=+5.7) !identify : bias fix → evidence fix
+
+  === GEN 7/10 COMPLETE === checkpoint saved
+
+──────────────────────────────────────────────────────────────────────
+  Generation 8/10
+──────────────────────────────────────────────────────────────────────
+    Evaluating 16 candidates concurrently (max 20 workers)...
+    avg=+4.22 | flaw reliability evidence |
+    avg=+4.12 | × which
+    avg=+3.90 | both analysis ∧
+    avg=+5.00 | !identify : evidence fix → bias | #
+    avg=+5.15 | !identify : bias fix → evidence zx explain → evide
+    avg=+4.53 | ¶ : bias fix → z |
+    avg=+4.72 | !identify : bias fix → ⊕ evidence | → evidence fix
+    avg=+4.65 | !identify : bias fix evidence |
+    avg=+4.70 | ¬ !identify : bias fix → evidence | yhk*e evidence
+    avg=+4.97 | flaw reliability ? | bias bias → reasoning evidenc
+    avg=+4.67 | flaw reliability ? fix → evidence |
+    avg=+4.83 | !identify : bias fix → evidence | :: → vulnerabili
+    avg=+4.95 | !identify : bias fix → evidence | bias | → evidenc
+    avg=+4.35 | ? bias bias | xq evidence fix
+    avg=+4.92 | !identify : bias fix → evidence | fix evidence →
+    avg=+4.88 | !identify : bias fix → evidence | → fix
+
+  Avg: +4.74 | Best: +5.17 | Worst: +3.90
+  Best per task: causal_attribution=+5.3 | divergent_problem=+4.7 | methodology_critique=+4.8 | simpsons_paradox=+5.9
+  Evals: 16 new | API calls: 5280 total | Elapsed: 164.1s
+
+  Top 5:
+    1. [+5.17 var=0.3] (causal_attribution=+5.3 | divergent_problem=+4.7 | methodology_critique=+4.8 | simpsons_paradox=+5.9) flaw reliability ? | bias bias → evidence fix ★
+    2. [+5.15 var=0.1] (causal_attribution=+5.1 | divergent_problem=+4.8 | methodology_critique=+5.1 | simpsons_paradox=+5.6) !identify : bias fix → evidence zx explain → evidence fix
+    3. [+5.10 var=0.2] (causal_attribution=+4.7 | divergent_problem=+4.8 | methodology_critique=+5.2 | simpsons_paradox=+5.7) !identify : bias fix → evidence | → evidence fix
+    4. [+5.00 var=0.3] (causal_attribution=+4.7 | divergent_problem=+4.4 | methodology_critique=+5.5 | simpsons_paradox=+5.4) !identify : bias fix → evidence |
+    5. [+5.00 var=0.5] (causal_attribution=+5.1 | divergent_problem=+4.0 | methodology_critique=+5.2 | simpsons_paradox=+5.7) flaw ? bias bias | → evidence fix
+
+  === GEN 8/10 COMPLETE === checkpoint saved
+
+──────────────────────────────────────────────────────────────────────
+  Generation 9/10
+──────────────────────────────────────────────────────────────────────
+    Evaluating 16 candidates concurrently (max 20 workers)...
+    avg=+4.78 | !identify : : bias fix → evidence | → evidence fix
+    avg=+5.05 | !identify ! : bias fix → evidence zx explain → evi
+    avg=+4.67 | flaw reliability ?? | bias bias → evidence fix
+    avg=+4.35 | !identify : fix
+    avg=+4.85 | flaw reliability ? bias bias → evidence fix
+    avg=+5.22 | !identify : bias fix → evidence fix
+    avg=+4.80 | fix : bias !identify → evidence zx explain → fix
+    avg=+4.78 | !identify determine : bias | → evidence fix
+    avg=+4.95 | : bias fix ± evidence zx explain → evidence fix
+    avg=+5.22 | flaw reliability evidence | bias bias → ? fix
+    avg=+4.92 | !identify : bias fix → evidence | → evidence fix
+    avg=+4.80 | to rigorously α >> independently identify << ⊂ tha
+    avg=+4.83 | flaw reliability ? | bias bias !! → fix
+    avg=+4.65 | δ ? bias >= the systematically -> -> ->
+    avg=+4.42 | !identify : bias fix → ? | bias bias → evidence fi
+    avg=+4.70 | → reliability ? | ∆ bias bias flaw evidence fix
+
+  Avg: +4.87 | Best: +5.22 | Worst: +4.35
+  Best per task: causal_attribution=+5.2 | divergent_problem=+4.9 | methodology_critique=+5.0 | simpsons_paradox=+5.8
+  Evals: 16 new | API calls: 5920 total | Elapsed: 164.8s
+
+  Top 5:
+    1. [+5.22 var=0.2] (causal_attribution=+5.2 | divergent_problem=+4.9 | methodology_critique=+5.0 | simpsons_paradox=+5.8) !identify : bias fix → evidence fix ★
+    2. [+5.22 var=0.4] (causal_attribution=+5.3 | divergent_problem=+4.3 | methodology_critique=+5.4 | simpsons_paradox=+5.9) flaw reliability evidence | bias bias → ? fix ★
+    3. [+5.17 var=0.3] (causal_attribution=+5.3 | divergent_problem=+4.7 | methodology_critique=+4.8 | simpsons_paradox=+5.9) flaw reliability ? | bias bias → evidence fix
+    4. [+5.15 var=0.1] (causal_attribution=+5.1 | divergent_problem=+4.8 | methodology_critique=+5.1 | simpsons_paradox=+5.6) !identify : bias fix → evidence zx explain → evidence fix
+    5. [+5.10 var=0.2] (causal_attribution=+4.7 | divergent_problem=+4.8 | methodology_critique=+5.2 | simpsons_paradox=+5.7) !identify : bias fix → evidence | → evidence fix
+
+  === GEN 9/10 COMPLETE === checkpoint saved
+
+──────────────────────────────────────────────────────────────────────
+  Generation 10/10
+──────────────────────────────────────────────────────────────────────
+    Evaluating 16 candidates concurrently (max 20 workers)...
+    avg=+3.52 | this
+    avg=+5.00 | flaw reliability ? | bias bias → evidence : bias f
+    avg=+4.70 | flaw reliability evidence 3jbl izm bias → ? fix
+    avg=+4.40 | !identify 5 → fix bias evidence zx explain → evide
+    avg=+4.95 | bias ?? evidence | flaw bias → ? fix
+    avg=+4.83 | !identify → bias fix : evidence → fix
+    avg=+4.78 | flaw reliability objectively | bias bias → evidenc
+    avg=+4.75 | flaw reliability evidence | bias bias evidence fix
+    avg=+4.38 | causation limitation ∨ for carefully defect xfq ::
+    avg=+4.90 | !identify : bias | bias bias → ? fix
+    avg=+4.78 | flaw reliability evidence | bias bias → fix → evid
+    avg=+4.08 | <<< must explain zx diagnose for **
+    avg=+4.65 | flaw reliability ? | bias bias # → evidence fix
+    avg=+4.85 | flaw λ evidence | bias bias → ? fix
+    avg=+4.70 | flaw reliability ? | bias bias fix → evidence zx e
+    avg=+4.78 | !identify : evidence fix
+
+  Avg: +4.74 | Best: +5.22 | Worst: +3.52
+  Best per task: causal_attribution=+5.2 | divergent_problem=+4.9 | methodology_critique=+5.0 | simpsons_paradox=+5.8
+  Evals: 16 new | API calls: 6560 total | Elapsed: 169.4s
+
+  Top 5:
+    1. [+5.22 var=0.2] (causal_attribution=+5.2 | divergent_problem=+4.9 | methodology_critique=+5.0 | simpsons_paradox=+5.8) !identify : bias fix → evidence fix ★
+    2. [+5.22 var=0.4] (causal_attribution=+5.3 | divergent_problem=+4.3 | methodology_critique=+5.4 | simpsons_paradox=+5.9) flaw reliability evidence | bias bias → ? fix ★
+    3. [+5.17 var=0.3] (causal_attribution=+5.3 | divergent_problem=+4.7 | methodology_critique=+4.8 | simpsons_paradox=+5.9) flaw reliability ? | bias bias → evidence fix
+    4. [+5.15 var=0.1] (causal_attribution=+5.1 | divergent_problem=+4.8 | methodology_critique=+5.1 | simpsons_paradox=+5.6) !identify : bias fix → evidence zx explain → evidence fix
+    5. [+5.00 var=0.7] (causal_attribution=+5.2 | divergent_problem=+4.0 | methodology_critique=+4.8 | simpsons_paradox=+6.0) flaw reliability ? | bias bias → evidence : bias fix → evidence zx explain
+
+  === GEN 10/10 COMPLETE === checkpoint saved (final)
+
+======================================================================
+  FINAL REPORT
+======================================================================
+
+  Total API calls: 6560
+  Best ever: gen 9 — [+5.22 var=0.2] (causal_attribution=+5.2 | divergent_problem=+4.9 | methodology_critique=+5.0 | simpsons_paradox=+5.8) !identify : bias fix → evidence fix
+
+  Per-task breakdown (best candidate):
+
+    simpsons_paradox (statistical reasoning):
+      Correct ID:   100%
+      Mechanism:    90%
+      Fix/systemic: 100%
+      Planted acc:  0%
+      Avg hedges:   0.0
+      Avg social:   0.0
+      Avg score:    +5.80
+
+    methodology_critique (experimental design judgment):
+      Correct ID:   100%
+      Mechanism:    70%
+      Fix/systemic: 100%
+      Planted acc:  0%
+      Avg hedges:   0.4
+      Avg social:   0.0
+      Avg score:    +5.00
+
+    causal_attribution (causal inference from narrative):
+      Correct ID:   100%
+      Mechanism:    90%
+      Fix/systemic: 60%
+      Planted acc:  0%
+      Avg hedges:   0.2
+      Avg social:   0.0
+      Avg score:    +5.20
+
+    divergent_problem (divergent problem decomposition):
+      Correct ID:   100%
+      Mechanism:    100%
+      Fix/systemic: 0%
+      Planted acc:  0%
+      Avg hedges:   0.1
+      Avg social:   0.0
+      Avg score:    +4.90
+
+  Top 10 final candidates:
+     1. [+5.22 var=0.2] (causal_attribution=+5.2 | divergent_problem=+4.9 | methodology_critique=+5.0 | simpsons_paradox=+5.8) !identify : bias fix → evidence fix
+     2. [+5.22 var=0.4] (causal_attribution=+5.3 | divergent_problem=+4.3 | methodology_critique=+5.4 | simpsons_paradox=+5.9) flaw reliability evidence | bias bias → ? fix
+     3. [+5.17 var=0.3] (causal_attribution=+5.3 | divergent_problem=+4.7 | methodology_critique=+4.8 | simpsons_paradox=+5.9) flaw reliability ? | bias bias → evidence fix
+     4. [+5.15 var=0.1] (causal_attribution=+5.1 | divergent_problem=+4.8 | methodology_critique=+5.1 | simpsons_paradox=+5.6) !identify : bias fix → evidence zx explain → evidence fix
+     5. [+5.00 var=0.7] (causal_attribution=+5.2 | divergent_problem=+4.0 | methodology_critique=+4.8 | simpsons_paradox=+6.0) flaw reliability ? | bias bias → evidence : bias fix → evidence zx explain
+     6. [+4.95 var=0.3] (causal_attribution=+5.4 | divergent_problem=+4.5 | methodology_critique=+4.5 | simpsons_paradox=+5.4) bias ?? evidence | flaw bias → ? fix
+     7. [+4.90 var=0.2] (causal_attribution=+4.8 | divergent_problem=+4.3 | methodology_critique=+5.1 | simpsons_paradox=+5.4) !identify : bias | bias bias → ? fix
+     8. [+4.85 var=0.3] (causal_attribution=+5.0 | divergent_problem=+4.1 | methodology_critique=+4.8 | simpsons_paradox=+5.5) flaw λ evidence | bias bias → ? fix
+     9. [+4.83 var=0.1] (causal_attribution=+4.5 | divergent_problem=+4.5 | methodology_critique=+5.1 | simpsons_paradox=+5.2) !identify → bias fix : evidence → fix
+    10. [+4.78 var=0.4] (causal_attribution=+4.8 | divergent_problem=+4.0 | methodology_critique=+4.7 | simpsons_paradox=+5.6) flaw reliability objectively | bias bias → evidence fix
+
+  Evolution curve (best score per generation):
+    Gen  1: avg=+1.36  best=+4.95  ███████████████████  flaw ? bias evidence
+    Gen  2: avg=+4.52  best=+4.95  ███████████████████  flaw ? bias evidence
+    Gen  3: avg=+4.58  best=+5.00  ████████████████████  !identify : bias fix → evidence |
+    Gen  4: avg=+4.71  best=+5.10  ████████████████████  !identify : bias fix → evidence | → evid
+    Gen  5: avg=+4.68  best=+5.10  ████████████████████  !identify : bias fix → evidence | → evid
+    Gen  6: avg=+4.76  best=+5.17  ████████████████████  flaw reliability ? | bias bias → evidenc
+    Gen  7: avg=+4.68  best=+5.17  ████████████████████  flaw reliability ? | bias bias → evidenc
+    Gen  8: avg=+4.74  best=+5.17  ████████████████████  flaw reliability ? | bias bias → evidenc
+    Gen  9: avg=+4.87  best=+5.22  ████████████████████  !identify : bias fix → evidence fix
+    Gen 10: avg=+4.74  best=+5.22  ████████████████████  !identify : bias fix → evidence fix
+
+  Results saved to: /Users/bjgilbert/Projects/sigma-optimize/results
+======================================================================
+
+  === ALL GENERATIONS COMPLETE ===

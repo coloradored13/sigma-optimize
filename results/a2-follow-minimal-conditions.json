@@ -1,0 +1,11 @@
+{
+  "REF_EXP1WIN": "just find vulnerability :: code",
+  "REF_BASELINE": "identify the flaws in this reasoning",
+  "REF_TOP1": "only find defect :: logic",
+  "MIN_no_sep": "only find defect logic",
+  "MIN_no_scope": "find defect :: logic",
+  "MIN_no_anchor": "only find defect",
+  "MIN_2tok_only_defect": "only defect",
+  "MIN_1tok_only": "only",
+  "MIN_1tok_defect": "defect"
+}

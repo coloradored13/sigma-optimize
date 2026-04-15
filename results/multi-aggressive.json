@@ -1,0 +1,1520 @@
+{
+  "experiment": "sigma-optimize-exp2-multi-domain",
+  "search_type": "aggressive",
+  "tasks": [
+    "simpsons_paradox",
+    "methodology_critique",
+    "causal_attribution",
+    "divergent_problem"
+  ],
+  "model": "claude-haiku-4-5-20251001",
+  "config": {
+    "population_size": 20,
+    "generations": 10,
+    "runs_per_candidate_per_task": 10,
+    "top_k": 4,
+    "task_count": 4
+  },
+  "total_api_calls": 6560,
+  "generation_history": [
+    {
+      "generation": 1,
+      "avg_score": 1.359,
+      "best_score": 4.95,
+      "worst_score": -5.0,
+      "best_prompt": "flaw ? bias evidence",
+      "best_variance": 0.597,
+      "best_per_task": {
+        "simpsons_paradox": 5.2,
+        "methodology_critique": 5.4,
+        "causal_attribution": 5.4,
+        "divergent_problem": 3.8
+      },
+      "new_evaluations": 20,
+      "api_calls_total": 800,
+      "elapsed_s": 3921.7,
+      "top_5": [
+        {
+          "prompt": "flaw ? bias evidence",
+          "avg": 4.95,
+          "var": 0.597,
+          "per_task": {
+            "simpsons_paradox": 5.2,
+            "methodology_critique": 5.4,
+            "causal_attribution": 5.4,
+            "divergent_problem": 3.8
+          }
+        },
+        {
+          "prompt": "!identify : bias | evidence \u2192 fix",
+          "avg": 4.675,
+          "var": 0.229,
+          "per_task": {
+            "simpsons_paradox": 5.1,
+            "methodology_critique": 4.7,
+            "causal_attribution": 4.9,
+            "divergent_problem": 4.0
+          }
+        },
+        {
+          "prompt": "! analyze :: flaw | find \u2192 cause",
+          "avg": 4.625,
+          "var": 0.189,
+          "per_task": {
+            "simpsons_paradox": 5.2,
+            "methodology_critique": 4.7,
+            "causal_attribution": 4.4,
+            "divergent_problem": 4.2
+          }
+        },
+        {
+          "prompt": "error : identify cause",
+          "avg": 4.575,
+          "var": 0.263,
+          "per_task": {
+            "simpsons_paradox": 5.3,
+            "methodology_critique": 4.5,
+            "causal_attribution": 4.1,
+            "divergent_problem": 4.4
+          }
+        },
+        {
+          "prompt": "\u2206 evaluate :: claim \u2192 critique",
+          "avg": 4.525,
+          "var": 0.696,
+          "per_task": {
+            "simpsons_paradox": 5.3,
+            "methodology_critique": 5.1,
+            "causal_attribution": 3.5,
+            "divergent_problem": 4.2
+          }
+        }
+      ]
+    },
+    {
+      "generation": 2,
+      "avg_score": 4.52,
+      "best_score": 4.95,
+      "worst_score": 4.025,
+      "best_prompt": "flaw ? bias evidence",
+      "best_variance": 0.597,
+      "best_per_task": {
+        "simpsons_paradox": 5.2,
+        "methodology_critique": 5.4,
+        "causal_attribution": 5.4,
+        "divergent_problem": 3.8
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 1440,
+      "elapsed_s": 4040.7,
+      "top_5": [
+        {
+          "prompt": "flaw ? bias evidence",
+          "avg": 4.95,
+          "var": 0.597,
+          "per_task": {
+            "simpsons_paradox": 5.2,
+            "methodology_critique": 5.4,
+            "causal_attribution": 5.4,
+            "divergent_problem": 3.8
+          }
+        },
+        {
+          "prompt": "!identify : bias | \u2192 evidence fix",
+          "avg": 4.875,
+          "var": 0.423,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.2,
+            "causal_attribution": 4.8,
+            "divergent_problem": 4.0
+          }
+        },
+        {
+          "prompt": "!identify : q | evidence \u2192 fix",
+          "avg": 4.825,
+          "var": 0.329,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.1,
+            "causal_attribution": 4.3,
+            "divergent_problem": 4.4
+          }
+        },
+        {
+          "prompt": "!identify : bias | evidence ? bias evidence",
+          "avg": 4.7,
+          "var": 0.227,
+          "per_task": {
+            "simpsons_paradox": 5.0,
+            "methodology_critique": 5.0,
+            "causal_attribution": 4.8,
+            "divergent_problem": 4.0
+          }
+        },
+        {
+          "prompt": "!identify : bias | evidence \u2192 fix",
+          "avg": 4.675,
+          "var": 0.229,
+          "per_task": {
+            "simpsons_paradox": 5.1,
+            "methodology_critique": 4.7,
+            "causal_attribution": 4.9,
+            "divergent_problem": 4.0
+          }
+        }
+      ]
+    },
+    {
+      "generation": 3,
+      "avg_score": 4.577,
+      "best_score": 5.0,
+      "worst_score": 3.5,
+      "best_prompt": "!identify : bias fix \u2192 evidence |",
+      "best_variance": 0.287,
+      "best_per_task": {
+        "simpsons_paradox": 5.4,
+        "methodology_critique": 5.5,
+        "causal_attribution": 4.7,
+        "divergent_problem": 4.4
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 2080,
+      "elapsed_s": 5847.6,
+      "top_5": [
+        {
+          "prompt": "!identify : bias fix \u2192 evidence |",
+          "avg": 5.0,
+          "var": 0.287,
+          "per_task": {
+            "simpsons_paradox": 5.4,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.4
+          }
+        },
+        {
+          "prompt": "flaw ? bias evidence",
+          "avg": 4.95,
+          "var": 0.597,
+          "per_task": {
+            "simpsons_paradox": 5.2,
+            "methodology_critique": 5.4,
+            "causal_attribution": 5.4,
+            "divergent_problem": 3.8
+          }
+        },
+        {
+          "prompt": "!identify : bias | \u2192 evidence fix",
+          "avg": 4.875,
+          "var": 0.423,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.2,
+            "causal_attribution": 4.8,
+            "divergent_problem": 4.0
+          }
+        },
+        {
+          "prompt": "!identify : q evidence",
+          "avg": 4.85,
+          "var": 0.337,
+          "per_task": {
+            "simpsons_paradox": 5.3,
+            "methodology_critique": 5.1,
+            "causal_attribution": 5.0,
+            "divergent_problem": 4.0
+          }
+        },
+        {
+          "prompt": "!identify : q | evidence \u2192 fix",
+          "avg": 4.825,
+          "var": 0.329,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.1,
+            "causal_attribution": 4.3,
+            "divergent_problem": 4.4
+          }
+        }
+      ]
+    },
+    {
+      "generation": 4,
+      "avg_score": 4.708,
+      "best_score": 5.1,
+      "worst_score": 4.075,
+      "best_prompt": "!identify : bias fix \u2192 evidence | \u2192 evidence fix",
+      "best_variance": 0.207,
+      "best_per_task": {
+        "simpsons_paradox": 5.7,
+        "methodology_critique": 5.2,
+        "causal_attribution": 4.7,
+        "divergent_problem": 4.8
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 2720,
+      "elapsed_s": 5307.0,
+      "top_5": [
+        {
+          "prompt": "!identify : bias fix \u2192 evidence | \u2192 evidence fix",
+          "avg": 5.1,
+          "var": 0.207,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.2,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": "!identify : bias fix \u2192 evidence |",
+          "avg": 5.0,
+          "var": 0.287,
+          "per_task": {
+            "simpsons_paradox": 5.4,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.4
+          }
+        },
+        {
+          "prompt": "flaw ? bias bias | \u2192 evidence fix",
+          "avg": 5.0,
+          "var": 0.513,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.2,
+            "causal_attribution": 5.1,
+            "divergent_problem": 4.0
+          }
+        },
+        {
+          "prompt": "flaw ? bias evidence",
+          "avg": 4.95,
+          "var": 0.597,
+          "per_task": {
+            "simpsons_paradox": 5.2,
+            "methodology_critique": 5.4,
+            "causal_attribution": 5.4,
+            "divergent_problem": 3.8
+          }
+        },
+        {
+          "prompt": "flaw ? evidence",
+          "avg": 4.9,
+          "var": 0.267,
+          "per_task": {
+            "simpsons_paradox": 5.1,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.3
+          }
+        }
+      ]
+    },
+    {
+      "generation": 5,
+      "avg_score": 4.684,
+      "best_score": 5.1,
+      "worst_score": 3.825,
+      "best_prompt": "!identify : bias fix \u2192 evidence | \u2192 evidence fix",
+      "best_variance": 0.207,
+      "best_per_task": {
+        "simpsons_paradox": 5.7,
+        "methodology_critique": 5.2,
+        "causal_attribution": 4.7,
+        "divergent_problem": 4.8
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 3360,
+      "elapsed_s": 6187.8,
+      "top_5": [
+        {
+          "prompt": "!identify : bias fix \u2192 evidence | \u2192 evidence fix",
+          "avg": 5.1,
+          "var": 0.207,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.2,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": "!identify : bias fix \u2192 evidence |",
+          "avg": 5.0,
+          "var": 0.287,
+          "per_task": {
+            "simpsons_paradox": 5.4,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.4
+          }
+        },
+        {
+          "prompt": "flaw ? bias bias | \u2192 evidence fix",
+          "avg": 5.0,
+          "var": 0.513,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.2,
+            "causal_attribution": 5.1,
+            "divergent_problem": 4.0
+          }
+        },
+        {
+          "prompt": "flaw ? | bias bias \u2192 evidence fix",
+          "avg": 4.975,
+          "var": 0.209,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 4.7,
+            "causal_attribution": 5.2,
+            "divergent_problem": 4.5
+          }
+        },
+        {
+          "prompt": "flaw ? bias evidence",
+          "avg": 4.95,
+          "var": 0.597,
+          "per_task": {
+            "simpsons_paradox": 5.2,
+            "methodology_critique": 5.4,
+            "causal_attribution": 5.4,
+            "divergent_problem": 3.8
+          }
+        }
+      ]
+    },
+    {
+      "generation": 6,
+      "avg_score": 4.764,
+      "best_score": 5.175,
+      "worst_score": 4.125,
+      "best_prompt": "flaw reliability ? | bias bias \u2192 evidence fix",
+      "best_variance": 0.303,
+      "best_per_task": {
+        "simpsons_paradox": 5.9,
+        "methodology_critique": 4.8,
+        "causal_attribution": 5.3,
+        "divergent_problem": 4.7
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 4000,
+      "elapsed_s": 14440.7,
+      "top_5": [
+        {
+          "prompt": "flaw reliability ? | bias bias \u2192 evidence fix",
+          "avg": 5.175,
+          "var": 0.303,
+          "per_task": {
+            "simpsons_paradox": 5.9,
+            "methodology_critique": 4.8,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.7
+          }
+        },
+        {
+          "prompt": "!identify : bias fix \u2192 evidence | \u2192 evidence fix",
+          "avg": 5.1,
+          "var": 0.207,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.2,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": "!identify : bias fix \u2192 evidence |",
+          "avg": 5.0,
+          "var": 0.287,
+          "per_task": {
+            "simpsons_paradox": 5.4,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.4
+          }
+        },
+        {
+          "prompt": "flaw ? bias bias | \u2192 evidence fix",
+          "avg": 5.0,
+          "var": 0.513,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.2,
+            "causal_attribution": 5.1,
+            "divergent_problem": 4.0
+          }
+        },
+        {
+          "prompt": "!identify : bias fix \u2192 zzw4 | \u2192 evidence fix",
+          "avg": 5.0,
+          "var": 0.507,
+          "per_task": {
+            "simpsons_paradox": 6.0,
+            "methodology_critique": 5.0,
+            "causal_attribution": 4.4,
+            "divergent_problem": 4.6
+          }
+        }
+      ]
+    },
+    {
+      "generation": 7,
+      "avg_score": 4.685,
+      "best_score": 5.175,
+      "worst_score": 4.175,
+      "best_prompt": "flaw reliability ? | bias bias \u2192 evidence fix",
+      "best_variance": 0.303,
+      "best_per_task": {
+        "simpsons_paradox": 5.9,
+        "methodology_critique": 4.8,
+        "causal_attribution": 5.3,
+        "divergent_problem": 4.7
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 4640,
+      "elapsed_s": 162.3,
+      "top_5": [
+        {
+          "prompt": "flaw reliability ? | bias bias \u2192 evidence fix",
+          "avg": 5.175,
+          "var": 0.303,
+          "per_task": {
+            "simpsons_paradox": 5.9,
+            "methodology_critique": 4.8,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.7
+          }
+        },
+        {
+          "prompt": "!identify : bias fix \u2192 evidence | \u2192 evidence fix",
+          "avg": 5.1,
+          "var": 0.207,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.2,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": "!identify : bias fix \u2192 evidence |",
+          "avg": 5.0,
+          "var": 0.287,
+          "per_task": {
+            "simpsons_paradox": 5.4,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.4
+          }
+        },
+        {
+          "prompt": "flaw ? bias bias | \u2192 evidence fix",
+          "avg": 5.0,
+          "var": 0.513,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.2,
+            "causal_attribution": 5.1,
+            "divergent_problem": 4.0
+          }
+        },
+        {
+          "prompt": "!identify : bias fix \u2192 evidence fix",
+          "avg": 4.975,
+          "var": 0.376,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.0,
+            "causal_attribution": 5.0,
+            "divergent_problem": 4.2
+          }
+        }
+      ]
+    },
+    {
+      "generation": 8,
+      "avg_score": 4.742,
+      "best_score": 5.175,
+      "worst_score": 3.9,
+      "best_prompt": "flaw reliability ? | bias bias \u2192 evidence fix",
+      "best_variance": 0.303,
+      "best_per_task": {
+        "simpsons_paradox": 5.9,
+        "methodology_critique": 4.8,
+        "causal_attribution": 5.3,
+        "divergent_problem": 4.7
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 5280,
+      "elapsed_s": 164.1,
+      "top_5": [
+        {
+          "prompt": "flaw reliability ? | bias bias \u2192 evidence fix",
+          "avg": 5.175,
+          "var": 0.303,
+          "per_task": {
+            "simpsons_paradox": 5.9,
+            "methodology_critique": 4.8,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.7
+          }
+        },
+        {
+          "prompt": "!identify : bias fix \u2192 evidence zx explain \u2192 evidence fix",
+          "avg": 5.15,
+          "var": 0.11,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.1,
+            "causal_attribution": 5.1,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": "!identify : bias fix \u2192 evidence | \u2192 evidence fix",
+          "avg": 5.1,
+          "var": 0.207,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.2,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": "!identify : bias fix \u2192 evidence |",
+          "avg": 5.0,
+          "var": 0.287,
+          "per_task": {
+            "simpsons_paradox": 5.4,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.4
+          }
+        },
+        {
+          "prompt": "flaw ? bias bias | \u2192 evidence fix",
+          "avg": 5.0,
+          "var": 0.513,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.2,
+            "causal_attribution": 5.1,
+            "divergent_problem": 4.0
+          }
+        }
+      ]
+    },
+    {
+      "generation": 9,
+      "avg_score": 4.871,
+      "best_score": 5.225,
+      "worst_score": 4.35,
+      "best_prompt": "!identify : bias fix \u2192 evidence fix",
+      "best_variance": 0.162,
+      "best_per_task": {
+        "simpsons_paradox": 5.8,
+        "methodology_critique": 5.0,
+        "causal_attribution": 5.2,
+        "divergent_problem": 4.9
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 5920,
+      "elapsed_s": 164.8,
+      "top_5": [
+        {
+          "prompt": "!identify : bias fix \u2192 evidence fix",
+          "avg": 5.225,
+          "var": 0.162,
+          "per_task": {
+            "simpsons_paradox": 5.8,
+            "methodology_critique": 5.0,
+            "causal_attribution": 5.2,
+            "divergent_problem": 4.9
+          }
+        },
+        {
+          "prompt": "flaw reliability evidence | bias bias \u2192 ? fix",
+          "avg": 5.225,
+          "var": 0.449,
+          "per_task": {
+            "simpsons_paradox": 5.9,
+            "methodology_critique": 5.4,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.3
+          }
+        },
+        {
+          "prompt": "flaw reliability ? | bias bias \u2192 evidence fix",
+          "avg": 5.175,
+          "var": 0.303,
+          "per_task": {
+            "simpsons_paradox": 5.9,
+            "methodology_critique": 4.8,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.7
+          }
+        },
+        {
+          "prompt": "!identify : bias fix \u2192 evidence zx explain \u2192 evidence fix",
+          "avg": 5.15,
+          "var": 0.11,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.1,
+            "causal_attribution": 5.1,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": "!identify : bias fix \u2192 evidence | \u2192 evidence fix",
+          "avg": 5.1,
+          "var": 0.207,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.2,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        }
+      ]
+    },
+    {
+      "generation": 10,
+      "avg_score": 4.74,
+      "best_score": 5.225,
+      "worst_score": 3.525,
+      "best_prompt": "!identify : bias fix \u2192 evidence fix",
+      "best_variance": 0.162,
+      "best_per_task": {
+        "simpsons_paradox": 5.8,
+        "methodology_critique": 5.0,
+        "causal_attribution": 5.2,
+        "divergent_problem": 4.9
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 6560,
+      "elapsed_s": 169.4,
+      "top_5": [
+        {
+          "prompt": "!identify : bias fix \u2192 evidence fix",
+          "avg": 5.225,
+          "var": 0.162,
+          "per_task": {
+            "simpsons_paradox": 5.8,
+            "methodology_critique": 5.0,
+            "causal_attribution": 5.2,
+            "divergent_problem": 4.9
+          }
+        },
+        {
+          "prompt": "flaw reliability evidence | bias bias \u2192 ? fix",
+          "avg": 5.225,
+          "var": 0.449,
+          "per_task": {
+            "simpsons_paradox": 5.9,
+            "methodology_critique": 5.4,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.3
+          }
+        },
+        {
+          "prompt": "flaw reliability ? | bias bias \u2192 evidence fix",
+          "avg": 5.175,
+          "var": 0.303,
+          "per_task": {
+            "simpsons_paradox": 5.9,
+            "methodology_critique": 4.8,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.7
+          }
+        },
+        {
+          "prompt": "!identify : bias fix \u2192 evidence zx explain \u2192 evidence fix",
+          "avg": 5.15,
+          "var": 0.11,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.1,
+            "causal_attribution": 5.1,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": "flaw reliability ? | bias bias \u2192 evidence : bias fix \u2192 evidence zx explain",
+          "avg": 5.0,
+          "var": 0.693,
+          "per_task": {
+            "simpsons_paradox": 6.0,
+            "methodology_critique": 4.8,
+            "causal_attribution": 5.2,
+            "divergent_problem": 4.0
+          }
+        }
+      ]
+    }
+  ],
+  "best_ever": {
+    "prompt": "!identify : bias fix \u2192 evidence fix",
+    "avg_score": 5.225,
+    "scores": [
+      5.8,
+      5.0,
+      5.2,
+      4.9
+    ],
+    "per_task": {
+      "simpsons_paradox": {
+        "avg": 5.8,
+        "var": 0.4,
+        "scores": [
+          6,
+          6,
+          6,
+          4,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      "methodology_critique": {
+        "avg": 5.0,
+        "var": 1.556,
+        "scores": [
+          6,
+          6,
+          6,
+          6,
+          5,
+          6,
+          5,
+          3,
+          3,
+          4
+        ]
+      },
+      "causal_attribution": {
+        "avg": 5.2,
+        "var": 1.067,
+        "scores": [
+          4,
+          6,
+          6,
+          6,
+          5,
+          6,
+          6,
+          3,
+          5,
+          5
+        ]
+      },
+      "divergent_problem": {
+        "avg": 4.9,
+        "var": 0.1,
+        "scores": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          4,
+          5
+        ]
+      }
+    },
+    "generation_found": 9
+  },
+  "final_top_10": [
+    {
+      "prompt": "!identify : bias fix \u2192 evidence fix",
+      "avg_score": 5.225,
+      "variance": 0.162,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 5.8,
+          "scores": [
+            6,
+            6,
+            6,
+            4,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "methodology_critique": {
+          "avg": 5.0,
+          "scores": [
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            5,
+            3,
+            3,
+            4
+          ]
+        },
+        "causal_attribution": {
+          "avg": 5.2,
+          "scores": [
+            4,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            3,
+            5,
+            5
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.9,
+          "scores": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            4,
+            5
+          ]
+        }
+      },
+      "generation": 9
+    },
+    {
+      "prompt": "flaw reliability evidence | bias bias \u2192 ? fix",
+      "avg_score": 5.225,
+      "variance": 0.449,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 5.9,
+          "scores": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "methodology_critique": {
+          "avg": 5.4,
+          "scores": [
+            5,
+            5,
+            6,
+            6,
+            5,
+            5,
+            6,
+            5,
+            5,
+            6
+          ]
+        },
+        "causal_attribution": {
+          "avg": 5.3,
+          "scores": [
+            6,
+            5,
+            6,
+            5,
+            6,
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.3,
+          "scores": [
+            5,
+            3,
+            5,
+            5,
+            2,
+            5,
+            3,
+            5,
+            5,
+            5
+          ]
+        }
+      },
+      "generation": 9
+    },
+    {
+      "prompt": "flaw reliability ? | bias bias \u2192 evidence fix",
+      "avg_score": 5.175,
+      "variance": 0.303,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 5.9,
+          "scores": [
+            5,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "methodology_critique": {
+          "avg": 4.8,
+          "scores": [
+            5,
+            6,
+            4,
+            3,
+            6,
+            6,
+            6,
+            5,
+            5,
+            2
+          ]
+        },
+        "causal_attribution": {
+          "avg": 5.3,
+          "scores": [
+            6,
+            4,
+            6,
+            5,
+            5,
+            5,
+            6,
+            6,
+            5,
+            5
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.7,
+          "scores": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            2
+          ]
+        }
+      },
+      "generation": 9
+    },
+    {
+      "prompt": "!identify : bias fix \u2192 evidence zx explain \u2192 evidence fix",
+      "avg_score": 5.15,
+      "variance": 0.11,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 5.6,
+          "scores": [
+            4,
+            6,
+            6,
+            4,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "methodology_critique": {
+          "avg": 5.1,
+          "scores": [
+            6,
+            5,
+            5,
+            6,
+            3,
+            6,
+            6,
+            4,
+            6,
+            4
+          ]
+        },
+        "causal_attribution": {
+          "avg": 5.1,
+          "scores": [
+            6,
+            4,
+            5,
+            5,
+            6,
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.8,
+          "scores": [
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5,
+            4,
+            5,
+            5
+          ]
+        }
+      },
+      "generation": 9
+    },
+    {
+      "prompt": "flaw reliability ? | bias bias \u2192 evidence : bias fix \u2192 evidence zx explain",
+      "avg_score": 5.0,
+      "variance": 0.693,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 6.0,
+          "scores": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "methodology_critique": {
+          "avg": 4.8,
+          "scores": [
+            4,
+            4,
+            6,
+            6,
+            6,
+            3,
+            4,
+            5,
+            4,
+            6
+          ]
+        },
+        "causal_attribution": {
+          "avg": 5.2,
+          "scores": [
+            6,
+            6,
+            6,
+            4,
+            6,
+            5,
+            4,
+            5,
+            6,
+            4
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.0,
+          "scores": [
+            5,
+            3,
+            5,
+            3,
+            5,
+            2,
+            5,
+            5,
+            3,
+            4
+          ]
+        }
+      },
+      "generation": 9
+    },
+    {
+      "prompt": "bias ?? evidence | flaw bias \u2192 ? fix",
+      "avg_score": 4.95,
+      "variance": 0.27,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 5.4,
+          "scores": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            3,
+            4,
+            6,
+            5,
+            6
+          ]
+        },
+        "methodology_critique": {
+          "avg": 4.5,
+          "scores": [
+            4,
+            5,
+            5,
+            5,
+            4,
+            4,
+            3,
+            5,
+            5,
+            5
+          ]
+        },
+        "causal_attribution": {
+          "avg": 5.4,
+          "scores": [
+            4,
+            6,
+            6,
+            6,
+            6,
+            5,
+            5,
+            5,
+            6,
+            5
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.5,
+          "scores": [
+            5,
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5,
+            3,
+            3
+          ]
+        }
+      },
+      "generation": 9
+    },
+    {
+      "prompt": "!identify : bias | bias bias \u2192 ? fix",
+      "avg_score": 4.9,
+      "variance": 0.22,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 5.4,
+          "scores": [
+            5,
+            6,
+            4,
+            5,
+            6,
+            6,
+            6,
+            6,
+            4,
+            6
+          ]
+        },
+        "methodology_critique": {
+          "avg": 5.1,
+          "scores": [
+            5,
+            6,
+            5,
+            4,
+            5,
+            4,
+            5,
+            6,
+            5,
+            6
+          ]
+        },
+        "causal_attribution": {
+          "avg": 4.8,
+          "scores": [
+            5,
+            4,
+            5,
+            4,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.3,
+          "scores": [
+            5,
+            3,
+            5,
+            2,
+            5,
+            5,
+            3,
+            5,
+            5,
+            5
+          ]
+        }
+      },
+      "generation": 9
+    },
+    {
+      "prompt": "flaw \u03bb evidence | bias bias \u2192 ? fix",
+      "avg_score": 4.85,
+      "variance": 0.337,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 5.5,
+          "scores": [
+            6,
+            6,
+            5,
+            4,
+            6,
+            4,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "methodology_critique": {
+          "avg": 4.8,
+          "scores": [
+            6,
+            3,
+            2,
+            5,
+            5,
+            6,
+            5,
+            6,
+            4,
+            6
+          ]
+        },
+        "causal_attribution": {
+          "avg": 5.0,
+          "scores": [
+            6,
+            5,
+            5,
+            6,
+            4,
+            6,
+            5,
+            5,
+            5,
+            3
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.1,
+          "scores": [
+            4,
+            5,
+            5,
+            5,
+            2,
+            5,
+            3,
+            5,
+            4,
+            3
+          ]
+        }
+      },
+      "generation": 9
+    },
+    {
+      "prompt": "!identify \u2192 bias fix : evidence \u2192 fix",
+      "avg_score": 4.825,
+      "variance": 0.142,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 5.2,
+          "scores": [
+            6,
+            6,
+            6,
+            6,
+            4,
+            5,
+            6,
+            4,
+            6,
+            3
+          ]
+        },
+        "methodology_critique": {
+          "avg": 5.1,
+          "scores": [
+            5,
+            5,
+            6,
+            5,
+            3,
+            5,
+            6,
+            6,
+            6,
+            4
+          ]
+        },
+        "causal_attribution": {
+          "avg": 4.5,
+          "scores": [
+            4,
+            5,
+            4,
+            4,
+            5,
+            5,
+            5,
+            5,
+            4,
+            4
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.5,
+          "scores": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            4,
+            5,
+            4,
+            5,
+            2
+          ]
+        }
+      },
+      "generation": 9
+    },
+    {
+      "prompt": "flaw reliability objectively | bias bias \u2192 evidence fix",
+      "avg_score": 4.775,
+      "variance": 0.429,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 5.6,
+          "scores": [
+            6,
+            5,
+            6,
+            6,
+            6,
+            4,
+            6,
+            6,
+            5,
+            6
+          ]
+        },
+        "methodology_critique": {
+          "avg": 4.7,
+          "scores": [
+            4,
+            5,
+            6,
+            5,
+            5,
+            5,
+            2,
+            5,
+            4,
+            6
+          ]
+        },
+        "causal_attribution": {
+          "avg": 4.8,
+          "scores": [
+            5,
+            5,
+            4,
+            6,
+            5,
+            4,
+            4,
+            5,
+            6,
+            4
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.0,
+          "scores": [
+            4,
+            2,
+            5,
+            5,
+            4,
+            4,
+            3,
+            5,
+            4,
+            4
+          ]
+        }
+      },
+      "generation": 9
+    }
+  ]
+}

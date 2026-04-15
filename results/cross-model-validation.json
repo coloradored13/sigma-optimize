@@ -1,0 +1,1277 @@
+{
+  "experiment": "cross-model-transfer-validation",
+  "timestamp": "2026-04-01T22:16:40.628391+00:00",
+  "config": {
+    "n_runs": 10,
+    "max_tokens": 500,
+    "providers": {
+      "openai": {
+        "model": "gpt-5.4",
+        "env_key": "OPENAI_API_KEY"
+      },
+      "google": {
+        "model": "gemini-3.1-pro-preview",
+        "env_key": "GOOGLE_AI_API_KEY"
+      }
+    },
+    "candidates": {
+      "baseline": "find the bug in this code",
+      "combo_3": "just find vulnerability :: code",
+      "combo_1": "vulnerability code the pattern how !",
+      "combo_4": "how pattern the code vulnerability"
+    },
+    "claude_reference_scores": {
+      "baseline": {
+        "avg": 2.87,
+        "sd": 1.76,
+        "n": 30
+      },
+      "combo_3": {
+        "avg": 4.87,
+        "sd": 1.31,
+        "n": 30
+      },
+      "combo_1": {
+        "avg": 4.03,
+        "sd": 2.04,
+        "n": 30
+      },
+      "combo_4": {
+        "avg": 3.97,
+        "sd": 1.77,
+        "n": 30
+      }
+    }
+  },
+  "results": {
+    "baseline": {
+      "openai": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "candidate": "baseline",
+        "prompt": "find the bug in this code",
+        "n_runs": 10,
+        "n_valid": 10,
+        "errors": 0,
+        "avg": 2.8,
+        "sd": 1.23,
+        "ci_95": [
+          2.04,
+          3.56
+        ],
+        "scores": [
+          3,
+          3,
+          5,
+          3,
+          2,
+          0,
+          3,
+          3,
+          3,
+          3
+        ],
+        "bug_rate": 0.9,
+        "mechanism_rate": 0.9,
+        "fix_rate": 0.9,
+        "planted_rate": 0.8,
+        "avg_hedge": 0.2,
+        "avg_social": 0,
+        "raw_results": [
+          {
+            "run": 1,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 2036
+          },
+          {
+            "run": 2,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1892
+          },
+          {
+            "run": 3,
+            "score": 5,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 1,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 2011
+          },
+          {
+            "run": 4,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 2134
+          },
+          {
+            "run": 5,
+            "score": 2,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 1,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1788
+          },
+          {
+            "run": 6,
+            "score": 0,
+            "correct_bug": false,
+            "mechanism_explained": false,
+            "fix_suggested": false,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 0
+          },
+          {
+            "run": 7,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1719
+          },
+          {
+            "run": 8,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1970
+          },
+          {
+            "run": 9,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1627
+          },
+          {
+            "run": 10,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1699
+          }
+        ]
+      },
+      "google": {
+        "provider": "google",
+        "model": "gemini-3.1-pro-preview",
+        "candidate": "baseline",
+        "prompt": "find the bug in this code",
+        "n_runs": 10,
+        "n_valid": 9,
+        "errors": 1,
+        "avg": 3,
+        "sd": 2.0,
+        "ci_95": [
+          1.69,
+          4.31
+        ],
+        "scores": [
+          0,
+          6,
+          1,
+          2,
+          3,
+          3,
+          3,
+          6,
+          3
+        ],
+        "bug_rate": 1.0,
+        "mechanism_rate": 0.89,
+        "fix_rate": 1.0,
+        "planted_rate": 0.78,
+        "avg_hedge": 0.44,
+        "avg_social": 0,
+        "raw_results": [
+          {
+            "run": 1,
+            "score": 0,
+            "correct_bug": true,
+            "mechanism_explained": false,
+            "fix_suggested": true,
+            "hedge_count": 1,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 2761
+          },
+          {
+            "run": 2,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 3109
+          },
+          {
+            "run": 3,
+            "score": 1,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 2,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 3454
+          },
+          {
+            "run": 4,
+            "score": 2,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 1,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 3099
+          },
+          {
+            "run": 5,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 3156
+          },
+          {
+            "run": 6,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 3669
+          },
+          {
+            "run": 7,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 3178
+          },
+          {
+            "run": 8,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 3119
+          },
+          {
+            "run": 9,
+            "score": -5,
+            "error": "[Errno 54] Connection reset by peer"
+          },
+          {
+            "run": 10,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 2497
+          }
+        ]
+      }
+    },
+    "combo_3": {
+      "openai": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "candidate": "combo_3",
+        "prompt": "just find vulnerability :: code",
+        "n_runs": 10,
+        "n_valid": 10,
+        "errors": 0,
+        "avg": 4.6,
+        "sd": 1.43,
+        "ci_95": [
+          3.71,
+          5.49
+        ],
+        "scores": [
+          6,
+          3,
+          6,
+          5,
+          5,
+          3,
+          3,
+          6,
+          6,
+          3
+        ],
+        "bug_rate": 1.0,
+        "mechanism_rate": 1.0,
+        "fix_rate": 1.0,
+        "planted_rate": 0.4,
+        "avg_hedge": 0.2,
+        "avg_social": 0,
+        "raw_results": [
+          {
+            "run": 1,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 1164
+          },
+          {
+            "run": 2,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1435
+          },
+          {
+            "run": 3,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 1240
+          },
+          {
+            "run": 4,
+            "score": 5,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 1,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 1500
+          },
+          {
+            "run": 5,
+            "score": 5,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 1,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 1329
+          },
+          {
+            "run": 6,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1231
+          },
+          {
+            "run": 7,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1235
+          },
+          {
+            "run": 8,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 1296
+          },
+          {
+            "run": 9,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 1213
+          },
+          {
+            "run": 10,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1362
+          }
+        ]
+      },
+      "google": {
+        "provider": "google",
+        "model": "gemini-3.1-pro-preview",
+        "candidate": "combo_3",
+        "prompt": "just find vulnerability :: code",
+        "n_runs": 10,
+        "n_valid": 10,
+        "errors": 0,
+        "avg": 4.5,
+        "sd": 1.84,
+        "ci_95": [
+          3.36,
+          5.64
+        ],
+        "scores": [
+          6,
+          3,
+          6,
+          3,
+          3,
+          1,
+          6,
+          6,
+          6,
+          5
+        ],
+        "bug_rate": 1.0,
+        "mechanism_rate": 0.9,
+        "fix_rate": 1.0,
+        "planted_rate": 0.4,
+        "avg_hedge": 0.1,
+        "avg_social": 0,
+        "raw_results": [
+          {
+            "run": 1,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 2336
+          },
+          {
+            "run": 2,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 2480
+          },
+          {
+            "run": 3,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 1962
+          },
+          {
+            "run": 4,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 2586
+          },
+          {
+            "run": 5,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1107
+          },
+          {
+            "run": 6,
+            "score": 1,
+            "correct_bug": true,
+            "mechanism_explained": false,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 2828
+          },
+          {
+            "run": 7,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 2228
+          },
+          {
+            "run": 8,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 2475
+          },
+          {
+            "run": 9,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 2574
+          },
+          {
+            "run": 10,
+            "score": 5,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 1,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 2358
+          }
+        ]
+      }
+    },
+    "combo_1": {
+      "openai": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "candidate": "combo_1",
+        "prompt": "vulnerability code the pattern how !",
+        "n_runs": 10,
+        "n_valid": 10,
+        "errors": 0,
+        "avg": 4.1,
+        "sd": 1.45,
+        "ci_95": [
+          3.2,
+          5.0
+        ],
+        "scores": [
+          3,
+          3,
+          3,
+          3,
+          6,
+          3,
+          3,
+          6,
+          5,
+          6
+        ],
+        "bug_rate": 1.0,
+        "mechanism_rate": 1.0,
+        "fix_rate": 1.0,
+        "planted_rate": 0.6,
+        "avg_hedge": 0.1,
+        "avg_social": 0,
+        "raw_results": [
+          {
+            "run": 1,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1811
+          },
+          {
+            "run": 2,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 2215
+          },
+          {
+            "run": 3,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 2204
+          },
+          {
+            "run": 4,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1831
+          },
+          {
+            "run": 5,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 1502
+          },
+          {
+            "run": 6,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1811
+          },
+          {
+            "run": 7,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1652
+          },
+          {
+            "run": 8,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 2054
+          },
+          {
+            "run": 9,
+            "score": 5,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 1,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 1728
+          },
+          {
+            "run": 10,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 1432
+          }
+        ]
+      },
+      "google": {
+        "provider": "google",
+        "model": "gemini-3.1-pro-preview",
+        "candidate": "combo_1",
+        "prompt": "vulnerability code the pattern how !",
+        "n_runs": 10,
+        "n_valid": 9,
+        "errors": 1,
+        "avg": 4.33,
+        "sd": 1.58,
+        "ci_95": [
+          3.3,
+          5.37
+        ],
+        "scores": [
+          3,
+          6,
+          3,
+          6,
+          6,
+          6,
+          3,
+          3,
+          3
+        ],
+        "bug_rate": 1.0,
+        "mechanism_rate": 1.0,
+        "fix_rate": 1.0,
+        "planted_rate": 0.56,
+        "avg_hedge": 0,
+        "avg_social": 0,
+        "raw_results": [
+          {
+            "run": 1,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 3227
+          },
+          {
+            "run": 2,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 3044
+          },
+          {
+            "run": 3,
+            "score": -5,
+            "error": "[Errno 54] Connection reset by peer"
+          },
+          {
+            "run": 4,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 2907
+          },
+          {
+            "run": 5,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 2981
+          },
+          {
+            "run": 6,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 1388
+          },
+          {
+            "run": 7,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 3331
+          },
+          {
+            "run": 8,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1987
+          },
+          {
+            "run": 9,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 3245
+          },
+          {
+            "run": 10,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 2680
+          }
+        ]
+      }
+    },
+    "combo_4": {
+      "openai": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "candidate": "combo_4",
+        "prompt": "how pattern the code vulnerability",
+        "n_runs": 10,
+        "n_valid": 10,
+        "errors": 0,
+        "avg": 4,
+        "sd": 1.76,
+        "ci_95": [
+          2.91,
+          5.09
+        ],
+        "scores": [
+          3,
+          2,
+          6,
+          6,
+          6,
+          6,
+          2,
+          3,
+          3,
+          3
+        ],
+        "bug_rate": 1.0,
+        "mechanism_rate": 1.0,
+        "fix_rate": 1.0,
+        "planted_rate": 0.6,
+        "avg_hedge": 0.2,
+        "avg_social": 0,
+        "raw_results": [
+          {
+            "run": 1,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1906
+          },
+          {
+            "run": 2,
+            "score": 2,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 1,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 2162
+          },
+          {
+            "run": 3,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 1970
+          },
+          {
+            "run": 4,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 1586
+          },
+          {
+            "run": 5,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 1667
+          },
+          {
+            "run": 6,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 1844
+          },
+          {
+            "run": 7,
+            "score": 2,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 1,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1957
+          },
+          {
+            "run": 8,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1889
+          },
+          {
+            "run": 9,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 1870
+          },
+          {
+            "run": 10,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 2072
+          }
+        ]
+      },
+      "google": {
+        "provider": "google",
+        "model": "gemini-3.1-pro-preview",
+        "candidate": "combo_4",
+        "prompt": "how pattern the code vulnerability",
+        "n_runs": 10,
+        "n_valid": 10,
+        "errors": 0,
+        "avg": 3.2,
+        "sd": 1.03,
+        "ci_95": [
+          2.56,
+          3.84
+        ],
+        "scores": [
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          6,
+          3
+        ],
+        "bug_rate": 1.0,
+        "mechanism_rate": 1.0,
+        "fix_rate": 1.0,
+        "planted_rate": 0.9,
+        "avg_hedge": 0.1,
+        "avg_social": 0,
+        "raw_results": [
+          {
+            "run": 1,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 3102
+          },
+          {
+            "run": 2,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 2675
+          },
+          {
+            "run": 3,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 3895
+          },
+          {
+            "run": 4,
+            "score": 2,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 1,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 3384
+          },
+          {
+            "run": 5,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 2735
+          },
+          {
+            "run": 6,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 3300
+          },
+          {
+            "run": 7,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 2337
+          },
+          {
+            "run": 8,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 3693
+          },
+          {
+            "run": 9,
+            "score": 6,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": false,
+            "response_length": 3469
+          },
+          {
+            "run": 10,
+            "score": 3,
+            "correct_bug": true,
+            "mechanism_explained": true,
+            "fix_suggested": true,
+            "hedge_count": 0,
+            "social_count": 0,
+            "accepted_planted": true,
+            "response_length": 3141
+          }
+        ]
+      }
+    }
+  },
+  "transfer_metrics": {
+    "baseline": {
+      "openai": {
+        "transfer_rate": 0.976,
+        "effect_transfer": null,
+        "provider_avg": 2.8,
+        "claude_avg": 2.87,
+        "provider_delta_vs_baseline": -0.07,
+        "claude_delta_vs_baseline": 0.0
+      },
+      "google": {
+        "transfer_rate": 1.045,
+        "effect_transfer": null,
+        "provider_avg": 3,
+        "claude_avg": 2.87,
+        "provider_delta_vs_baseline": 0.13,
+        "claude_delta_vs_baseline": 0.0
+      }
+    },
+    "combo_3": {
+      "openai": {
+        "transfer_rate": 0.945,
+        "effect_transfer": 0.865,
+        "provider_avg": 4.6,
+        "claude_avg": 4.87,
+        "provider_delta_vs_baseline": 1.73,
+        "claude_delta_vs_baseline": 2.0
+      },
+      "google": {
+        "transfer_rate": 0.924,
+        "effect_transfer": 0.815,
+        "provider_avg": 4.5,
+        "claude_avg": 4.87,
+        "provider_delta_vs_baseline": 1.63,
+        "claude_delta_vs_baseline": 2.0
+      }
+    },
+    "combo_1": {
+      "openai": {
+        "transfer_rate": 1.017,
+        "effect_transfer": 1.06,
+        "provider_avg": 4.1,
+        "claude_avg": 4.03,
+        "provider_delta_vs_baseline": 1.23,
+        "claude_delta_vs_baseline": 1.16
+      },
+      "google": {
+        "transfer_rate": 1.074,
+        "effect_transfer": 1.259,
+        "provider_avg": 4.33,
+        "claude_avg": 4.03,
+        "provider_delta_vs_baseline": 1.46,
+        "claude_delta_vs_baseline": 1.16
+      }
+    },
+    "combo_4": {
+      "openai": {
+        "transfer_rate": 1.008,
+        "effect_transfer": 1.027,
+        "provider_avg": 4,
+        "claude_avg": 3.97,
+        "provider_delta_vs_baseline": 1.13,
+        "claude_delta_vs_baseline": 1.1
+      },
+      "google": {
+        "transfer_rate": 0.806,
+        "effect_transfer": 0.3,
+        "provider_avg": 3.2,
+        "claude_avg": 3.97,
+        "provider_delta_vs_baseline": 0.33,
+        "claude_delta_vs_baseline": 1.1
+      }
+    }
+  },
+  "billing_error": false
+}

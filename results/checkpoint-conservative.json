@@ -1,0 +1,2800 @@
+{
+  "completed_generation": 10,
+  "total_generations": 10,
+  "search_type": "conservative",
+  "api_calls": 6560,
+  "population": [
+    {
+      "tokens": [
+        "vulnerability",
+        "find",
+        "code",
+        "::",
+        "!"
+      ],
+      "scores": [
+        5.1,
+        5.5,
+        5.2,
+        4.8
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          6,
+          5,
+          4,
+          6,
+          6,
+          3,
+          5,
+          5,
+          6,
+          5
+        ],
+        "methodology_critique": [
+          6,
+          6,
+          6,
+          5,
+          5,
+          5,
+          6,
+          6,
+          5,
+          5
+        ],
+        "causal_attribution": [
+          5,
+          6,
+          5,
+          6,
+          5,
+          5,
+          6,
+          5,
+          4,
+          5
+        ],
+        "divergent_problem": [
+          5,
+          5,
+          5,
+          4,
+          5,
+          5,
+          4,
+          5,
+          5,
+          5
+        ]
+      },
+      "generation": 9
+    },
+    {
+      "tokens": [
+        "::",
+        "just",
+        "find",
+        "vulnerability",
+        "::",
+        "identify",
+        "code"
+      ],
+      "scores": [
+        5.6,
+        5.2,
+        5.1,
+        4.6
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          6,
+          6,
+          6,
+          4,
+          6,
+          5,
+          5,
+          6,
+          6,
+          6
+        ],
+        "methodology_critique": [
+          5,
+          6,
+          5,
+          5,
+          6,
+          6,
+          6,
+          5,
+          5,
+          3
+        ],
+        "causal_attribution": [
+          5,
+          5,
+          5,
+          6,
+          6,
+          4,
+          5,
+          4,
+          5,
+          6
+        ],
+        "divergent_problem": [
+          5,
+          5,
+          5,
+          2,
+          4,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "generation": 9
+    },
+    {
+      "tokens": [
+        "just",
+        "find",
+        "|",
+        "vulnerability",
+        "::",
+        "code"
+      ],
+      "scores": [
+        5.5,
+        5.0,
+        5.3,
+        4.6
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          5,
+          5,
+          5,
+          6,
+          6,
+          6,
+          4,
+          6,
+          6,
+          6
+        ],
+        "methodology_critique": [
+          6,
+          5,
+          6,
+          5,
+          6,
+          4,
+          4,
+          5,
+          6,
+          3
+        ],
+        "causal_attribution": [
+          6,
+          6,
+          5,
+          5,
+          5,
+          5,
+          5,
+          4,
+          6,
+          6
+        ],
+        "divergent_problem": [
+          5,
+          5,
+          5,
+          5,
+          4,
+          5,
+          2,
+          5,
+          5,
+          5
+        ]
+      },
+      "generation": 9
+    },
+    {
+      "tokens": [
+        "just",
+        "find",
+        "vulnerability",
+        "::",
+        "::",
+        "identify",
+        "#",
+        "code"
+      ],
+      "scores": [
+        5.5,
+        5.4,
+        4.7,
+        4.8
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          6,
+          6,
+          6,
+          6,
+          5,
+          6,
+          6,
+          3,
+          5,
+          6
+        ],
+        "methodology_critique": [
+          6,
+          6,
+          5,
+          4,
+          6,
+          6,
+          5,
+          6,
+          6,
+          4
+        ],
+        "causal_attribution": [
+          5,
+          5,
+          5,
+          5,
+          6,
+          4,
+          5,
+          4,
+          4,
+          4
+        ],
+        "divergent_problem": [
+          5,
+          4,
+          5,
+          4,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "generation": 9
+    },
+    {
+      "tokens": [
+        "::",
+        "just",
+        "find",
+        "vulnerability",
+        "vulnerability",
+        "::",
+        "code"
+      ],
+      "scores": [
+        5.6,
+        4.9,
+        4.9,
+        4.5
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          5,
+          6,
+          3,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "methodology_critique": [
+          6,
+          6,
+          3,
+          5,
+          3,
+          6,
+          5,
+          5,
+          6,
+          4
+        ],
+        "causal_attribution": [
+          5,
+          6,
+          5,
+          5,
+          5,
+          5,
+          5,
+          3,
+          5,
+          5
+        ],
+        "divergent_problem": [
+          4,
+          4,
+          4,
+          5,
+          5,
+          4,
+          5,
+          4,
+          5,
+          5
+        ]
+      },
+      "generation": 9
+    },
+    {
+      "tokens": [
+        "accuracy",
+        "::",
+        "just",
+        "vulnerability",
+        "::",
+        "identify",
+        "code"
+      ],
+      "scores": [
+        5.3,
+        5.4,
+        4.9,
+        4.2
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          6,
+          6,
+          6,
+          6,
+          5,
+          5,
+          4,
+          4,
+          6,
+          5
+        ],
+        "methodology_critique": [
+          5,
+          4,
+          6,
+          6,
+          6,
+          5,
+          6,
+          5,
+          5,
+          6
+        ],
+        "causal_attribution": [
+          5,
+          4,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "divergent_problem": [
+          5,
+          3,
+          4,
+          2,
+          4,
+          5,
+          5,
+          5,
+          5,
+          4
+        ]
+      },
+      "generation": 9
+    },
+    {
+      "tokens": [
+        "find",
+        "vulnerability",
+        "::",
+        "::",
+        "identify",
+        "never",
+        "code"
+      ],
+      "scores": [
+        5.4,
+        5.2,
+        5.0,
+        4.2
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          6,
+          5,
+          6,
+          6,
+          6,
+          6,
+          5,
+          5,
+          5,
+          4
+        ],
+        "methodology_critique": [
+          4,
+          4,
+          6,
+          6,
+          6,
+          3,
+          6,
+          5,
+          6,
+          6
+        ],
+        "causal_attribution": [
+          6,
+          5,
+          4,
+          6,
+          5,
+          5,
+          6,
+          5,
+          4,
+          4
+        ],
+        "divergent_problem": [
+          3,
+          5,
+          4,
+          5,
+          5,
+          3,
+          5,
+          3,
+          5,
+          4
+        ]
+      },
+      "generation": 9
+    },
+    {
+      "tokens": [
+        "just",
+        "find",
+        "vulnerability",
+        "::",
+        "reasoning",
+        "::",
+        "must",
+        "identify",
+        "#",
+        "code"
+      ],
+      "scores": [
+        5.4,
+        5.1,
+        5.0,
+        4.2
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          6,
+          6,
+          6,
+          4,
+          6,
+          6,
+          4,
+          6,
+          6,
+          4
+        ],
+        "methodology_critique": [
+          5,
+          6,
+          5,
+          4,
+          5,
+          6,
+          5,
+          5,
+          5,
+          5
+        ],
+        "causal_attribution": [
+          6,
+          4,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          6,
+          4
+        ],
+        "divergent_problem": [
+          3,
+          5,
+          5,
+          5,
+          3,
+          5,
+          2,
+          5,
+          5,
+          4
+        ]
+      },
+      "generation": 9
+    },
+    {
+      "tokens": [
+        "just",
+        "find",
+        "vulnerability",
+        "spl",
+        "::",
+        "identify",
+        "#",
+        "code"
+      ],
+      "scores": [
+        5.0,
+        5.2,
+        4.9,
+        4.5
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          5,
+          3,
+          5,
+          5,
+          4,
+          6,
+          6,
+          5,
+          6,
+          5
+        ],
+        "methodology_critique": [
+          5,
+          4,
+          6,
+          5,
+          6,
+          6,
+          5,
+          4,
+          6,
+          5
+        ],
+        "causal_attribution": [
+          4,
+          5,
+          5,
+          6,
+          6,
+          6,
+          4,
+          4,
+          4,
+          5
+        ],
+        "divergent_problem": [
+          5,
+          5,
+          5,
+          5,
+          3,
+          3,
+          5,
+          5,
+          5,
+          4
+        ]
+      },
+      "generation": 9
+    },
+    {
+      "tokens": [
+        "::",
+        "just",
+        "find",
+        "|",
+        "vulnerability",
+        "::",
+        "identify",
+        "code"
+      ],
+      "scores": [
+        5.5,
+        4.9,
+        4.9,
+        4.2
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          6,
+          4,
+          6,
+          6,
+          6,
+          6,
+          4,
+          6,
+          5,
+          6
+        ],
+        "methodology_critique": [
+          5,
+          6,
+          4,
+          5,
+          5,
+          4,
+          5,
+          5,
+          5,
+          5
+        ],
+        "causal_attribution": [
+          6,
+          5,
+          5,
+          5,
+          5,
+          3,
+          5,
+          5,
+          5,
+          5
+        ],
+        "divergent_problem": [
+          3,
+          5,
+          5,
+          2,
+          5,
+          4,
+          5,
+          3,
+          5,
+          5
+        ]
+      },
+      "generation": 9
+    },
+    {
+      "tokens": [
+        "just",
+        "must",
+        "find",
+        "vulnerability",
+        "::",
+        "::",
+        "diagnose",
+        "identify",
+        "#",
+        "code"
+      ],
+      "scores": [
+        5.2,
+        4.5,
+        5.0,
+        4.6
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          6,
+          6,
+          5,
+          5,
+          5,
+          4,
+          6,
+          5,
+          5,
+          5
+        ],
+        "methodology_critique": [
+          6,
+          4,
+          5,
+          3,
+          3,
+          5,
+          5,
+          4,
+          5,
+          5
+        ],
+        "causal_attribution": [
+          4,
+          6,
+          4,
+          5,
+          5,
+          6,
+          5,
+          5,
+          5,
+          5
+        ],
+        "divergent_problem": [
+          5,
+          5,
+          5,
+          4,
+          5,
+          4,
+          4,
+          4,
+          5,
+          5
+        ]
+      },
+      "generation": 9
+    },
+    {
+      "tokens": [
+        "just",
+        "6@%q",
+        "|",
+        "vulnerability",
+        "::",
+        "code"
+      ],
+      "scores": [
+        5.7,
+        5.5,
+        3.7,
+        4.1
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          5,
+          6,
+          6,
+          6,
+          6,
+          5,
+          6,
+          6,
+          6,
+          5
+        ],
+        "methodology_critique": [
+          6,
+          6,
+          5,
+          6,
+          4,
+          6,
+          6,
+          6,
+          5,
+          5
+        ],
+        "causal_attribution": [
+          1,
+          4,
+          4,
+          5,
+          4,
+          4,
+          5,
+          4,
+          1,
+          5
+        ],
+        "divergent_problem": [
+          3,
+          5,
+          4,
+          5,
+          5,
+          3,
+          4,
+          5,
+          4,
+          3
+        ]
+      },
+      "generation": 9
+    },
+    {
+      "tokens": [
+        "::",
+        "just",
+        "exactly",
+        "::",
+        "identify",
+        "code"
+      ],
+      "scores": [
+        5.4,
+        5.3,
+        3.9,
+        4.4
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          6,
+          5,
+          5,
+          5,
+          5,
+          6,
+          6,
+          5,
+          6,
+          5
+        ],
+        "methodology_critique": [
+          6,
+          6,
+          5,
+          6,
+          3,
+          5,
+          6,
+          6,
+          4,
+          6
+        ],
+        "causal_attribution": [
+          6,
+          2,
+          5,
+          3,
+          5,
+          4,
+          5,
+          1,
+          5,
+          3
+        ],
+        "divergent_problem": [
+          2,
+          5,
+          5,
+          5,
+          3,
+          5,
+          5,
+          4,
+          5,
+          5
+        ]
+      },
+      "generation": 9
+    },
+    {
+      "tokens": [
+        "code",
+        "find",
+        "|",
+        "vulnerability",
+        "::",
+        "just"
+      ],
+      "scores": [
+        5.1,
+        4.9,
+        4.7,
+        4.2
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          5,
+          5,
+          5,
+          5,
+          6,
+          6,
+          5,
+          6,
+          3,
+          5
+        ],
+        "methodology_critique": [
+          5,
+          5,
+          3,
+          6,
+          5,
+          5,
+          5,
+          6,
+          5,
+          4
+        ],
+        "causal_attribution": [
+          4,
+          4,
+          4,
+          5,
+          5,
+          5,
+          3,
+          6,
+          6,
+          5
+        ],
+        "divergent_problem": [
+          5,
+          2,
+          5,
+          5,
+          5,
+          4,
+          2,
+          5,
+          5,
+          4
+        ]
+      },
+      "generation": 9
+    },
+    {
+      "tokens": [
+        "just",
+        "!",
+        "find",
+        "::",
+        "vulnerability",
+        "|",
+        "code"
+      ],
+      "scores": [
+        5.4,
+        5.2,
+        4.7,
+        3.2
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          5,
+          6,
+          5,
+          6,
+          5,
+          5,
+          6,
+          6,
+          4,
+          6
+        ],
+        "methodology_critique": [
+          5,
+          4,
+          5,
+          5,
+          6,
+          5,
+          6,
+          5,
+          5,
+          6
+        ],
+        "causal_attribution": [
+          4,
+          3,
+          5,
+          5,
+          6,
+          5,
+          5,
+          5,
+          5,
+          4
+        ],
+        "divergent_problem": [
+          5,
+          2,
+          1,
+          3,
+          3,
+          2,
+          3,
+          5,
+          3,
+          5
+        ]
+      },
+      "generation": 9
+    },
+    {
+      "tokens": [
+        "identify",
+        "what"
+      ],
+      "scores": [
+        4.8,
+        5.0,
+        4.4,
+        4.0
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          5,
+          5,
+          4,
+          5,
+          4,
+          6,
+          4,
+          6,
+          4,
+          5
+        ],
+        "methodology_critique": [
+          6,
+          5,
+          6,
+          6,
+          3,
+          6,
+          4,
+          5,
+          6,
+          3
+        ],
+        "causal_attribution": [
+          4,
+          5,
+          3,
+          4,
+          5,
+          5,
+          4,
+          5,
+          5,
+          4
+        ],
+        "divergent_problem": [
+          5,
+          5,
+          2,
+          5,
+          4,
+          5,
+          5,
+          3,
+          3,
+          3
+        ]
+      },
+      "generation": 9
+    },
+    {
+      "tokens": [
+        "claim",
+        "just",
+        "find",
+        "|",
+        "vulnerability",
+        "::",
+        "code"
+      ],
+      "scores": [
+        5.3,
+        5.3,
+        3.5,
+        3.9
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          5,
+          3,
+          5,
+          5,
+          6,
+          6,
+          6,
+          5,
+          6,
+          6
+        ],
+        "methodology_critique": [
+          5,
+          5,
+          5,
+          6,
+          6,
+          4,
+          6,
+          5,
+          6,
+          5
+        ],
+        "causal_attribution": [
+          3,
+          2,
+          3,
+          5,
+          2,
+          6,
+          3,
+          0,
+          6,
+          5
+        ],
+        "divergent_problem": [
+          5,
+          5,
+          3,
+          5,
+          3,
+          4,
+          5,
+          2,
+          5,
+          2
+        ]
+      },
+      "generation": 9
+    },
+    {
+      "tokens": [
+        "::",
+        "just",
+        "find",
+        "e&f",
+        "::",
+        "identify",
+        "code"
+      ],
+      "scores": [
+        5.3,
+        5.4,
+        2.4,
+        4.6
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          5,
+          6,
+          5,
+          6,
+          5,
+          5,
+          6,
+          5,
+          5,
+          5
+        ],
+        "methodology_critique": [
+          5,
+          5,
+          6,
+          6,
+          6,
+          6,
+          4,
+          5,
+          6,
+          5
+        ],
+        "causal_attribution": [
+          2,
+          2,
+          5,
+          1,
+          5,
+          2,
+          0,
+          4,
+          1,
+          2
+        ],
+        "divergent_problem": [
+          5,
+          5,
+          5,
+          5,
+          4,
+          5,
+          5,
+          4,
+          3,
+          5
+        ]
+      },
+      "generation": 9
+    },
+    {
+      "tokens": [
+        "just",
+        "*utaj",
+        "|",
+        "vulnerability",
+        "::",
+        "hnw!"
+      ],
+      "scores": [
+        4.3,
+        5.1,
+        3.2,
+        3.8
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          2,
+          5,
+          5,
+          3,
+          5,
+          5,
+          5,
+          5,
+          5,
+          3
+        ],
+        "methodology_critique": [
+          4,
+          6,
+          4,
+          5,
+          4,
+          6,
+          5,
+          6,
+          6,
+          5
+        ],
+        "causal_attribution": [
+          2,
+          5,
+          1,
+          -1,
+          5,
+          4,
+          5,
+          6,
+          4,
+          1
+        ],
+        "divergent_problem": [
+          4,
+          4,
+          2,
+          5,
+          4,
+          5,
+          4,
+          4,
+          3,
+          3
+        ]
+      },
+      "generation": 9
+    },
+    {
+      "tokens": [
+        "evidence",
+        "immediately"
+      ],
+      "scores": [
+        4.9,
+        4.7,
+        2.9,
+        3.5
+      ],
+      "task_scores": {
+        "simpsons_paradox": [
+          5,
+          6,
+          5,
+          4,
+          5,
+          3,
+          5,
+          6,
+          5,
+          5
+        ],
+        "methodology_critique": [
+          3,
+          3,
+          5,
+          5,
+          4,
+          5,
+          6,
+          5,
+          6,
+          5
+        ],
+        "causal_attribution": [
+          2,
+          1,
+          4,
+          2,
+          4,
+          4,
+          4,
+          2,
+          1,
+          5
+        ],
+        "divergent_problem": [
+          2,
+          3,
+          4,
+          2,
+          4,
+          4,
+          2,
+          5,
+          4,
+          5
+        ]
+      },
+      "generation": 9
+    }
+  ],
+  "best_ever": {
+    "tokens": [
+      "vulnerability",
+      "find",
+      "code",
+      "::",
+      "!"
+    ],
+    "scores": [
+      5.1,
+      5.5,
+      5.2,
+      4.8
+    ],
+    "task_scores": {
+      "simpsons_paradox": [
+        6,
+        5,
+        4,
+        6,
+        6,
+        3,
+        5,
+        5,
+        6,
+        5
+      ],
+      "methodology_critique": [
+        6,
+        6,
+        6,
+        5,
+        5,
+        5,
+        6,
+        6,
+        5,
+        5
+      ],
+      "causal_attribution": [
+        5,
+        6,
+        5,
+        6,
+        5,
+        5,
+        6,
+        5,
+        4,
+        5
+      ],
+      "divergent_problem": [
+        5,
+        5,
+        5,
+        4,
+        5,
+        5,
+        4,
+        5,
+        5,
+        5
+      ]
+    },
+    "generation": 7
+  },
+  "generation_history": [
+    {
+      "generation": 1,
+      "avg_score": 4.334,
+      "best_score": 4.9,
+      "worst_score": 4.0,
+      "best_prompt": "identify the flaws in this reasoning",
+      "best_variance": 0.54,
+      "best_per_task": {
+        "simpsons_paradox": 5.3,
+        "methodology_critique": 5.2,
+        "causal_attribution": 5.3,
+        "divergent_problem": 3.8
+      },
+      "new_evaluations": 20,
+      "api_calls_total": 800,
+      "elapsed_s": 200.4,
+      "top_5": [
+        {
+          "prompt": "identify the flaws in this reasoning",
+          "avg": 4.9,
+          "var": 0.54,
+          "per_task": {
+            "simpsons_paradox": 5.3,
+            "methodology_critique": 5.2,
+            "causal_attribution": 5.3,
+            "divergent_problem": 3.8
+          }
+        },
+        {
+          "prompt": "error : identify cause",
+          "avg": 4.875,
+          "var": 0.143,
+          "per_task": {
+            "simpsons_paradox": 5.4,
+            "methodology_critique": 4.6,
+            "causal_attribution": 4.6,
+            "divergent_problem": 4.9
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: code",
+          "avg": 4.85,
+          "var": 0.357,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.1,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.1
+          }
+        },
+        {
+          "prompt": "in validity of of of verify where correlation examine reasoning",
+          "avg": 4.8,
+          "var": 0.86,
+          "per_task": {
+            "simpsons_paradox": 5.3,
+            "methodology_critique": 5.6,
+            "causal_attribution": 4.8,
+            "divergent_problem": 3.5
+          }
+        },
+        {
+          "prompt": "!identify : bias | evidence \u2192 fix",
+          "avg": 4.55,
+          "var": 0.917,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 4.9,
+            "causal_attribution": 4.1,
+            "divergent_problem": 3.5
+          }
+        }
+      ]
+    },
+    {
+      "generation": 2,
+      "avg_score": 4.69,
+      "best_score": 5.05,
+      "worst_score": 4.05,
+      "best_prompt": "just find vulnerability :: identify code",
+      "best_variance": 0.417,
+      "best_per_task": {
+        "simpsons_paradox": 5.7,
+        "methodology_critique": 5.5,
+        "causal_attribution": 4.6,
+        "divergent_problem": 4.4
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 1440,
+      "elapsed_s": 161.3,
+      "top_5": [
+        {
+          "prompt": "just find vulnerability :: identify code",
+          "avg": 5.05,
+          "var": 0.417,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.6,
+            "divergent_problem": 4.4
+          }
+        },
+        {
+          "prompt": "vulnerability find just :: code",
+          "avg": 5.05,
+          "var": 0.51,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.3,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.0
+          }
+        },
+        {
+          "prompt": "just find | vulnerability :: code",
+          "avg": 4.975,
+          "var": 0.143,
+          "per_task": {
+            "simpsons_paradox": 5.4,
+            "methodology_critique": 5.1,
+            "causal_attribution": 4.9,
+            "divergent_problem": 4.5
+          }
+        },
+        {
+          "prompt": "identify the flaws in this reasoning",
+          "avg": 4.9,
+          "var": 0.54,
+          "per_task": {
+            "simpsons_paradox": 5.3,
+            "methodology_critique": 5.2,
+            "causal_attribution": 5.3,
+            "divergent_problem": 3.8
+          }
+        },
+        {
+          "prompt": "error cause identify :",
+          "avg": 4.9,
+          "var": 0.3,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.0,
+            "causal_attribution": 4.3,
+            "divergent_problem": 4.7
+          }
+        }
+      ]
+    },
+    {
+      "generation": 3,
+      "avg_score": 4.723,
+      "best_score": 5.05,
+      "worst_score": 3.725,
+      "best_prompt": "just find vulnerability :: identify code",
+      "best_variance": 0.417,
+      "best_per_task": {
+        "simpsons_paradox": 5.7,
+        "methodology_critique": 5.5,
+        "causal_attribution": 4.6,
+        "divergent_problem": 4.4
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 2080,
+      "elapsed_s": 153.3,
+      "top_5": [
+        {
+          "prompt": "just find vulnerability :: identify code",
+          "avg": 5.05,
+          "var": 0.417,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.6,
+            "divergent_problem": 4.4
+          }
+        },
+        {
+          "prompt": "vulnerability find just :: code",
+          "avg": 5.05,
+          "var": 0.51,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.3,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.0
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: :: identify code",
+          "avg": 5.05,
+          "var": 0.07,
+          "per_task": {
+            "simpsons_paradox": 5.0,
+            "methodology_critique": 5.3,
+            "causal_attribution": 5.2,
+            "divergent_problem": 4.7
+          }
+        },
+        {
+          "prompt": "just find | vulnerability :: code",
+          "avg": 4.975,
+          "var": 0.143,
+          "per_task": {
+            "simpsons_paradox": 5.4,
+            "methodology_critique": 5.1,
+            "causal_attribution": 4.9,
+            "divergent_problem": 4.5
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: code",
+          "avg": 4.975,
+          "var": 0.116,
+          "per_task": {
+            "simpsons_paradox": 5.3,
+            "methodology_critique": 5.1,
+            "causal_attribution": 5.0,
+            "divergent_problem": 4.5
+          }
+        }
+      ]
+    },
+    {
+      "generation": 4,
+      "avg_score": 4.854,
+      "best_score": 5.1,
+      "worst_score": 4.475,
+      "best_prompt": "just find | vulnerability :: code",
+      "best_variance": 0.153,
+      "best_per_task": {
+        "simpsons_paradox": 5.5,
+        "methodology_critique": 5.0,
+        "causal_attribution": 5.3,
+        "divergent_problem": 4.6
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 2720,
+      "elapsed_s": 155.2,
+      "top_5": [
+        {
+          "prompt": "just find | vulnerability :: code",
+          "avg": 5.1,
+          "var": 0.153,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.0,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: :: identify # code",
+          "avg": 5.1,
+          "var": 0.167,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.4,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: identify code",
+          "avg": 5.05,
+          "var": 0.417,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.6,
+            "divergent_problem": 4.4
+          }
+        },
+        {
+          "prompt": "vulnerability find just :: code",
+          "avg": 5.05,
+          "var": 0.51,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.3,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.0
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: :: identify code",
+          "avg": 5.05,
+          "var": 0.07,
+          "per_task": {
+            "simpsons_paradox": 5.0,
+            "methodology_critique": 5.3,
+            "causal_attribution": 5.2,
+            "divergent_problem": 4.7
+          }
+        }
+      ]
+    },
+    {
+      "generation": 5,
+      "avg_score": 4.734,
+      "best_score": 5.1,
+      "worst_score": 3.6,
+      "best_prompt": "just find | vulnerability :: code",
+      "best_variance": 0.153,
+      "best_per_task": {
+        "simpsons_paradox": 5.5,
+        "methodology_critique": 5.0,
+        "causal_attribution": 5.3,
+        "divergent_problem": 4.6
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 3360,
+      "elapsed_s": 158.2,
+      "top_5": [
+        {
+          "prompt": "just find | vulnerability :: code",
+          "avg": 5.1,
+          "var": 0.153,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.0,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: :: identify # code",
+          "avg": 5.1,
+          "var": 0.167,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.4,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": "vulnerability find just :: code !",
+          "avg": 5.075,
+          "var": 0.256,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.8,
+            "divergent_problem": 4.5
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: identify code",
+          "avg": 5.05,
+          "var": 0.417,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.6,
+            "divergent_problem": 4.4
+          }
+        },
+        {
+          "prompt": "vulnerability find just :: code",
+          "avg": 5.05,
+          "var": 0.51,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.3,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.0
+          }
+        }
+      ]
+    },
+    {
+      "generation": 6,
+      "avg_score": 4.845,
+      "best_score": 5.1,
+      "worst_score": 4.45,
+      "best_prompt": "just find | vulnerability :: code",
+      "best_variance": 0.153,
+      "best_per_task": {
+        "simpsons_paradox": 5.5,
+        "methodology_critique": 5.0,
+        "causal_attribution": 5.3,
+        "divergent_problem": 4.6
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 4000,
+      "elapsed_s": 156.8,
+      "top_5": [
+        {
+          "prompt": "just find | vulnerability :: code",
+          "avg": 5.1,
+          "var": 0.153,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.0,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: :: identify # code",
+          "avg": 5.1,
+          "var": 0.167,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.4,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": "vulnerability find just :: code !",
+          "avg": 5.075,
+          "var": 0.256,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.8,
+            "divergent_problem": 4.5
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: identify code",
+          "avg": 5.05,
+          "var": 0.417,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.6,
+            "divergent_problem": 4.4
+          }
+        },
+        {
+          "prompt": "just find | vulnerability w34i code",
+          "avg": 5.0,
+          "var": 0.433,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.4,
+            "causal_attribution": 4.3,
+            "divergent_problem": 4.6
+          }
+        }
+      ]
+    },
+    {
+      "generation": 7,
+      "avg_score": 4.803,
+      "best_score": 5.15,
+      "worst_score": 4.275,
+      "best_prompt": "vulnerability find code :: !",
+      "best_variance": 0.083,
+      "best_per_task": {
+        "simpsons_paradox": 5.1,
+        "methodology_critique": 5.5,
+        "causal_attribution": 5.2,
+        "divergent_problem": 4.8
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 4640,
+      "elapsed_s": 160.4,
+      "top_5": [
+        {
+          "prompt": "vulnerability find code :: !",
+          "avg": 5.15,
+          "var": 0.083,
+          "per_task": {
+            "simpsons_paradox": 5.1,
+            "methodology_critique": 5.5,
+            "causal_attribution": 5.2,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": ":: just find vulnerability :: identify code",
+          "avg": 5.125,
+          "var": 0.169,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.2,
+            "causal_attribution": 5.1,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find | vulnerability :: code",
+          "avg": 5.1,
+          "var": 0.153,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.0,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: :: identify # code",
+          "avg": 5.1,
+          "var": 0.167,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.4,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": "vulnerability find just :: code !",
+          "avg": 5.075,
+          "var": 0.256,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.8,
+            "divergent_problem": 4.5
+          }
+        }
+      ]
+    },
+    {
+      "generation": 8,
+      "avg_score": 4.855,
+      "best_score": 5.15,
+      "worst_score": 4.475,
+      "best_prompt": "vulnerability find code :: !",
+      "best_variance": 0.083,
+      "best_per_task": {
+        "simpsons_paradox": 5.1,
+        "methodology_critique": 5.5,
+        "causal_attribution": 5.2,
+        "divergent_problem": 4.8
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 5280,
+      "elapsed_s": 155.2,
+      "top_5": [
+        {
+          "prompt": "vulnerability find code :: !",
+          "avg": 5.15,
+          "var": 0.083,
+          "per_task": {
+            "simpsons_paradox": 5.1,
+            "methodology_critique": 5.5,
+            "causal_attribution": 5.2,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": ":: just find vulnerability :: identify code",
+          "avg": 5.125,
+          "var": 0.169,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.2,
+            "causal_attribution": 5.1,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find | vulnerability :: code",
+          "avg": 5.1,
+          "var": 0.153,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.0,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: :: identify # code",
+          "avg": 5.1,
+          "var": 0.167,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.4,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": "\u00ac :: just vulnerability :: identify code",
+          "avg": 5.1,
+          "var": 0.12,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.0,
+            "causal_attribution": 5.0,
+            "divergent_problem": 4.8
+          }
+        }
+      ]
+    },
+    {
+      "generation": 9,
+      "avg_score": 4.702,
+      "best_score": 5.15,
+      "worst_score": 3.875,
+      "best_prompt": "vulnerability find code :: !",
+      "best_variance": 0.083,
+      "best_per_task": {
+        "simpsons_paradox": 5.1,
+        "methodology_critique": 5.5,
+        "causal_attribution": 5.2,
+        "divergent_problem": 4.8
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 5920,
+      "elapsed_s": 157.4,
+      "top_5": [
+        {
+          "prompt": "vulnerability find code :: !",
+          "avg": 5.15,
+          "var": 0.083,
+          "per_task": {
+            "simpsons_paradox": 5.1,
+            "methodology_critique": 5.5,
+            "causal_attribution": 5.2,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": ":: just find vulnerability :: identify code",
+          "avg": 5.125,
+          "var": 0.169,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.2,
+            "causal_attribution": 5.1,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find | vulnerability :: code",
+          "avg": 5.1,
+          "var": 0.153,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.0,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: :: identify # code",
+          "avg": 5.1,
+          "var": 0.167,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.4,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": ":: just find vulnerability | :: identify code",
+          "avg": 5.025,
+          "var": 0.416,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.2,
+            "causal_attribution": 5.2,
+            "divergent_problem": 4.1
+          }
+        }
+      ]
+    },
+    {
+      "generation": 10,
+      "avg_score": 4.765,
+      "best_score": 5.15,
+      "worst_score": 4.0,
+      "best_prompt": "vulnerability find code :: !",
+      "best_variance": 0.083,
+      "best_per_task": {
+        "simpsons_paradox": 5.1,
+        "methodology_critique": 5.5,
+        "causal_attribution": 5.2,
+        "divergent_problem": 4.8
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 6560,
+      "elapsed_s": 163.1,
+      "top_5": [
+        {
+          "prompt": "vulnerability find code :: !",
+          "avg": 5.15,
+          "var": 0.083,
+          "per_task": {
+            "simpsons_paradox": 5.1,
+            "methodology_critique": 5.5,
+            "causal_attribution": 5.2,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": ":: just find vulnerability :: identify code",
+          "avg": 5.125,
+          "var": 0.169,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.2,
+            "causal_attribution": 5.1,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find | vulnerability :: code",
+          "avg": 5.1,
+          "var": 0.153,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.0,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: :: identify # code",
+          "avg": 5.1,
+          "var": 0.167,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.4,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": ":: just find vulnerability vulnerability :: code",
+          "avg": 4.975,
+          "var": 0.209,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 4.9,
+            "causal_attribution": 4.9,
+            "divergent_problem": 4.5
+          }
+        }
+      ]
+    }
+  ],
+  "rng_state": [
+    3,
+    [
+      3500428859,
+      74239521,
+      1605971478,
+      3655434558,
+      2894567018,
+      2232069044,
+      4148841114,
+      2732508605,
+      3870972669,
+      4026081947,
+      2667864667,
+      1239031660,
+      2226553771,
+      321795966,
+      1788110176,
+      1737744185,
+      127740384,
+      2194062935,
+      666976542,
+      3448012648,
+      1419167130,
+      1115607621,
+      4166249973,
+      1132582156,
+      3852605520,
+      1172304543,
+      1182289686,
+      3797708276,
+      2765987275,
+      2487874652,
+      3345838597,
+      1640356660,
+      1648958835,
+      3209933280,
+      2135680836,
+      1549931131,
+      684180758,
+      134427065,
+      1362389532,
+      1051895034,
+      3456631204,
+      2339076762,
+      1734410665,
+      4053472781,
+      772045950,
+      1979002667,
+      1731655514,
+      3143964578,
+      2655895435,
+      1805667934,
+      2069148389,
+      1711089271,
+      16019162,
+      709675458,
+      4254876257,
+      2355406746,
+      3378123258,
+      4241661811,
+      1919390565,
+      1680029533,
+      350338643,
+      1372915725,
+      3365263726,
+      2130007224,
+      1553432055,
+      1938751978,
+      1482996070,
+      2778624279,
+      1729529339,
+      1685240752,
+      1982615840,
+      707738285,
+      627114065,
+      3141309084,
+      3061939377,
+      3194589753,
+      1848445830,
+      2817702977,
+      3947306306,
+      2335491259,
+      124236063,
+      415510763,
+      2855045924,
+      1634575928,
+      3217387531,
+      1816798926,
+      521393227,
+      2958756419,
+      389721972,
+      3376119381,
+      1883129820,
+      978579556,
+      686329293,
+      138942992,
+      1436236948,
+      1210787473,
+      1364878796,
+      1034681099,
+      2796545997,
+      2442539730,
+      2533178449,
+      3647395847,
+      1576648739,
+      2223468656,
+      2770461403,
+      3710382995,
+      1439925936,
+      1350905142,
+      2426340974,
+      1493579374,
+      1379889563,
+      1215667006,
+      1434069425,
+      3644009217,
+      3814837103,
+      3780426018,
+      2795979166,
+      1842351415,
+      3249915764,
+      1879258685,
+      2230552916,
+      4035876253,
+      393188913,
+      3337158114,
+      3847152732,
+      2966170155,
+      3308227301,
+      1529616748,
+      4210203009,
+      3782467935,
+      4185185846,
+      553577199,
+      2478152410,
+      1430464788,
+      4103528802,
+      3231239977,
+      1780071690,
+      1880235778,
+      2904809972,
+      3657491276,
+      1673199017,
+      4117726374,
+      3342786856,
+      12937841,
+      1617626776,
+      3206300632,
+      1532537073,
+      517425848,
+      2313814229,
+      3821727192,
+      1026605217,
+      3686897373,
+      474750385,
+      1209291970,
+      197465175,
+      752393808,
+      1978322653,
+      2290020838,
+      3851963811,
+      1356508135,
+      1411974860,
+      3306882463,
+      379587494,
+      1269646616,
+      447968443,
+      1007206520,
+      3812345225,
+      3075049938,
+      2831607203,
+      1043175848,
+      1092747956,
+      2737697736,
+      3398020594,
+      1945826962,
+      4111953159,
+      3363782513,
+      2238947863,
+      3932563275,
+      779019187,
+      4277535839,
+      1721451957,
+      882211033,
+      466624483,
+      3113456562,
+      3597116220,
+      1154678728,
+      931045893,
+      4083399663,
+      31861779,
+      3642323281,
+      3759492167,
+      2744189133,
+      3109695366,
+      305556045,
+      4209255877,
+      3560472242,
+      1862809044,
+      1548137155,
+      2439843230,
+      2909474893,
+      2350409142,
+      2249011145,
+      3678253678,
+      736442015,
+      1220125326,
+      2405469424,
+      1658911362,
+      926193173,
+      54451344,
+      2860883070,
+      983348391,
+      1922628969,
+      3581306062,
+      4045869441,
+      4081552244,
+      2366904752,
+      2793196805,
+      3752957918,
+      181469941,
+      3724334933,
+      4293335913,
+      1246386505,
+      1786261016,
+      1736661529,
+      525428084,
+      2823074810,
+      3735919578,
+      2153734896,
+      3436386760,
+      842552833,
+      1397535657,
+      3006033134,
+      2309348108,
+      3254277057,
+      119298820,
+      3446732318,
+      3342446748,
+      798249976,
+      4009020541,
+      2163188048,
+      3899083310,
+      3990387921,
+      2745351192,
+      3097175578,
+      3137234581,
+      1885891984,
+      1136103956,
+      6234948,
+      4233113336,
+      1884200871,
+      1396829761,
+      4179201867,
+      1331556436,
+      3043229170,
+      2300460863,
+      1028449296,
+      3341048447,
+      3866848887,
+      3220696804,
+      1642228637,
+      4172565026,
+      3121327495,
+      1346451861,
+      203901821,
+      2309693548,
+      4436278,
+      1785104972,
+      1806541582,
+      1896848755,
+      387702574,
+      1406276574,
+      1515569953,
+      3068669463,
+      3814345982,
+      2493490635,
+      1596135601,
+      1326795099,
+      3409444231,
+      3791605878,
+      2994481929,
+      3763253093,
+      3763942588,
+      3872377068,
+      2987565306,
+      3448384048,
+      3301091634,
+      3543557630,
+      2139319023,
+      517391153,
+      1607881526,
+      826831577,
+      2773025898,
+      2794952697,
+      594809209,
+      8903652,
+      2588340607,
+      1383963082,
+      2462428912,
+      936736450,
+      1712541232,
+      761358037,
+      2639138390,
+      3784340761,
+      4003376789,
+      1298392522,
+      4200024595,
+      2651607391,
+      1391622333,
+      1939109357,
+      1874982047,
+      2650052452,
+      1495054822,
+      4196822516,
+      861173678,
+      4086221379,
+      1685268598,
+      1139964762,
+      1162690526,
+      4067770564,
+      1808644413,
+      3851409554,
+      219991015,
+      521899282,
+      3482887292,
+      363420624,
+      3282237702,
+      2657494831,
+      3442136261,
+      3740913587,
+      2394923526,
+      843699988,
+      393027597,
+      2203102745,
+      2034626021,
+      1501964111,
+      2002062384,
+      367347200,
+      4027542007,
+      1232601108,
+      3722692161,
+      1952040187,
+      3863027240,
+      1552136460,
+      3873613494,
+      1374497990,
+      1122786342,
+      1904815421,
+      3552709118,
+      683331264,
+      4260565155,
+      3944886342,
+      463345509,
+      3485339298,
+      1300216011,
+      1675267212,
+      2857442430,
+      3350776278,
+      1501979908,
+      3141042621,
+      1288316366,
+      679726600,
+      301929230,
+      2373298033,
+      1878234167,
+      1907417135,
+      1412929267,
+      113104171,
+      3971677074,
+      2968915654,
+      548329480,
+      2272985038,
+      4289280362,
+      1888342667,
+      2745576284,
+      2063058131,
+      4093995532,
+      2894461737,
+      277918640,
+      2066267058,
+      2866544961,
+      3335244891,
+      342657753,
+      329528849,
+      3866867342,
+      682114454,
+      2277819533,
+      875645952,
+      240436472,
+      987676272,
+      1530282585,
+      155078026,
+      1841835642,
+      3258179528,
+      3047883248,
+      3961721868,
+      4074452533,
+      2608831966,
+      2601517279,
+      978947439,
+      2538295748,
+      2120465011,
+      663396274,
+      536073588,
+      4189704128,
+      3687001295,
+      789727261,
+      989056585,
+      3229468437,
+      2354157782,
+      3049951621,
+      1149260202,
+      4292037458,
+      2792847013,
+      3162313562,
+      4033223366,
+      2544508787,
+      3025628056,
+      3012107398,
+      1263829954,
+      1192496726,
+      713426682,
+      3705548560,
+      1959997904,
+      4188051675,
+      1405750417,
+      2223111367,
+      2883271558,
+      414165597,
+      1683646418,
+      1863743342,
+      2483645386,
+      83975474,
+      3308380308,
+      3936368564,
+      1226784615,
+      1248080867,
+      12742218,
+      3709708626,
+      1248051830,
+      1792545223,
+      382757291,
+      3130313767,
+      3294554982,
+      438404073,
+      2574910044,
+      2074824639,
+      2625615612,
+      2215528302,
+      837490490,
+      891999241,
+      2460356413,
+      2793770225,
+      3343983522,
+      2966754469,
+      2524823934,
+      4151159315,
+      368004801,
+      1691835118,
+      1110739797,
+      4183747650,
+      2594681153,
+      35801318,
+      3712312328,
+      2110421341,
+      1518964075,
+      2981220319,
+      118690249,
+      4145742221,
+      1344133151,
+      3393198798,
+      534775416,
+      3262228313,
+      2036697143,
+      2131560440,
+      1767664678,
+      2116126724,
+      310666050,
+      3570360133,
+      3373642193,
+      796076762,
+      583476668,
+      3101479408,
+      2932709184,
+      418697087,
+      1400937585,
+      4096212430,
+      4276628073,
+      229017604,
+      1616744437,
+      1000795086,
+      3342430041,
+      1020367361,
+      1706070514,
+      4051315577,
+      3440531568,
+      1626586789,
+      2279277115,
+      3194748913,
+      3792561524,
+      2245722080,
+      3385244728,
+      923339709,
+      1703473244,
+      3332519370,
+      3992305938,
+      1567594369,
+      1972766258,
+      1264211605,
+      3621492706,
+      1314080416,
+      2063827164,
+      2577562767,
+      471153276,
+      603401299,
+      156563432,
+      214371897,
+      3590851639,
+      2864313831,
+      430401623,
+      1246625892,
+      1282200996,
+      2916386262,
+      2776497963,
+      3937813530,
+      2900091985,
+      842401914,
+      315306573,
+      1175085177,
+      1611260362,
+      2933077930,
+      115774453,
+      3889103885,
+      3989331066,
+      847790090,
+      1781193436,
+      3891943868,
+      58972430,
+      61489212,
+      1629081733,
+      2858335123,
+      4261329304,
+      817093612,
+      994578995,
+      3669581467,
+      1497686342,
+      3527216960,
+      2444199174,
+      4198463803,
+      1717946404,
+      3733434981,
+      3033595186,
+      2592762572,
+      19444460,
+      150032647,
+      2851507016,
+      2174125249,
+      699951134,
+      176803093,
+      2564956408,
+      727377863,
+      1990665638,
+      1140428657,
+      3846386195,
+      3165292277,
+      1674348409,
+      147248933,
+      790808149,
+      4184691250,
+      2861377249,
+      749956083,
+      154162703,
+      2013015826,
+      928951620,
+      1556084770,
+      987087646,
+      2526944701,
+      645630408,
+      3516429296,
+      1382941113,
+      911257235,
+      661280700,
+      907344042,
+      2956570384,
+      1926131628,
+      4017755762,
+      116856624,
+      414706964,
+      1549081236,
+      2513392815,
+      2567913455,
+      4224313852,
+      2725426896,
+      905419798,
+      295604515,
+      1762744986,
+      3150852350,
+      3489622131,
+      614090328,
+      2901863147,
+      1795308198,
+      456778547,
+      1263757826,
+      4158190814,
+      3896775727,
+      1289909865,
+      604238812,
+      690711415,
+      1888179081,
+      2465046201,
+      3264496721,
+      2227262750,
+      2883582715,
+      3509522592,
+      3973440297,
+      2250340377,
+      498174420,
+      2135300830,
+      1362296723,
+      468665144,
+      2922177580,
+      1306371144,
+      663140072,
+      1881198054,
+      1780812316,
+      412
+    ],
+    null
+  ],
+  "timestamp": "2026-04-02T21:02:08-0600"
+}

@@ -1,0 +1,924 @@
+{
+  "experiment": "sigma-optimize-aggressive-v1",
+  "search_type": "aggressive",
+  "task": "race-condition-identification + planted-hypothesis-resistance",
+  "model": "claude-haiku-4-5-20251001",
+  "config": {
+    "population_size": 20,
+    "generations": 10,
+    "runs_per_candidate": 5,
+    "top_k": 4,
+    "wildcard_rate": 0.2,
+    "vocab_size": 273,
+    "exotic_token_count": 135
+  },
+  "total_api_calls": 820,
+  "generation_history": [
+    {
+      "generation": 1,
+      "avg_score": 2.67,
+      "best_score": 4.6,
+      "worst_score": 1.2,
+      "best_prompt": "! analyze :: code | find \u2192 defect",
+      "best_variance": 1.8,
+      "new_evaluations": 20,
+      "api_calls_total": 100,
+      "elapsed_s": 447.4,
+      "top_5": [
+        {
+          "prompt": "! analyze :: code | find \u2192 defect",
+          "avg": 4.6,
+          "var": 1.8
+        },
+        {
+          "prompt": "!identify : bug | source \u2192 fix",
+          "avg": 4.0,
+          "var": 3.5
+        },
+        {
+          "prompt": "xq find zp defect kv",
+          "avg": 4.0,
+          "var": 3.5
+        },
+        {
+          "prompt": "\u4e01 \u4e03 \u4e07 bug",
+          "avg": 4.0,
+          "var": 0.0
+        },
+        {
+          "prompt": "\u221e \u2260 bug \u00ac sleep",
+          "avg": 3.8,
+          "var": 4.7
+        }
+      ]
+    },
+    {
+      "generation": 2,
+      "avg_score": 3.23,
+      "best_score": 4.6,
+      "worst_score": 1.4,
+      "best_prompt": "! analyze :: code | find \u2192 defect",
+      "best_variance": 1.8,
+      "new_evaluations": 16,
+      "api_calls_total": 180,
+      "elapsed_s": 2967.7,
+      "top_5": [
+        {
+          "prompt": "! analyze :: code | find \u2192 defect",
+          "avg": 4.6,
+          "var": 1.8
+        },
+        {
+          "prompt": "!identify : bug | source \u4e07 bug",
+          "avg": 4.2,
+          "var": 4.7
+        },
+        {
+          "prompt": "!identify : bug | source \u2192 fix",
+          "avg": 4.0,
+          "var": 3.5
+        },
+        {
+          "prompt": "xq find zp defect kv",
+          "avg": 4.0,
+          "var": 3.5
+        },
+        {
+          "prompt": "\u4e01 \u4e03 \u4e07 bug",
+          "avg": 4.0,
+          "var": 0.0
+        }
+      ]
+    },
+    {
+      "generation": 3,
+      "avg_score": 3.23,
+      "best_score": 4.6,
+      "worst_score": 1.2,
+      "best_prompt": "! analyze :: code | find \u2192 defect",
+      "best_variance": 1.8,
+      "new_evaluations": 16,
+      "api_calls_total": 260,
+      "elapsed_s": 352.3,
+      "top_5": [
+        {
+          "prompt": "! analyze :: code | find \u2192 defect",
+          "avg": 4.6,
+          "var": 1.8
+        },
+        {
+          "prompt": "xq find xfq zp defect kv",
+          "avg": 4.4,
+          "var": 5.3
+        },
+        {
+          "prompt": "!identify : bug | source \u4e07 bug",
+          "avg": 4.2,
+          "var": 4.7
+        },
+        {
+          "prompt": "!identify : bug | source \u2192 fix",
+          "avg": 4.0,
+          "var": 3.5
+        },
+        {
+          "prompt": "xq find zp defect kv",
+          "avg": 4.0,
+          "var": 3.5
+        }
+      ]
+    },
+    {
+      "generation": 4,
+      "avg_score": 3.67,
+      "best_score": 5.2,
+      "worst_score": 2.0,
+      "best_prompt": "xq find xfq zp defect :: kv \u222b",
+      "best_variance": 1.7,
+      "new_evaluations": 16,
+      "api_calls_total": 340,
+      "elapsed_s": 359.5,
+      "top_5": [
+        {
+          "prompt": "xq find xfq zp defect :: kv \u222b",
+          "avg": 5.2,
+          "var": 1.7
+        },
+        {
+          "prompt": "!identify : bug | source \u2192 fix vw",
+          "avg": 5.2,
+          "var": 1.2
+        },
+        {
+          "prompt": "! analyze :: code | find \u2192 defect",
+          "avg": 4.6,
+          "var": 1.8
+        },
+        {
+          "prompt": "xq find xfq zp defect kv",
+          "avg": 4.4,
+          "var": 5.3
+        },
+        {
+          "prompt": "! analyze :: code \u4e07 find \u2192 defect",
+          "avg": 4.4,
+          "var": 2.3
+        }
+      ]
+    },
+    {
+      "generation": 5,
+      "avg_score": 3.51,
+      "best_score": 5.2,
+      "worst_score": 2.0,
+      "best_prompt": "xq find xfq zp defect :: kv \u222b",
+      "best_variance": 1.7,
+      "new_evaluations": 16,
+      "api_calls_total": 420,
+      "elapsed_s": 527.2,
+      "top_5": [
+        {
+          "prompt": "xq find xfq zp defect :: kv \u222b",
+          "avg": 5.2,
+          "var": 1.7
+        },
+        {
+          "prompt": "!identify : bug | source \u2192 fix vw",
+          "avg": 5.2,
+          "var": 1.2
+        },
+        {
+          "prompt": "! analyze :: code | find \u2192 defect",
+          "avg": 4.6,
+          "var": 1.8
+        },
+        {
+          "prompt": "!identify : bug | gwkj source \u2192 fix vw",
+          "avg": 4.6,
+          "var": 4.8
+        },
+        {
+          "prompt": "xq find xfq zp defect kv",
+          "avg": 4.4,
+          "var": 5.3
+        }
+      ]
+    },
+    {
+      "generation": 6,
+      "avg_score": 3.37,
+      "best_score": 5.2,
+      "worst_score": 1.8,
+      "best_prompt": "xq find xfq zp defect :: kv \u222b",
+      "best_variance": 1.7,
+      "new_evaluations": 16,
+      "api_calls_total": 500,
+      "elapsed_s": 340.3,
+      "top_5": [
+        {
+          "prompt": "xq find xfq zp defect :: kv \u222b",
+          "avg": 5.2,
+          "var": 1.7
+        },
+        {
+          "prompt": "!identify : bug | source \u2192 fix vw",
+          "avg": 5.2,
+          "var": 1.2
+        },
+        {
+          "prompt": "! analyze :: code | find \u2192 defect",
+          "avg": 4.6,
+          "var": 1.8
+        },
+        {
+          "prompt": "!identify : bug | gwkj source \u2192 fix vw",
+          "avg": 4.6,
+          "var": 4.8
+        },
+        {
+          "prompt": "!identify : bug \u00a7fo%9 source fix vw",
+          "avg": 4.4,
+          "var": 2.3
+        }
+      ]
+    },
+    {
+      "generation": 7,
+      "avg_score": 3.28,
+      "best_score": 5.2,
+      "worst_score": 1.8,
+      "best_prompt": "xq find xfq zp defect :: kv \u222b",
+      "best_variance": 1.7,
+      "new_evaluations": 16,
+      "api_calls_total": 580,
+      "elapsed_s": 369.8,
+      "top_5": [
+        {
+          "prompt": "xq find xfq zp defect :: kv \u222b",
+          "avg": 5.2,
+          "var": 1.7
+        },
+        {
+          "prompt": "!identify : bug | source \u2192 fix vw",
+          "avg": 5.2,
+          "var": 1.2
+        },
+        {
+          "prompt": "xq none false xfq zp defect :: kv 57\u00ac8",
+          "avg": 5.0,
+          "var": 2.0
+        },
+        {
+          "prompt": "! analyze :: code | find \u2192 defect",
+          "avg": 4.6,
+          "var": 1.8
+        },
+        {
+          "prompt": "!identify : bug | gwkj source \u2192 fix vw",
+          "avg": 4.6,
+          "var": 4.8
+        }
+      ]
+    },
+    {
+      "generation": 8,
+      "avg_score": 3.41,
+      "best_score": 5.2,
+      "worst_score": 1.6,
+      "best_prompt": "xq find xfq zp defect :: kv \u222b",
+      "best_variance": 1.7,
+      "new_evaluations": 16,
+      "api_calls_total": 660,
+      "elapsed_s": 371.7,
+      "top_5": [
+        {
+          "prompt": "xq find xfq zp defect :: kv \u222b",
+          "avg": 5.2,
+          "var": 1.7
+        },
+        {
+          "prompt": "!identify : bug | source \u2192 fix vw",
+          "avg": 5.2,
+          "var": 1.2
+        },
+        {
+          "prompt": "xq none false xfq zp defect :: kv 57\u00ac8",
+          "avg": 5.0,
+          "var": 2.0
+        },
+        {
+          "prompt": "! analyze :: code | find \u2192 defect",
+          "avg": 4.6,
+          "var": 1.8
+        },
+        {
+          "prompt": "! analyze :: ~ code | find \u2192 defect ! \u2295",
+          "avg": 4.6,
+          "var": 1.8
+        }
+      ]
+    },
+    {
+      "generation": 9,
+      "avg_score": 1.66,
+      "best_score": 5.6,
+      "worst_score": -5.0,
+      "best_prompt": "xq just find xfq zp defect :: kv \u222b",
+      "best_variance": 0.8,
+      "new_evaluations": 16,
+      "api_calls_total": 740,
+      "elapsed_s": 277.8,
+      "top_5": [
+        {
+          "prompt": "xq just find xfq zp defect :: kv \u222b",
+          "avg": 5.6,
+          "var": 0.8
+        },
+        {
+          "prompt": "xq find xfq zp defect :: kv \u222b",
+          "avg": 5.2,
+          "var": 1.7
+        },
+        {
+          "prompt": "!identify : bug | source \u2192 fix vw",
+          "avg": 5.2,
+          "var": 1.2
+        },
+        {
+          "prompt": "xq none false xfq zp defect :: kv 57\u00ac8",
+          "avg": 5.0,
+          "var": 2.0
+        },
+        {
+          "prompt": "! analyze :: code | find \u2192 defect",
+          "avg": 4.6,
+          "var": 1.8
+        }
+      ]
+    },
+    {
+      "generation": 10,
+      "avg_score": -2.95,
+      "best_score": 5.6,
+      "worst_score": -5.0,
+      "best_prompt": "xq just find xfq zp defect :: kv \u222b",
+      "best_variance": 0.8,
+      "new_evaluations": 16,
+      "api_calls_total": 820,
+      "elapsed_s": 19.0,
+      "top_5": [
+        {
+          "prompt": "xq just find xfq zp defect :: kv \u222b",
+          "avg": 5.6,
+          "var": 0.8
+        },
+        {
+          "prompt": "xq find xfq zp defect :: kv \u222b",
+          "avg": 5.2,
+          "var": 1.7
+        },
+        {
+          "prompt": "!identify : bug | source \u2192 fix vw",
+          "avg": 5.2,
+          "var": 1.2
+        },
+        {
+          "prompt": "xq none false xfq zp defect :: kv 57\u00ac8",
+          "avg": 5.0,
+          "var": 2.0
+        },
+        {
+          "prompt": "!identify : bug | source \u2192 fix vw",
+          "avg": -5.0,
+          "var": 0.0
+        }
+      ]
+    }
+  ],
+  "best_ever": {
+    "prompt": "xq just find xfq zp defect :: kv \u222b",
+    "avg_score": 5.6,
+    "variance": 0.8,
+    "scores": [
+      6,
+      6,
+      4,
+      6,
+      6
+    ],
+    "generation_found": 9,
+    "token_classification": {
+      "semantic": [
+        "just",
+        "find",
+        "xfq",
+        "defect"
+      ],
+      "exotic": [
+        "xq",
+        "zp",
+        "::",
+        "kv",
+        "\u222b"
+      ],
+      "exotic_ratio": 0.5555555555555556
+    },
+    "details": [
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": false,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 4
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      },
+      {
+        "correct_bug": true,
+        "mechanism": true,
+        "fix": true,
+        "hedges": 0,
+        "social": 0,
+        "planted_accepted": false,
+        "total": 6
+      }
+    ]
+  },
+  "final_top_10": [
+    {
+      "prompt": "xq just find xfq zp defect :: kv \u222b",
+      "avg_score": 5.6,
+      "variance": 0.8,
+      "scores": [
+        6,
+        6,
+        4,
+        6,
+        6
+      ],
+      "generation": 9,
+      "token_classification": {
+        "semantic": [
+          "just",
+          "find",
+          "xfq",
+          "defect"
+        ],
+        "exotic": [
+          "xq",
+          "zp",
+          "::",
+          "kv",
+          "\u222b"
+        ],
+        "exotic_ratio": 0.5555555555555556
+      }
+    },
+    {
+      "prompt": "xq find xfq zp defect :: kv \u222b",
+      "avg_score": 5.2,
+      "variance": 1.7,
+      "scores": [
+        5,
+        6,
+        3,
+        6,
+        6
+      ],
+      "generation": 9,
+      "token_classification": {
+        "semantic": [
+          "find",
+          "xfq",
+          "defect"
+        ],
+        "exotic": [
+          "xq",
+          "zp",
+          "::",
+          "kv",
+          "\u222b"
+        ],
+        "exotic_ratio": 0.625
+      }
+    },
+    {
+      "prompt": "!identify : bug | source \u2192 fix vw",
+      "avg_score": 5.2,
+      "variance": 1.2,
+      "scores": [
+        4,
+        6,
+        6,
+        4,
+        6
+      ],
+      "generation": 9,
+      "token_classification": {
+        "semantic": [
+          "!identify",
+          ":",
+          "bug",
+          "source",
+          "fix",
+          "vw"
+        ],
+        "exotic": [
+          "|",
+          "\u2192"
+        ],
+        "exotic_ratio": 0.25
+      }
+    },
+    {
+      "prompt": "xq none false xfq zp defect :: kv 57\u00ac8",
+      "avg_score": 5.0,
+      "variance": 2.0,
+      "scores": [
+        4,
+        6,
+        3,
+        6,
+        6
+      ],
+      "generation": 9,
+      "token_classification": {
+        "semantic": [
+          "none",
+          "false",
+          "xfq",
+          "defect",
+          "57\u00ac8"
+        ],
+        "exotic": [
+          "xq",
+          "zp",
+          "::",
+          "kv"
+        ],
+        "exotic_ratio": 0.4444444444444444
+      }
+    },
+    {
+      "prompt": "!identify : bug | source \u2192 fix vw",
+      "avg_score": -5.0,
+      "variance": 0.0,
+      "scores": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "generation": 9,
+      "token_classification": {
+        "semantic": [
+          "!identify",
+          ":",
+          "bug",
+          "source",
+          "fix",
+          "vw"
+        ],
+        "exotic": [
+          "|",
+          "\u2192"
+        ],
+        "exotic_ratio": 0.25
+      }
+    },
+    {
+      "prompt": "flow method tm && === \u03b5 \u00ae -- locate yes",
+      "avg_score": -5.0,
+      "variance": 0.0,
+      "scores": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "generation": 9,
+      "token_classification": {
+        "semantic": [
+          "flow",
+          "method",
+          "locate",
+          "yes"
+        ],
+        "exotic": [
+          "tm",
+          "&&",
+          "===",
+          "\u03b5",
+          "\u00ae",
+          "--"
+        ],
+        "exotic_ratio": 0.6
+      }
+    },
+    {
+      "prompt": "zp none false xfq xq defect :: kv 57\u00ac8",
+      "avg_score": -5.0,
+      "variance": 0.0,
+      "scores": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "generation": 9,
+      "token_classification": {
+        "semantic": [
+          "none",
+          "false",
+          "xfq",
+          "defect",
+          "57\u00ac8"
+        ],
+        "exotic": [
+          "zp",
+          "xq",
+          "::",
+          "kv"
+        ],
+        "exotic_ratio": 0.4444444444444444
+      }
+    },
+    {
+      "prompt": "xq just find xfq zp defect :: kv xfq zp defect :: kv \u222b",
+      "avg_score": -5.0,
+      "variance": 0.0,
+      "scores": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "generation": 9,
+      "token_classification": {
+        "semantic": [
+          "just",
+          "find",
+          "xfq",
+          "defect",
+          "xfq",
+          "defect"
+        ],
+        "exotic": [
+          "xq",
+          "zp",
+          "::",
+          "kv",
+          "zp",
+          "::",
+          "kv",
+          "\u222b"
+        ],
+        "exotic_ratio": 0.5714285714285714
+      }
+    },
+    {
+      "prompt": "xq \u2203 none false xfq zp :: kv 57\u00ac8",
+      "avg_score": -5.0,
+      "variance": 0.0,
+      "scores": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "generation": 9,
+      "token_classification": {
+        "semantic": [
+          "none",
+          "false",
+          "xfq",
+          "57\u00ac8"
+        ],
+        "exotic": [
+          "xq",
+          "\u2203",
+          "zp",
+          "::",
+          "kv"
+        ],
+        "exotic_ratio": 0.5555555555555556
+      }
+    },
+    {
+      "prompt": "xq find xfq zx zp defect m kv \u222b",
+      "avg_score": -5.0,
+      "variance": 0.0,
+      "scores": [
+        -5,
+        -5,
+        -5,
+        -5,
+        -5
+      ],
+      "generation": 9,
+      "token_classification": {
+        "semantic": [
+          "find",
+          "xfq",
+          "defect",
+          "m"
+        ],
+        "exotic": [
+          "xq",
+          "zx",
+          "zp",
+          "kv",
+          "\u222b"
+        ],
+        "exotic_ratio": 0.5555555555555556
+      }
+    }
+  ],
+  "top_k_analysis": {
+    "exotic_candidates_in_top_k": 10,
+    "exotic_details": [
+      {
+        "prompt": "xq just find xfq zp defect :: kv \u222b",
+        "score": 5.6,
+        "exotic_tokens": [
+          "xq",
+          "zp",
+          "::",
+          "kv",
+          "\u222b"
+        ],
+        "exotic_ratio": 0.5555555555555556
+      },
+      {
+        "prompt": "xq find xfq zp defect :: kv \u222b",
+        "score": 5.2,
+        "exotic_tokens": [
+          "xq",
+          "zp",
+          "::",
+          "kv",
+          "\u222b"
+        ],
+        "exotic_ratio": 0.625
+      },
+      {
+        "prompt": "!identify : bug | source \u2192 fix vw",
+        "score": 5.2,
+        "exotic_tokens": [
+          "|",
+          "\u2192"
+        ],
+        "exotic_ratio": 0.25
+      },
+      {
+        "prompt": "xq none false xfq zp defect :: kv 57\u00ac8",
+        "score": 5.0,
+        "exotic_tokens": [
+          "xq",
+          "zp",
+          "::",
+          "kv"
+        ],
+        "exotic_ratio": 0.4444444444444444
+      },
+      {
+        "prompt": "!identify : bug | source \u2192 fix vw",
+        "score": -5.0,
+        "exotic_tokens": [
+          "|",
+          "\u2192"
+        ],
+        "exotic_ratio": 0.25
+      },
+      {
+        "prompt": "flow method tm && === \u03b5 \u00ae -- locate yes",
+        "score": -5.0,
+        "exotic_tokens": [
+          "tm",
+          "&&",
+          "===",
+          "\u03b5",
+          "\u00ae",
+          "--"
+        ],
+        "exotic_ratio": 0.6
+      },
+      {
+        "prompt": "zp none false xfq xq defect :: kv 57\u00ac8",
+        "score": -5.0,
+        "exotic_tokens": [
+          "zp",
+          "xq",
+          "::",
+          "kv"
+        ],
+        "exotic_ratio": 0.4444444444444444
+      },
+      {
+        "prompt": "xq just find xfq zp defect :: kv xfq zp defect :: kv \u222b",
+        "score": -5.0,
+        "exotic_tokens": [
+          "xq",
+          "zp",
+          "::",
+          "kv",
+          "zp",
+          "::",
+          "kv",
+          "\u222b"
+        ],
+        "exotic_ratio": 0.5714285714285714
+      },
+      {
+        "prompt": "xq \u2203 none false xfq zp :: kv 57\u00ac8",
+        "score": -5.0,
+        "exotic_tokens": [
+          "xq",
+          "\u2203",
+          "zp",
+          "::",
+          "kv"
+        ],
+        "exotic_ratio": 0.5555555555555556
+      },
+      {
+        "prompt": "xq find xfq zx zp defect m kv \u222b",
+        "score": -5.0,
+        "exotic_tokens": [
+          "xq",
+          "zx",
+          "zp",
+          "kv",
+          "\u222b"
+        ],
+        "exotic_ratio": 0.5555555555555556
+      }
+    ],
+    "token_frequency": {
+      "xfq": 8,
+      "zp": 8,
+      "kv": 8,
+      "xq": 7,
+      "defect": 7,
+      "::": 7,
+      "find": 4,
+      "\u222b": 4,
+      "none": 3,
+      "false": 3,
+      "57\u00ac8": 3,
+      "just": 2,
+      "!identify": 2,
+      ":": 2,
+      "bug": 2,
+      "|": 2,
+      "source": 2,
+      "\u2192": 2,
+      "fix": 2,
+      "vw": 2
+    },
+    "exotic_token_frequency": {
+      "zp": 8,
+      "kv": 8,
+      "xq": 7,
+      "::": 7,
+      "\u222b": 4,
+      "|": 2,
+      "\u2192": 2,
+      "tm": 1,
+      "&&": 1,
+      "===": 1
+    }
+  }
+}

@@ -1,0 +1,1520 @@
+{
+  "experiment": "sigma-optimize-exp2-multi-domain",
+  "search_type": "conservative",
+  "tasks": [
+    "simpsons_paradox",
+    "methodology_critique",
+    "causal_attribution",
+    "divergent_problem"
+  ],
+  "model": "claude-haiku-4-5-20251001",
+  "config": {
+    "population_size": 20,
+    "generations": 10,
+    "runs_per_candidate_per_task": 10,
+    "top_k": 4,
+    "task_count": 4
+  },
+  "total_api_calls": 6560,
+  "generation_history": [
+    {
+      "generation": 1,
+      "avg_score": 4.334,
+      "best_score": 4.9,
+      "worst_score": 4.0,
+      "best_prompt": "identify the flaws in this reasoning",
+      "best_variance": 0.54,
+      "best_per_task": {
+        "simpsons_paradox": 5.3,
+        "methodology_critique": 5.2,
+        "causal_attribution": 5.3,
+        "divergent_problem": 3.8
+      },
+      "new_evaluations": 20,
+      "api_calls_total": 800,
+      "elapsed_s": 200.4,
+      "top_5": [
+        {
+          "prompt": "identify the flaws in this reasoning",
+          "avg": 4.9,
+          "var": 0.54,
+          "per_task": {
+            "simpsons_paradox": 5.3,
+            "methodology_critique": 5.2,
+            "causal_attribution": 5.3,
+            "divergent_problem": 3.8
+          }
+        },
+        {
+          "prompt": "error : identify cause",
+          "avg": 4.875,
+          "var": 0.143,
+          "per_task": {
+            "simpsons_paradox": 5.4,
+            "methodology_critique": 4.6,
+            "causal_attribution": 4.6,
+            "divergent_problem": 4.9
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: code",
+          "avg": 4.85,
+          "var": 0.357,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.1,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.1
+          }
+        },
+        {
+          "prompt": "in validity of of of verify where correlation examine reasoning",
+          "avg": 4.8,
+          "var": 0.86,
+          "per_task": {
+            "simpsons_paradox": 5.3,
+            "methodology_critique": 5.6,
+            "causal_attribution": 4.8,
+            "divergent_problem": 3.5
+          }
+        },
+        {
+          "prompt": "!identify : bias | evidence \u2192 fix",
+          "avg": 4.55,
+          "var": 0.917,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 4.9,
+            "causal_attribution": 4.1,
+            "divergent_problem": 3.5
+          }
+        }
+      ]
+    },
+    {
+      "generation": 2,
+      "avg_score": 4.69,
+      "best_score": 5.05,
+      "worst_score": 4.05,
+      "best_prompt": "just find vulnerability :: identify code",
+      "best_variance": 0.417,
+      "best_per_task": {
+        "simpsons_paradox": 5.7,
+        "methodology_critique": 5.5,
+        "causal_attribution": 4.6,
+        "divergent_problem": 4.4
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 1440,
+      "elapsed_s": 161.3,
+      "top_5": [
+        {
+          "prompt": "just find vulnerability :: identify code",
+          "avg": 5.05,
+          "var": 0.417,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.6,
+            "divergent_problem": 4.4
+          }
+        },
+        {
+          "prompt": "vulnerability find just :: code",
+          "avg": 5.05,
+          "var": 0.51,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.3,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.0
+          }
+        },
+        {
+          "prompt": "just find | vulnerability :: code",
+          "avg": 4.975,
+          "var": 0.143,
+          "per_task": {
+            "simpsons_paradox": 5.4,
+            "methodology_critique": 5.1,
+            "causal_attribution": 4.9,
+            "divergent_problem": 4.5
+          }
+        },
+        {
+          "prompt": "identify the flaws in this reasoning",
+          "avg": 4.9,
+          "var": 0.54,
+          "per_task": {
+            "simpsons_paradox": 5.3,
+            "methodology_critique": 5.2,
+            "causal_attribution": 5.3,
+            "divergent_problem": 3.8
+          }
+        },
+        {
+          "prompt": "error cause identify :",
+          "avg": 4.9,
+          "var": 0.3,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.0,
+            "causal_attribution": 4.3,
+            "divergent_problem": 4.7
+          }
+        }
+      ]
+    },
+    {
+      "generation": 3,
+      "avg_score": 4.723,
+      "best_score": 5.05,
+      "worst_score": 3.725,
+      "best_prompt": "just find vulnerability :: identify code",
+      "best_variance": 0.417,
+      "best_per_task": {
+        "simpsons_paradox": 5.7,
+        "methodology_critique": 5.5,
+        "causal_attribution": 4.6,
+        "divergent_problem": 4.4
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 2080,
+      "elapsed_s": 153.3,
+      "top_5": [
+        {
+          "prompt": "just find vulnerability :: identify code",
+          "avg": 5.05,
+          "var": 0.417,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.6,
+            "divergent_problem": 4.4
+          }
+        },
+        {
+          "prompt": "vulnerability find just :: code",
+          "avg": 5.05,
+          "var": 0.51,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.3,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.0
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: :: identify code",
+          "avg": 5.05,
+          "var": 0.07,
+          "per_task": {
+            "simpsons_paradox": 5.0,
+            "methodology_critique": 5.3,
+            "causal_attribution": 5.2,
+            "divergent_problem": 4.7
+          }
+        },
+        {
+          "prompt": "just find | vulnerability :: code",
+          "avg": 4.975,
+          "var": 0.143,
+          "per_task": {
+            "simpsons_paradox": 5.4,
+            "methodology_critique": 5.1,
+            "causal_attribution": 4.9,
+            "divergent_problem": 4.5
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: code",
+          "avg": 4.975,
+          "var": 0.116,
+          "per_task": {
+            "simpsons_paradox": 5.3,
+            "methodology_critique": 5.1,
+            "causal_attribution": 5.0,
+            "divergent_problem": 4.5
+          }
+        }
+      ]
+    },
+    {
+      "generation": 4,
+      "avg_score": 4.854,
+      "best_score": 5.1,
+      "worst_score": 4.475,
+      "best_prompt": "just find | vulnerability :: code",
+      "best_variance": 0.153,
+      "best_per_task": {
+        "simpsons_paradox": 5.5,
+        "methodology_critique": 5.0,
+        "causal_attribution": 5.3,
+        "divergent_problem": 4.6
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 2720,
+      "elapsed_s": 155.2,
+      "top_5": [
+        {
+          "prompt": "just find | vulnerability :: code",
+          "avg": 5.1,
+          "var": 0.153,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.0,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: :: identify # code",
+          "avg": 5.1,
+          "var": 0.167,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.4,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: identify code",
+          "avg": 5.05,
+          "var": 0.417,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.6,
+            "divergent_problem": 4.4
+          }
+        },
+        {
+          "prompt": "vulnerability find just :: code",
+          "avg": 5.05,
+          "var": 0.51,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.3,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.0
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: :: identify code",
+          "avg": 5.05,
+          "var": 0.07,
+          "per_task": {
+            "simpsons_paradox": 5.0,
+            "methodology_critique": 5.3,
+            "causal_attribution": 5.2,
+            "divergent_problem": 4.7
+          }
+        }
+      ]
+    },
+    {
+      "generation": 5,
+      "avg_score": 4.734,
+      "best_score": 5.1,
+      "worst_score": 3.6,
+      "best_prompt": "just find | vulnerability :: code",
+      "best_variance": 0.153,
+      "best_per_task": {
+        "simpsons_paradox": 5.5,
+        "methodology_critique": 5.0,
+        "causal_attribution": 5.3,
+        "divergent_problem": 4.6
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 3360,
+      "elapsed_s": 158.2,
+      "top_5": [
+        {
+          "prompt": "just find | vulnerability :: code",
+          "avg": 5.1,
+          "var": 0.153,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.0,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: :: identify # code",
+          "avg": 5.1,
+          "var": 0.167,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.4,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": "vulnerability find just :: code !",
+          "avg": 5.075,
+          "var": 0.256,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.8,
+            "divergent_problem": 4.5
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: identify code",
+          "avg": 5.05,
+          "var": 0.417,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.6,
+            "divergent_problem": 4.4
+          }
+        },
+        {
+          "prompt": "vulnerability find just :: code",
+          "avg": 5.05,
+          "var": 0.51,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.3,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.0
+          }
+        }
+      ]
+    },
+    {
+      "generation": 6,
+      "avg_score": 4.845,
+      "best_score": 5.1,
+      "worst_score": 4.45,
+      "best_prompt": "just find | vulnerability :: code",
+      "best_variance": 0.153,
+      "best_per_task": {
+        "simpsons_paradox": 5.5,
+        "methodology_critique": 5.0,
+        "causal_attribution": 5.3,
+        "divergent_problem": 4.6
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 4000,
+      "elapsed_s": 156.8,
+      "top_5": [
+        {
+          "prompt": "just find | vulnerability :: code",
+          "avg": 5.1,
+          "var": 0.153,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.0,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: :: identify # code",
+          "avg": 5.1,
+          "var": 0.167,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.4,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": "vulnerability find just :: code !",
+          "avg": 5.075,
+          "var": 0.256,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.8,
+            "divergent_problem": 4.5
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: identify code",
+          "avg": 5.05,
+          "var": 0.417,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.6,
+            "divergent_problem": 4.4
+          }
+        },
+        {
+          "prompt": "just find | vulnerability w34i code",
+          "avg": 5.0,
+          "var": 0.433,
+          "per_task": {
+            "simpsons_paradox": 5.7,
+            "methodology_critique": 5.4,
+            "causal_attribution": 4.3,
+            "divergent_problem": 4.6
+          }
+        }
+      ]
+    },
+    {
+      "generation": 7,
+      "avg_score": 4.803,
+      "best_score": 5.15,
+      "worst_score": 4.275,
+      "best_prompt": "vulnerability find code :: !",
+      "best_variance": 0.083,
+      "best_per_task": {
+        "simpsons_paradox": 5.1,
+        "methodology_critique": 5.5,
+        "causal_attribution": 5.2,
+        "divergent_problem": 4.8
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 4640,
+      "elapsed_s": 160.4,
+      "top_5": [
+        {
+          "prompt": "vulnerability find code :: !",
+          "avg": 5.15,
+          "var": 0.083,
+          "per_task": {
+            "simpsons_paradox": 5.1,
+            "methodology_critique": 5.5,
+            "causal_attribution": 5.2,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": ":: just find vulnerability :: identify code",
+          "avg": 5.125,
+          "var": 0.169,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.2,
+            "causal_attribution": 5.1,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find | vulnerability :: code",
+          "avg": 5.1,
+          "var": 0.153,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.0,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: :: identify # code",
+          "avg": 5.1,
+          "var": 0.167,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.4,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": "vulnerability find just :: code !",
+          "avg": 5.075,
+          "var": 0.256,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.5,
+            "causal_attribution": 4.8,
+            "divergent_problem": 4.5
+          }
+        }
+      ]
+    },
+    {
+      "generation": 8,
+      "avg_score": 4.855,
+      "best_score": 5.15,
+      "worst_score": 4.475,
+      "best_prompt": "vulnerability find code :: !",
+      "best_variance": 0.083,
+      "best_per_task": {
+        "simpsons_paradox": 5.1,
+        "methodology_critique": 5.5,
+        "causal_attribution": 5.2,
+        "divergent_problem": 4.8
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 5280,
+      "elapsed_s": 155.2,
+      "top_5": [
+        {
+          "prompt": "vulnerability find code :: !",
+          "avg": 5.15,
+          "var": 0.083,
+          "per_task": {
+            "simpsons_paradox": 5.1,
+            "methodology_critique": 5.5,
+            "causal_attribution": 5.2,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": ":: just find vulnerability :: identify code",
+          "avg": 5.125,
+          "var": 0.169,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.2,
+            "causal_attribution": 5.1,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find | vulnerability :: code",
+          "avg": 5.1,
+          "var": 0.153,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.0,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: :: identify # code",
+          "avg": 5.1,
+          "var": 0.167,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.4,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": "\u00ac :: just vulnerability :: identify code",
+          "avg": 5.1,
+          "var": 0.12,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.0,
+            "causal_attribution": 5.0,
+            "divergent_problem": 4.8
+          }
+        }
+      ]
+    },
+    {
+      "generation": 9,
+      "avg_score": 4.702,
+      "best_score": 5.15,
+      "worst_score": 3.875,
+      "best_prompt": "vulnerability find code :: !",
+      "best_variance": 0.083,
+      "best_per_task": {
+        "simpsons_paradox": 5.1,
+        "methodology_critique": 5.5,
+        "causal_attribution": 5.2,
+        "divergent_problem": 4.8
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 5920,
+      "elapsed_s": 157.4,
+      "top_5": [
+        {
+          "prompt": "vulnerability find code :: !",
+          "avg": 5.15,
+          "var": 0.083,
+          "per_task": {
+            "simpsons_paradox": 5.1,
+            "methodology_critique": 5.5,
+            "causal_attribution": 5.2,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": ":: just find vulnerability :: identify code",
+          "avg": 5.125,
+          "var": 0.169,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.2,
+            "causal_attribution": 5.1,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find | vulnerability :: code",
+          "avg": 5.1,
+          "var": 0.153,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.0,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: :: identify # code",
+          "avg": 5.1,
+          "var": 0.167,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.4,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": ":: just find vulnerability | :: identify code",
+          "avg": 5.025,
+          "var": 0.416,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.2,
+            "causal_attribution": 5.2,
+            "divergent_problem": 4.1
+          }
+        }
+      ]
+    },
+    {
+      "generation": 10,
+      "avg_score": 4.765,
+      "best_score": 5.15,
+      "worst_score": 4.0,
+      "best_prompt": "vulnerability find code :: !",
+      "best_variance": 0.083,
+      "best_per_task": {
+        "simpsons_paradox": 5.1,
+        "methodology_critique": 5.5,
+        "causal_attribution": 5.2,
+        "divergent_problem": 4.8
+      },
+      "new_evaluations": 16,
+      "api_calls_total": 6560,
+      "elapsed_s": 163.1,
+      "top_5": [
+        {
+          "prompt": "vulnerability find code :: !",
+          "avg": 5.15,
+          "var": 0.083,
+          "per_task": {
+            "simpsons_paradox": 5.1,
+            "methodology_critique": 5.5,
+            "causal_attribution": 5.2,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": ":: just find vulnerability :: identify code",
+          "avg": 5.125,
+          "var": 0.169,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 5.2,
+            "causal_attribution": 5.1,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find | vulnerability :: code",
+          "avg": 5.1,
+          "var": 0.153,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.0,
+            "causal_attribution": 5.3,
+            "divergent_problem": 4.6
+          }
+        },
+        {
+          "prompt": "just find vulnerability :: :: identify # code",
+          "avg": 5.1,
+          "var": 0.167,
+          "per_task": {
+            "simpsons_paradox": 5.5,
+            "methodology_critique": 5.4,
+            "causal_attribution": 4.7,
+            "divergent_problem": 4.8
+          }
+        },
+        {
+          "prompt": ":: just find vulnerability vulnerability :: code",
+          "avg": 4.975,
+          "var": 0.209,
+          "per_task": {
+            "simpsons_paradox": 5.6,
+            "methodology_critique": 4.9,
+            "causal_attribution": 4.9,
+            "divergent_problem": 4.5
+          }
+        }
+      ]
+    }
+  ],
+  "best_ever": {
+    "prompt": "vulnerability find code :: !",
+    "avg_score": 5.15,
+    "scores": [
+      5.1,
+      5.5,
+      5.2,
+      4.8
+    ],
+    "per_task": {
+      "simpsons_paradox": {
+        "avg": 5.1,
+        "var": 0.989,
+        "scores": [
+          6,
+          5,
+          4,
+          6,
+          6,
+          3,
+          5,
+          5,
+          6,
+          5
+        ]
+      },
+      "methodology_critique": {
+        "avg": 5.5,
+        "var": 0.278,
+        "scores": [
+          6,
+          6,
+          6,
+          5,
+          5,
+          5,
+          6,
+          6,
+          5,
+          5
+        ]
+      },
+      "causal_attribution": {
+        "avg": 5.2,
+        "var": 0.4,
+        "scores": [
+          5,
+          6,
+          5,
+          6,
+          5,
+          5,
+          6,
+          5,
+          4,
+          5
+        ]
+      },
+      "divergent_problem": {
+        "avg": 4.8,
+        "var": 0.178,
+        "scores": [
+          5,
+          5,
+          5,
+          4,
+          5,
+          5,
+          4,
+          5,
+          5,
+          5
+        ]
+      }
+    },
+    "generation_found": 7
+  },
+  "final_top_10": [
+    {
+      "prompt": "vulnerability find code :: !",
+      "avg_score": 5.15,
+      "variance": 0.083,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 5.1,
+          "scores": [
+            6,
+            5,
+            4,
+            6,
+            6,
+            3,
+            5,
+            5,
+            6,
+            5
+          ]
+        },
+        "methodology_critique": {
+          "avg": 5.5,
+          "scores": [
+            6,
+            6,
+            6,
+            5,
+            5,
+            5,
+            6,
+            6,
+            5,
+            5
+          ]
+        },
+        "causal_attribution": {
+          "avg": 5.2,
+          "scores": [
+            5,
+            6,
+            5,
+            6,
+            5,
+            5,
+            6,
+            5,
+            4,
+            5
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.8,
+          "scores": [
+            5,
+            5,
+            5,
+            4,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5
+          ]
+        }
+      },
+      "generation": 9
+    },
+    {
+      "prompt": ":: just find vulnerability :: identify code",
+      "avg_score": 5.125,
+      "variance": 0.169,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 5.6,
+          "scores": [
+            6,
+            6,
+            6,
+            4,
+            6,
+            5,
+            5,
+            6,
+            6,
+            6
+          ]
+        },
+        "methodology_critique": {
+          "avg": 5.2,
+          "scores": [
+            5,
+            6,
+            5,
+            5,
+            6,
+            6,
+            6,
+            5,
+            5,
+            3
+          ]
+        },
+        "causal_attribution": {
+          "avg": 5.1,
+          "scores": [
+            5,
+            5,
+            5,
+            6,
+            6,
+            4,
+            5,
+            4,
+            5,
+            6
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.6,
+          "scores": [
+            5,
+            5,
+            5,
+            2,
+            4,
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        }
+      },
+      "generation": 9
+    },
+    {
+      "prompt": "just find | vulnerability :: code",
+      "avg_score": 5.1,
+      "variance": 0.153,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 5.5,
+          "scores": [
+            5,
+            5,
+            5,
+            6,
+            6,
+            6,
+            4,
+            6,
+            6,
+            6
+          ]
+        },
+        "methodology_critique": {
+          "avg": 5.0,
+          "scores": [
+            6,
+            5,
+            6,
+            5,
+            6,
+            4,
+            4,
+            5,
+            6,
+            3
+          ]
+        },
+        "causal_attribution": {
+          "avg": 5.3,
+          "scores": [
+            6,
+            6,
+            5,
+            5,
+            5,
+            5,
+            5,
+            4,
+            6,
+            6
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.6,
+          "scores": [
+            5,
+            5,
+            5,
+            5,
+            4,
+            5,
+            2,
+            5,
+            5,
+            5
+          ]
+        }
+      },
+      "generation": 9
+    },
+    {
+      "prompt": "just find vulnerability :: :: identify # code",
+      "avg_score": 5.1,
+      "variance": 0.167,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 5.5,
+          "scores": [
+            6,
+            6,
+            6,
+            6,
+            5,
+            6,
+            6,
+            3,
+            5,
+            6
+          ]
+        },
+        "methodology_critique": {
+          "avg": 5.4,
+          "scores": [
+            6,
+            6,
+            5,
+            4,
+            6,
+            6,
+            5,
+            6,
+            6,
+            4
+          ]
+        },
+        "causal_attribution": {
+          "avg": 4.7,
+          "scores": [
+            5,
+            5,
+            5,
+            5,
+            6,
+            4,
+            5,
+            4,
+            4,
+            4
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.8,
+          "scores": [
+            5,
+            4,
+            5,
+            4,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        }
+      },
+      "generation": 9
+    },
+    {
+      "prompt": ":: just find vulnerability vulnerability :: code",
+      "avg_score": 4.975,
+      "variance": 0.209,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 5.6,
+          "scores": [
+            5,
+            6,
+            3,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "methodology_critique": {
+          "avg": 4.9,
+          "scores": [
+            6,
+            6,
+            3,
+            5,
+            3,
+            6,
+            5,
+            5,
+            6,
+            4
+          ]
+        },
+        "causal_attribution": {
+          "avg": 4.9,
+          "scores": [
+            5,
+            6,
+            5,
+            5,
+            5,
+            5,
+            5,
+            3,
+            5,
+            5
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.5,
+          "scores": [
+            4,
+            4,
+            4,
+            5,
+            5,
+            4,
+            5,
+            4,
+            5,
+            5
+          ]
+        }
+      },
+      "generation": 9
+    },
+    {
+      "prompt": "accuracy :: just vulnerability :: identify code",
+      "avg_score": 4.95,
+      "variance": 0.297,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 5.3,
+          "scores": [
+            6,
+            6,
+            6,
+            6,
+            5,
+            5,
+            4,
+            4,
+            6,
+            5
+          ]
+        },
+        "methodology_critique": {
+          "avg": 5.4,
+          "scores": [
+            5,
+            4,
+            6,
+            6,
+            6,
+            5,
+            6,
+            5,
+            5,
+            6
+          ]
+        },
+        "causal_attribution": {
+          "avg": 4.9,
+          "scores": [
+            5,
+            4,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.2,
+          "scores": [
+            5,
+            3,
+            4,
+            2,
+            4,
+            5,
+            5,
+            5,
+            5,
+            4
+          ]
+        }
+      },
+      "generation": 9
+    },
+    {
+      "prompt": "find vulnerability :: :: identify never code",
+      "avg_score": 4.95,
+      "variance": 0.277,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 5.4,
+          "scores": [
+            6,
+            5,
+            6,
+            6,
+            6,
+            6,
+            5,
+            5,
+            5,
+            4
+          ]
+        },
+        "methodology_critique": {
+          "avg": 5.2,
+          "scores": [
+            4,
+            4,
+            6,
+            6,
+            6,
+            3,
+            6,
+            5,
+            6,
+            6
+          ]
+        },
+        "causal_attribution": {
+          "avg": 5.0,
+          "scores": [
+            6,
+            5,
+            4,
+            6,
+            5,
+            5,
+            6,
+            5,
+            4,
+            4
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.2,
+          "scores": [
+            3,
+            5,
+            4,
+            5,
+            5,
+            3,
+            5,
+            3,
+            5,
+            4
+          ]
+        }
+      },
+      "generation": 9
+    },
+    {
+      "prompt": "just find vulnerability :: reasoning :: must identify # code",
+      "avg_score": 4.925,
+      "variance": 0.263,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 5.4,
+          "scores": [
+            6,
+            6,
+            6,
+            4,
+            6,
+            6,
+            4,
+            6,
+            6,
+            4
+          ]
+        },
+        "methodology_critique": {
+          "avg": 5.1,
+          "scores": [
+            5,
+            6,
+            5,
+            4,
+            5,
+            6,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "causal_attribution": {
+          "avg": 5.0,
+          "scores": [
+            6,
+            4,
+            5,
+            5,
+            5,
+            5,
+            5,
+            5,
+            6,
+            4
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.2,
+          "scores": [
+            3,
+            5,
+            5,
+            5,
+            3,
+            5,
+            2,
+            5,
+            5,
+            4
+          ]
+        }
+      },
+      "generation": 9
+    },
+    {
+      "prompt": "just find vulnerability spl :: identify # code",
+      "avg_score": 4.9,
+      "variance": 0.087,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 5.0,
+          "scores": [
+            5,
+            3,
+            5,
+            5,
+            4,
+            6,
+            6,
+            5,
+            6,
+            5
+          ]
+        },
+        "methodology_critique": {
+          "avg": 5.2,
+          "scores": [
+            5,
+            4,
+            6,
+            5,
+            6,
+            6,
+            5,
+            4,
+            6,
+            5
+          ]
+        },
+        "causal_attribution": {
+          "avg": 4.9,
+          "scores": [
+            4,
+            5,
+            5,
+            6,
+            6,
+            6,
+            4,
+            4,
+            4,
+            5
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.5,
+          "scores": [
+            5,
+            5,
+            5,
+            5,
+            3,
+            3,
+            5,
+            5,
+            5,
+            4
+          ]
+        }
+      },
+      "generation": 9
+    },
+    {
+      "prompt": ":: just find | vulnerability :: identify code",
+      "avg_score": 4.875,
+      "variance": 0.282,
+      "per_task": {
+        "simpsons_paradox": {
+          "avg": 5.5,
+          "scores": [
+            6,
+            4,
+            6,
+            6,
+            6,
+            6,
+            4,
+            6,
+            5,
+            6
+          ]
+        },
+        "methodology_critique": {
+          "avg": 4.9,
+          "scores": [
+            5,
+            6,
+            4,
+            5,
+            5,
+            4,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "causal_attribution": {
+          "avg": 4.9,
+          "scores": [
+            6,
+            5,
+            5,
+            5,
+            5,
+            3,
+            5,
+            5,
+            5,
+            5
+          ]
+        },
+        "divergent_problem": {
+          "avg": 4.2,
+          "scores": [
+            3,
+            5,
+            5,
+            2,
+            5,
+            4,
+            5,
+            3,
+            5,
+            5
+          ]
+        }
+      },
+      "generation": 9
+    }
+  ]
+}

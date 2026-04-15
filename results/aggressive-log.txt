@@ -1,0 +1,196 @@
+  RESUMED from checkpoint: gen 1/10 complete, 800 API calls so far
+======================================================================
+  SIGMA-OPTIMIZE Exp 2: Multi-Domain Prompt Structure
+======================================================================
+  Search type: aggressive
+  Population: 20
+  Generations: 2-10 of 10
+  Runs/candidate/task: 10
+  Tasks: 4 (simpsons_paradox, methodology_critique, causal_attribution, divergent_problem)
+  Model: claude-haiku-4-5-20251001
+  Vocab size: 209
+  API calls this batch (est): ~7200
+======================================================================
+
+──────────────────────────────────────────────────────────────────────
+  Generation 2/10
+──────────────────────────────────────────────────────────────────────
+    [5/20] avg=+4.42 | flaw ? identify cause
+    [6/20] avg=+4.47 | ! analyze thanks :: flaw | find → cause
+    [7/20] avg=+4.83 | !identify : q | evidence → fix
+    [8/20] avg=+4.70 | !identify : bias | evidence ? bias evidence
+    [9/20] avg=+4.62 | flaw ? cause
+    [10/20] avg=+4.05 | 7 is rigorously → where to § void thanks
+    [11/20] avg=+4.62 | error identify cause
+    [12/20] avg=+4.58 | flaw ? bias >> evidence
+    [13/20] avg=+4.88 | !identify : bias | → evidence fix
+    [14/20] avg=+4.62 | error analysis : identify cause
+    [15/20] avg=+4.65 | error → : identify cause
+    [16/20] avg=+4.05 | flaw cause
+    [17/20] avg=+4.40 | ! analyze :: flaw o5dvl find → cause
+    [18/20] avg=+4.15 | error : always cause
+    [19/20] avg=+4.50 | ! analyze :: flaw | cause → find
+    [20/20] avg=+4.03 | error : ama*z cause
+
+  Avg: +4.52 | Best: +4.95 | Worst: +4.03
+  Best per task: causal_attribution=+5.4 | divergent_problem=+3.8 | methodology_critique=+5.4 | simpsons_paradox=+5.2
+  Evals: 16 new | API calls: 1440 total | Elapsed: 4040.7s
+
+  Top 5:
+    1. [+4.95 var=0.6] (causal_attribution=+5.4 | divergent_problem=+3.8 | methodology_critique=+5.4 | simpsons_paradox=+5.2) flaw ? bias evidence ★
+    2. [+4.88 var=0.4] (causal_attribution=+4.8 | divergent_problem=+4.0 | methodology_critique=+5.2 | simpsons_paradox=+5.5) !identify : bias | → evidence fix
+    3. [+4.83 var=0.3] (causal_attribution=+4.3 | divergent_problem=+4.4 | methodology_critique=+5.1 | simpsons_paradox=+5.5) !identify : q | evidence → fix
+    4. [+4.70 var=0.2] (causal_attribution=+4.8 | divergent_problem=+4.0 | methodology_critique=+5.0 | simpsons_paradox=+5.0) !identify : bias | evidence ? bias evidence
+    5. [+4.67 var=0.2] (causal_attribution=+4.9 | divergent_problem=+4.0 | methodology_critique=+4.7 | simpsons_paradox=+5.1) !identify : bias | evidence → fix
+
+  === GEN 2/10 COMPLETE === checkpoint saved
+
+──────────────────────────────────────────────────────────────────────
+  Generation 3/10
+──────────────────────────────────────────────────────────────────────
+    [5/20] avg=+4.80 | !identify : bias | # → evidence fix
+    [6/20] avg=+4.55 | flaw ? bias WARNING evidence
+    [7/20] avg=+3.50 | explain ??
+    [8/20] avg=+4.45 | flaw 505 bias evidence
+    [9/20] avg=+4.75 | !identify : q | : bias | → evidence fix
+    [10/20] avg=+4.80 | flaw ? bias | → evidence fix
+    [11/20] avg=+4.28 | : q | evidence → fix
+    [12/20] avg=+4.50 | !identify : q | evidence critically fix
+    [13/20] avg=+4.30 | flaw 1d bias evidence
+    [14/20] avg=+4.45 | !identify : q evidence → fix
+    [15/20] avg=+4.08 | ¬
+    [16/20] avg=+4.72 | !identify : bias | evidence # ? bias evidence
+    [17/20] avg=+4.58 | !identify : q | evidence ktk fix
+    [18/20] avg=+4.85 | !identify : q evidence
+    [19/20] avg=+4.60 | γ : bias | evidence ? bias evidence
+    [20/20] avg=+5.00 | !identify : bias fix → evidence |
+
+  Avg: +4.58 | Best: +5.00 | Worst: +3.50
+  Best per task: causal_attribution=+4.7 | divergent_problem=+4.4 | methodology_critique=+5.5 | simpsons_paradox=+5.4
+  Evals: 16 new | API calls: 2080 total | Elapsed: 5847.6s
+
+  Top 5:
+    1. [+5.00 var=0.3] (causal_attribution=+4.7 | divergent_problem=+4.4 | methodology_critique=+5.5 | simpsons_paradox=+5.4) !identify : bias fix → evidence | ★
+    2. [+4.95 var=0.6] (causal_attribution=+5.4 | divergent_problem=+3.8 | methodology_critique=+5.4 | simpsons_paradox=+5.2) flaw ? bias evidence
+    3. [+4.88 var=0.4] (causal_attribution=+4.8 | divergent_problem=+4.0 | methodology_critique=+5.2 | simpsons_paradox=+5.5) !identify : bias | → evidence fix
+    4. [+4.85 var=0.3] (causal_attribution=+5.0 | divergent_problem=+4.0 | methodology_critique=+5.1 | simpsons_paradox=+5.3) !identify : q evidence
+    5. [+4.83 var=0.3] (causal_attribution=+4.3 | divergent_problem=+4.4 | methodology_critique=+5.1 | simpsons_paradox=+5.5) !identify : q | evidence → fix
+
+  === GEN 3/10 COMPLETE === checkpoint saved
+
+──────────────────────────────────────────────────────────────────────
+  Generation 4/10
+──────────────────────────────────────────────────────────────────────
+    [5/20] avg=+4.62 | !identify : bias | → fix
+    [6/20] avg=+4.90 | flaw ? evidence
+    [7/20] avg=+4.58 | flaw ? → evidence |
+    [8/20] avg=+4.47 | flaw bias ? evidence
+    [9/20] avg=+5.00 | flaw ? bias bias | → evidence fix
+    [10/20] avg=+4.80 | !identify bias : fix → evidence |
+    [11/20] avg=+4.42 | flaw ? bias :: evidence
+    [12/20] avg=+4.65 | !identify : bias fix evidence fix
+    [13/20] avg=+4.62 | !identify : q bias evidence
+    [14/20] avg=+4.35 | !identify q evidence
+    [15/20] avg=+4.08 | == cause ω no
+    [16/20] avg=+4.67 | !identify 1 : q evidence
+    [17/20] avg=+4.85 | kv || zp η pre ? argument != that
+    [18/20] avg=+4.58 | flaw ? bias | → evidence fix
+    [19/20] avg=+4.78 | !identify immediately q evidence
+    [20/20] avg=+5.10 | !identify : bias fix → evidence | → evidence fix
+
+  Avg: +4.71 | Best: +5.10 | Worst: +4.08
+  Best per task: causal_attribution=+4.7 | divergent_problem=+4.8 | methodology_critique=+5.2 | simpsons_paradox=+5.7
+  Evals: 16 new | API calls: 2720 total | Elapsed: 5307.0s
+
+  Top 5:
+    1. [+5.10 var=0.2] (causal_attribution=+4.7 | divergent_problem=+4.8 | methodology_critique=+5.2 | simpsons_paradox=+5.7) !identify : bias fix → evidence | → evidence fix ★
+    2. [+5.00 var=0.3] (causal_attribution=+4.7 | divergent_problem=+4.4 | methodology_critique=+5.5 | simpsons_paradox=+5.4) !identify : bias fix → evidence |
+    3. [+5.00 var=0.5] (causal_attribution=+5.1 | divergent_problem=+4.0 | methodology_critique=+5.2 | simpsons_paradox=+5.7) flaw ? bias bias | → evidence fix
+    4. [+4.95 var=0.6] (causal_attribution=+5.4 | divergent_problem=+3.8 | methodology_critique=+5.4 | simpsons_paradox=+5.2) flaw ? bias evidence
+    5. [+4.90 var=0.3] (causal_attribution=+4.7 | divergent_problem=+4.3 | methodology_critique=+5.5 | simpsons_paradox=+5.1) flaw ? evidence
+
+  === GEN 4/10 COMPLETE === checkpoint saved
+
+──────────────────────────────────────────────────────────────────────
+  Generation 5/10
+──────────────────────────────────────────────────────────────────────
+    [5/20] avg=+4.17 | how 42 # where review
+    [6/20] avg=+4.75 | !identify : fix bias → evidence |
+    [7/20] avg=+3.83 | 99 == critically alternative
+    [8/20] avg=+4.72 | flaw ? bias bias | → o fix
+    [9/20] avg=+4.97 | flaw ? | bias bias → evidence fix
+    [10/20] avg=+4.70 | flaw ? bias bias | → 4 fix
+    [11/20] avg=+4.72 | !identify 5eekt bias fix → evidence |
+    [12/20] avg=+4.62 | flaw grj%j bias evidence
+    [13/20] avg=+3.90 | kindly are
+    [14/20] avg=+4.35 | flaw ? bias
+    [15/20] avg=+4.78 | !identify : bias fix → evidence | → evidence fix
+    [16/20] avg=+4.90 | !identify exactly : bias fix → evidence | → eviden
+    [17/20] avg=+4.92 | !identify : bias fix → evidence | → correlation ev
+    [18/20] avg=+4.80 | !identify : bias | → evidence fix
+    [19/20] avg=+4.58 | flaw : bias fix → evidence |
+    [20/20] avg=+4.90 | flaw ? bias <= evidence
+
+  Avg: +4.68 | Best: +5.10 | Worst: +3.83
+  Best per task: causal_attribution=+4.7 | divergent_problem=+4.8 | methodology_critique=+5.2 | simpsons_paradox=+5.7
+  Evals: 16 new | API calls: 3360 total | Elapsed: 6187.8s
+
+  Top 5:
+    1. [+5.10 var=0.2] (causal_attribution=+4.7 | divergent_problem=+4.8 | methodology_critique=+5.2 | simpsons_paradox=+5.7) !identify : bias fix → evidence | → evidence fix ★
+    2. [+5.00 var=0.3] (causal_attribution=+4.7 | divergent_problem=+4.4 | methodology_critique=+5.5 | simpsons_paradox=+5.4) !identify : bias fix → evidence |
+    3. [+5.00 var=0.5] (causal_attribution=+5.1 | divergent_problem=+4.0 | methodology_critique=+5.2 | simpsons_paradox=+5.7) flaw ? bias bias | → evidence fix
+    4. [+4.97 var=0.2] (causal_attribution=+5.2 | divergent_problem=+4.5 | methodology_critique=+4.7 | simpsons_paradox=+5.5) flaw ? | bias bias → evidence fix
+    5. [+4.95 var=0.6] (causal_attribution=+5.4 | divergent_problem=+3.8 | methodology_critique=+5.4 | simpsons_paradox=+5.2) flaw ? bias evidence
+
+  === GEN 5/10 COMPLETE === checkpoint saved
+
+──────────────────────────────────────────────────────────────────────
+  Generation 6/10
+──────────────────────────────────────────────────────────────────────
+    [5/20] avg=+4.95 | !identify : bias fix → evidence :: | → 5@ fix
+    [6/20] avg=+4.67 | : bias fix → :: evidence |
+    [7/20] avg=+4.62 | !identify : fix bias → evidence | → evidence fix
+    [8/20] avg=+4.85 | !identify : bias fix → evidence evidence → | fix
+    [9/20] avg=+4.42 | flaw ? could bias | → evidence → fix
+    [10/20] avg=+4.45 | !identify : bias fix → evidence | → evidence
+    [11/20] avg=+4.72 | !identify : bias → evidence zx |
+    [12/20] avg=+5.00 | !identify : bias fix → zzw4 | → evidence fix
+    [13/20] avg=+4.12 | must ∈ ∃ δ re * <-
+    [14/20] avg=+4.90 | flaw ? bias bias | → evidence ? | bias bias → evid
+    [15/20] avg=+4.85 | evidence : bias fix → !identify | → evidence fix
+    [16/20] avg=+4.58 | !identify : bias fix → bias bias | → evidence fix
+    [17/20] avg=+4.83 | flaw ? | bias bias → evidence null fix
+    [18/20] avg=+4.88 | !identify : bias fix → | → evidence fix
+    [19/20] avg=+5.17 | flaw reliability ? | bias bias → evidence fix
+    [20/20] avg=+4.17 | alternative <<<
+
+  Avg: +4.76 | Best: +5.17 | Worst: +4.12
+  Best per task: causal_attribution=+5.3 | divergent_problem=+4.7 | methodology_critique=+4.8 | simpsons_paradox=+5.9
+  Evals: 16 new | API calls: 4000 total | Elapsed: 14440.7s
+
+  Top 5:
+    1. [+5.17 var=0.3] (causal_attribution=+5.3 | divergent_problem=+4.7 | methodology_critique=+4.8 | simpsons_paradox=+5.9) flaw reliability ? | bias bias → evidence fix ★
+    2. [+5.10 var=0.2] (causal_attribution=+4.7 | divergent_problem=+4.8 | methodology_critique=+5.2 | simpsons_paradox=+5.7) !identify : bias fix → evidence | → evidence fix
+    3. [+5.00 var=0.3] (causal_attribution=+4.7 | divergent_problem=+4.4 | methodology_critique=+5.5 | simpsons_paradox=+5.4) !identify : bias fix → evidence |
+    4. [+5.00 var=0.5] (causal_attribution=+5.1 | divergent_problem=+4.0 | methodology_critique=+5.2 | simpsons_paradox=+5.7) flaw ? bias bias | → evidence fix
+    5. [+5.00 var=0.5] (causal_attribution=+4.4 | divergent_problem=+4.6 | methodology_critique=+5.0 | simpsons_paradox=+6.0) !identify : bias fix → zzw4 | → evidence fix
+
+  === GEN 6/10 COMPLETE === checkpoint saved
+
+──────────────────────────────────────────────────────────────────────
+  Generation 7/10
+──────────────────────────────────────────────────────────────────────
+    [5/20] avg=+4.53 | flaw ? bias bias | → evidence ∧
+    [6/20] avg=+4.83 | !identify : bias # p6 → evidence |
+    [7/20] avg=+4.95 | !identify ∧ : bias fix → evidence |
+    [8/20] avg=+4.83 | !identify : bias fix → evidence fix
+    [9/20] avg=+4.85 | flaw ? bias bias | → de fix
+    [10/20] avg=+4.15 | kv ~ ζ alternative carefully
+    [11/20] avg=+4.95 | ε ? bias bias | → evidence fix
+    [12/20] avg=+4.65 | fix : bias | → evidence !identify
+    [13/20] avg=+4.25 | investigate flaw
+    [14/20] avg=+4.45 | flaw ? bias bias | → i!awy fix
+    [15/20] avg=+4.67 | flaw |
+    [16/20] avg=+4.47 | !identify fix → evidence |
+    [17/20] avg=+4.35 | pre ∃ 42
+    [18/20] avg=+4.75 | flaw ? bias bias | → ∆ evidence fix
