@@ -218,7 +218,7 @@
     Gen  9: avg=+4.87  best=+5.22  ████████████████████  !identify : bias fix → evidence fix
     Gen 10: avg=+4.74  best=+5.22  ████████████████████  !identify : bias fix → evidence fix
 
-  Results saved to: /Users/bjgilbert/Projects/sigma-optimize/results
+  Results saved to: results
 ======================================================================
 
   === ALL GENERATIONS COMPLETE ===

@@ -425,7 +425,7 @@
     Gen  9: avg=+4.70  best=+5.15  ████████████████████  vulnerability find code :: !
     Gen 10: avg=+4.76  best=+5.15  ████████████████████  vulnerability find code :: !
 
-  Results saved to: /Users/bjgilbert/Projects/sigma-optimize/results
+  Results saved to: results
 ======================================================================
 
   === ALL GENERATIONS COMPLETE ===

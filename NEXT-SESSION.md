@@ -30,7 +30,7 @@ Full audit done — process failures documented + 15 action items prioritized.
 
 ## What to do next
 - Run Exp 3 (cross-model convergence probe — designed, waiting on these fixes)
-  - Design: ~/.claude/projects/-Users-bjgilbert/memory/project_exp3-convergence.md
+  - Design: ~/.claude/projects/<project>/memory/project_exp3-convergence.md
 - Optional: have sigma-build agents review these changes before running Exp 3
 
 ### Key files:

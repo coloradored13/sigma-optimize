@@ -17,7 +17,7 @@ Using 10 concurrent workers
 
 Evaluation complete: 6400 API calls in 4466s
 
-Results saved to /Users/bjgilbert/Projects/sigma-optimize/results/multi-combinatorial.json
+Results saved to results/multi-combinatorial.json
 
 === TOP-20 CANDIDATES ===
    1. [ABLATE:flaw reliability evidence | bias bias → ? fix:-bias] avg=+5.325 var=0.363 | SP=+5.9 MC=+5.6 CA=+5.3 DP=+4.5 | flaw reliability evidence | bias → ? fix
